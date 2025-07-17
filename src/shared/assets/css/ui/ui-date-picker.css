@@ -1,6 +1,6 @@
 :root {
   /*General*/
-  --dp-font-family: "Inter", sans-serif; /*Default font-family*/
+  --dp-font-family: "Manrope", sans-serif; /*Default font-family*/
   --dp-border-radius: 8px; /*Configurable border-radius*/
   --dp-cell-border-radius: 4px; /*Specific border radius for the calendar cell*/
   --dp-common-transition: all 0.3s ease-in-out; /*Generic transition applied on buttons and calendar cells*/

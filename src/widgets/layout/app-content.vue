@@ -1,11 +1,8 @@
 <script setup lang="ts">
-import { useLayoutStore } from "~/entities/layout"
-
-const store = useLayoutStore()
 </script>
 
 <template>
-  <div class="duration-300 ease-in-out" :class="store.contentLgMargin">
+  <div class="duration-300 ease-in-out">
     <div class="app-content">
       <slot name="header" />
 

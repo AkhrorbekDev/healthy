@@ -1,0 +1,123 @@
+.headline {
+    font-size: 58px;
+    line-height: 74px;
+}
+
+.headline-2 {
+    font-size: 50px;
+    line-height: 64px;
+}
+
+.headline-3 {
+    font-size: 40px;
+    line-height: 48px;
+}
+
+.headline-4 {
+    font-size: 30px;
+    line-height: 36px;
+}
+
+.subtitle {
+    font-size: 24px;
+    line-height: 29px;
+}
+
+.subtitle-2 {
+    font-size: 22px;
+    line-height: 28px;
+}
+
+.subtitle-3 {
+    font-size: 20px;
+    line-height: 25px;
+}
+
+.subtitle-4 {
+    font-size: 18px;
+    line-height: 23px;
+}
+
+.subtitle-5 {
+    font-size: 16px;
+    line-height: 22px;
+}
+
+.body {
+    font-size: 20px;
+    line-height: 25px;
+}
+
+.body-2 {
+    font-size: 18px;
+    line-height: 23px;
+}
+
+.body-3 {
+    font-size: 17px;
+    line-height: 22px;
+}
+
+.body-4 {
+    font-size: 16px;
+    line-height: 20px;
+}
+
+@media (max-width: 767px) {
+    .headline {
+        font-size: 32px;
+        line-height: 41px;
+    }
+
+    .headline-2 {
+        font-size: 28px;
+        line-height: 36px;
+    }
+
+
+    .subtitle {
+        font-size: 22px;
+        line-height: 28px;
+    }
+
+    .subtitle-2 {
+        font-size: 20px;
+        line-height: 25px;
+    }
+
+    .subtitle-3 {
+        font-size: 18px;
+        line-height: 23px;
+    }
+
+    .subtitle-4 {
+        font-size: 16px;
+        line-height: 20px;
+    }
+
+    .subtitle-5 {
+        font-size: 16px;
+        line-height: 22px;
+    }
+
+
+    .body {
+        font-size: 17px;
+        line-height: 22px;
+    }
+
+    .body-2 {
+        font-size: 16px;
+        line-height: 20px;
+    }
+
+    .body-3 {
+        font-size: 15px;
+        line-height: 19px;
+    }
+
+    .body-4 {
+        font-size: 14px;
+        line-height: 18px;
+    }
+}

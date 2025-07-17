@@ -18,7 +18,6 @@ export default defineNuxtConfig({
     middleware: "./app/middleware",
     public: "../public"
   },
-
   devtools: { enabled: true },
 
   components: [
@@ -52,7 +51,30 @@ export default defineNuxtConfig({
     layoutTransition: { name: "fade", mode: "out-in" }
   },
 
-  modules: ["@nuxtjs/tailwindcss", "@nuxtjs/i18n", "@nuxt/icon", "@pinia/nuxt", "@vueuse/nuxt", "vue-sonner/nuxt"],
+  modules: [
+    "@nuxtjs/tailwindcss",
+    "@nuxtjs/i18n",
+    "@nuxtjs/google-fonts",
+    "@nuxt/icon",
+    "@pinia/nuxt",
+    "@vueuse/nuxt",
+    "vue-sonner/nuxt"
+  ],
+  icon: {
+    customCollections: [
+      {
+        prefix: "h-icon",
+        dir: "./src/shared/assets/icons"
+      }
+    ]
+  },
+
+  googleFonts: {
+    families: {
+      Onest: [300, 400, 500, 600, 700, 800, 900],
+      Manrope: [300, 400, 500, 600, 700, 800, 900]
+    }
+  },
 
   css: ["floating-vue/dist/style.css", "@vuepic/vue-datepicker/dist/main.css", "~/shared/assets/css/index.css"],
 

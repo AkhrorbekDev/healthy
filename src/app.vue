@@ -4,6 +4,5 @@ useHead({ titleTemplate: (title) => (title ? `${title} | ${t("labels.app_name")}
 </script>
 
 <template>
-<!--  <app-root />-->
-  <div></div>
+  <app-root />
 </template>

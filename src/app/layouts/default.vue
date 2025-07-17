@@ -5,8 +5,6 @@ import { ProfileModal, ProfilePasswordModal } from "~/features/profile"
 
 <template>
   <div>
-    <app-sidebar />
-
     <app-content>
       <template #header>
         <app-header />
@@ -14,8 +12,5 @@ import { ProfileModal, ProfilePasswordModal } from "~/features/profile"
 
       <slot />
     </app-content>
-
-    <profile-modal />
-    <profile-password-modal />
   </div>
 </template>
