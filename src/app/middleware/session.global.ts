@@ -5,7 +5,7 @@ export default defineNuxtRouteMiddleware(async (to) => {
   const { getProfile } = useProfileService()
   const { $session } = useNuxtApp()
 
-  const hasToken = !!localStorage.getItem("token")
+  const hasToken = !!useCookie("token")
   const isPublic = to.meta?.public || false
   const unauthorized = !isPublic && !hasToken
 
@@ -16,6 +16,6 @@ export default defineNuxtRouteMiddleware(async (to) => {
     $session.loaded.value = true
   }
 
-  // if (hasToken && !$session.profile.value) await getProfile()
+  if (hasToken && !$session.profile.value) await getProfile()
   // if (unauthorized) return navigateTo(localePath("/auth/sign-in"))
 })

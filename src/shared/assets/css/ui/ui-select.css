@@ -90,7 +90,7 @@
 }
 
 .multiselect-search {
-  @apply w-full absolute inset-0 outline-none focus:ring-0 appearance-none box-border border-0 text-sm font-sans bg-transparent rounded pl-2.5 rtl:pl-0 rtl:pr-2.5;
+  @apply w-full absolute inset-0 outline-none focus:ring-0 appearance-none box-border border-0 text-sm bg-transparent rounded pl-2.5 rtl:pl-0 rtl:pr-2.5;
 }
 
 .multiselect-tags {
@@ -125,7 +125,7 @@
 }
 
 .multiselect-tags-search {
-  @apply absolute inset-0 border-0 outline-none focus:ring-0 appearance-none bg-transparent p-0 text-sm font-sans box-border w-full;
+  @apply absolute inset-0 border-0 outline-none focus:ring-0 appearance-none bg-transparent p-0 text-sm box-border w-full;
 }
 
 .multiselect-tags-search-copy {

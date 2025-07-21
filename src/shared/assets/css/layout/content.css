@@ -1,11 +1,18 @@
 .app-content {
-  @apply flex min-h-dvh w-full flex-col items-start justify-between;
+    @apply flex min-h-dvh w-full flex-col items-start justify-between;
 
-  & > main {
-    @apply flex w-full grow items-stretch;
-  }
+    & > main {
+        @apply flex w-full grow items-stretch;
+    }
 }
 
 .app-container {
-  @apply px-4 mx-auto w-full max-w-screen-3xl;
+    @apply px-4 mx-auto w-full max-w-screen-2xl;
+}
+
+
+.p-section {
+    @media screen and (max-width: 576px) {
+        @apply px-4;
+    }
 }

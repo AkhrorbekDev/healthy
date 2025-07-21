@@ -7,6 +7,7 @@ export interface IProps extends /* @vue-ignore */ ButtonHTMLAttributes {
   size?: "xs" | "sm" | "md" | "lg" | "xl"
   color?: "primary" | "secondary" | "success" | "warning" | "danger"
   rounded?: boolean
+  mode?: string
   squared?: boolean
   loading?: boolean
   disabled?: boolean
@@ -20,6 +21,7 @@ export interface IProps extends /* @vue-ignore */ ButtonHTMLAttributes {
 const props = withDefaults(defineProps<IProps>(), {
   size: "md",
   color: "primary",
+  mode: "css",
   variant: "solid"
 })
 
@@ -55,7 +57,7 @@ const buttonAttrs = computed(() => {
     </slot>
 
     <slot>
-      <icon v-if="iconName" :class="iconClass" :name="iconName" />
+      <icon v-if="iconName" :mode :class="iconClass" :name="iconName" />
     </slot>
   </component>
 </template>

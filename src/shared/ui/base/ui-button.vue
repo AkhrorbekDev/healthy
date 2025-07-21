@@ -2,7 +2,7 @@
 import type { ButtonHTMLAttributes } from "vue"
 
 export interface IProps extends /* @vue-ignore */ ButtonHTMLAttributes {
-  variant?: "solid" | "ghost" | "flat" | "white"
+  variant?: "solid" | "ghost" | "flat" | "white" | "outline" | "link" | "filled"
   size?: "xs" | "sm" | "md" | "lg" | "xl"
   color?: "primary" | "secondary" | "success" | "warning" | "danger" | "info" | "lime" | "cyan" | "yellow" | string
   label?: string
