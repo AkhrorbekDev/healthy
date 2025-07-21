@@ -290,7 +290,7 @@
 
 /* Filled */
 .ui-button-filled {
-    @apply bg-primary-500 text-white hover:bg-primary-400 appearance-none focus-visible:outline-none focus-visible:bg-green-focusin;
+    @apply bg-green-500 text-white hover:bg-green-400 appearance-none focus-visible:outline-none focus-visible:bg-green-focusin;
 
     &.ui-button-secondary {
         @apply bg-secondary-600 text-white hover:bg-secondary-700;
@@ -332,10 +332,10 @@
 /* Outline */
 
 .ui-button-outline {
-    @apply border border-primary-500 bg-white text-green-500 hover:bg-green-500 hover:text-white appearance-none focus-visible:outline-none focus-visible:bg-green-focusin;
+    @apply border border-green-500 bg-white text-green-500 hover:bg-green-500 hover:text-white appearance-none focus-visible:outline-none focus-visible:bg-green-focusin;
 
     &.ui-button-primary {
-        @apply border-primary-500 bg-primary-500 text-white hover:bg-primary-600;
+        @apply border-green-500 bg-transparent hover:bg-green-600;
     }
 
     &.ui-button-secondary {

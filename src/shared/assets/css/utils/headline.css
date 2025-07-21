@@ -1,4 +1,4 @@
-.headline {
+.headline-1 {
     font-size: 58px;
     line-height: 74px;
 }
@@ -18,53 +18,53 @@
     line-height: 36px;
 }
 
-.subtitle {
+.subtitle-24 {
     font-size: 24px;
     line-height: 29px;
 }
 
-.subtitle-2 {
+.subtitle-22 {
     font-size: 22px;
     line-height: 28px;
 }
 
-.subtitle-3 {
+.subtitle-20 {
     font-size: 20px;
     line-height: 25px;
 }
 
-.subtitle-4 {
+.subtitle-18 {
     font-size: 18px;
     line-height: 23px;
 }
 
-.subtitle-5 {
+.subtitle-16 {
     font-size: 16px;
     line-height: 22px;
 }
 
-.body {
+.body-20 {
     font-size: 20px;
     line-height: 25px;
 }
 
-.body-2 {
+.body-18 {
     font-size: 18px;
     line-height: 23px;
 }
 
-.body-3 {
+.body-17 {
     font-size: 17px;
     line-height: 22px;
 }
 
-.body-4 {
+.body-16 {
     font-size: 16px;
     line-height: 20px;
 }
 
 @media (max-width: 767px) {
-    .headline {
+    .headline-1 {
         font-size: 32px;
         line-height: 41px;
     }
@@ -75,48 +75,48 @@
     }
 
 
-    .subtitle {
+    .subtitle-24 {
         font-size: 22px;
         line-height: 28px;
     }
 
-    .subtitle-2 {
+    .subtitle-22 {
         font-size: 20px;
         line-height: 25px;
     }
 
-    .subtitle-3 {
+    .subtitle-20 {
         font-size: 18px;
         line-height: 23px;
     }
 
-    .subtitle-4 {
+    .subtitle-18 {
         font-size: 16px;
         line-height: 20px;
     }
 
-    .subtitle-5 {
+    .subtitle-16 {
         font-size: 16px;
         line-height: 22px;
     }
 
 
-    .body {
+    .body-20 {
         font-size: 17px;
         line-height: 22px;
     }
 
-    .body-2 {
+    .body-18 {
         font-size: 16px;
         line-height: 20px;
     }
 
-    .body-3 {
+    .body-17 {
         font-size: 15px;
         line-height: 19px;
     }
 
-    .body-4 {
+    .body-16 {
         font-size: 14px;
         line-height: 18px;
     }

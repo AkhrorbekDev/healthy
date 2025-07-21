@@ -15,17 +15,17 @@ defineProps<IProps>()
 <template>
   <div class="post-hero">
     <!--  Background  -->
-    <div class="post-hero__background" data-rellax-speed="-5">
+    <div class="post-hero__background">
       <img alt="Background" :src="background" />
     </div>
 
     <!--  Content  -->
     <div class="post-hero__content max-w-screen-2xl">
       <div class="max-w-[832px]">
-        <h1 class="post-hero__title headline mb-[15px]">{{ title }}</h1>
-        <p class="post-hero__description body">{{ description }}</p>
+        <h1 class="post-hero__title headline-1 mb-[15px]">{{ title }}</h1>
+        <p class="post-hero__description body-20">{{ description }}</p>
       </div>
-      <div class="flex gap-[15px] mt-[50px]">
+      <div class="mt-[50px] flex flex-col gap-[15px] sm:flex-row">
         <ui-button :to="specialistsLink">
           {{ t("select_specialist") }}
         </ui-button>
