@@ -25,7 +25,7 @@ defineProps<IProps>()
         <h1 class="post-hero__title headline mb-[15px]">{{ title }}</h1>
         <p class="post-hero__description body">{{ description }}</p>
       </div>
-      <div class="flex gap-[15px] mt-[50px]">
+      <div class="mt-[50px] flex gap-[15px]">
         <ui-button :to="specialistsLink">
           {{ t("select_specialist") }}
         </ui-button>

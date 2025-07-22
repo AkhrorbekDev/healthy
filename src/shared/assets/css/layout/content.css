@@ -9,3 +9,7 @@
 .app-container {
   @apply px-4 mx-auto w-full max-w-screen-2xl;
 }
+
+.p-section {
+  @apply py-[120px]
+}
