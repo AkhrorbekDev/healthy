@@ -1,5 +1,8 @@
 <script setup lang="ts">
 import AppSection from "~/widgets/layout/app-section.vue"
+import HomeAboutCard from "~/features/home/ui/home-about-card.vue"
+
+const { t, tm, rt } = useI18n({useScope: "local" })
 </script>
 
 <template>
@@ -45,86 +48,46 @@ import AppSection from "~/widgets/layout/app-section.vue"
     </div>
     <div>
       <span class="headline-1 font-semibold text-[#323232]">Наш подход</span>
-      <div class="mt-[30px] flex flex-col gap-[20px] md:flex-row md:items-center">
-        <div
-          class="relative z-[267] flex w-full shrink-0 flex-col flex-nowrap items-start gap-[209px] gap-[60px] rounded-[20px] bg-[#fff] pb-[20px] pl-[20px] pr-[20px] pt-[20px] md:gap-[209px]"
-        >
-          <div
-            class="relative z-[268] h-[45px] w-[45px] shrink-0 overflow-hidden bg-[url(https://codia-f2c.s3.us-west-1.amazonaws.com/image/2025-07-20/XwD957mDTH.png)] bg-cover bg-no-repeat"
-          ></div>
-          <div class="relative z-[269] flex w-[305px] shrink-0 flex-col flex-nowrap items-start gap-[8px]">
-            <span
-              class="subtitle-22 relative z-[270] text-left font-['Onest'] text-[24px] font-semibold leading-[29px] text-[#323232]"
-            >
-              Опытные специалисты
-            </span>
-            <span
-              class="body-16 relative z-[271] text-left font-['Onest'] text-[17px] font-medium leading-[21.675px] text-[#585958]"
-            >
-              Многолетний стаж и профессионализм
-            </span>
-          </div>
-        </div>
-        <div
-          class="relative z-[272] flex w-full shrink-0 flex-col flex-nowrap items-start gap-[209px] gap-[60px] rounded-[20px] bg-[#fff] pb-[20px] pl-[20px] pr-[20px] pt-[20px] md:gap-[209px]"
-        >
-          <div
-            class="relative z-[273] h-[45px] w-[45px] shrink-0 overflow-hidden bg-[url(https://codia-f2c.s3.us-west-1.amazonaws.com/image/2025-07-20/zeb5VHTRnJ.png)] bg-cover bg-no-repeat"
-          ></div>
-          <div class="relative z-[274] flex w-[305px] shrink-0 flex-col flex-nowrap items-start gap-[8px]">
-            <span
-              class="subtitle-22 relative z-[275] text-left font-['Onest'] text-[24px] font-semibold leading-[29px] text-[#323232]"
-            >
-              Авторские курсы
-            </span>
-            <span
-              class="body-16 relative z-[276] text-left font-['Onest'] text-[17px] font-medium leading-[21.675px] text-[#585958]"
-            >
-              Уникальные офлайн-программы для вашего развития
-            </span>
-          </div>
-        </div>
-        <div
-          class="relative z-[277] flex w-full shrink-0 flex-col flex-nowrap items-start gap-[209px] gap-[60px] rounded-[20px] bg-[#fff] pb-[20px] pl-[20px] pr-[20px] pt-[20px] md:gap-[209px]"
-        >
-          <div
-            class="relative z-[278] h-[45px] w-[45px] shrink-0 overflow-hidden bg-[url(https://codia-f2c.s3.us-west-1.amazonaws.com/image/2025-07-20/aaEDsgw5gs.png)] bg-cover bg-no-repeat"
-          ></div>
-          <div class="relative z-[279] flex w-[305px] shrink-0 flex-col flex-nowrap items-start gap-[8px]">
-            <span
-              class="subtitle-22 relative z-[280] text-left font-['Onest'] text-[24px] font-semibold leading-[29px] text-[#323232]"
-            >
-              Индивидуальный подход
-            </span>
-            <span
-              class="body-16 relative z-[281] text-left font-['Onest'] text-[17px] font-medium leading-[21.675px] text-[#585958]"
-            >
-              Персональные планы терапии и полная конфиденциальность
-            </span>
-          </div>
-        </div>
-        <div
-          class="relative z-[282] flex w-full shrink-0 flex-col flex-nowrap items-start gap-[209px] gap-[60px] rounded-[20px] bg-[#fff] pb-[20px] pl-[20px] pr-[20px] pt-[20px] md:gap-[209px]"
-        >
-          <div
-            class="relative z-[283] h-[45px] w-[45px] shrink-0 overflow-hidden bg-[url(https://codia-f2c.s3.us-west-1.amazonaws.com/image/2025-07-20/JC5sVgcQVe.png)] bg-cover bg-no-repeat"
-          ></div>
-          <div class="relative z-[284] flex w-[305px] shrink-0 flex-col flex-nowrap items-start gap-[8px]">
-            <span
-              class="subtitle-22 relative z-[285] text-left font-['Onest'] text-[24px] font-semibold leading-[29px] text-[#323232]"
-            >
-              Поддержка на пути
-            </span>
-            <span
-              class="body-16 relative z-[286] text-left font-['Onest'] text-[17px] font-medium leading-[21.675px] text-[#585958]"
-            >
-              Блог и материалы для самостоятельной помощи
-            </span>
-          </div>
-        </div>
+      <div class="mt-[30px] grid grid-cols-1 gap-[20px] md:grid-cols-4">
+        <home-about-card
+          v-for="(content, index) in tm('about_card')"
+          :key="index"
+          :title="rt(content.title)"
+          :description="rt(content.description)"
+          :icon-name="rt(content.icon)"
+        />
       </div>
     </div>
   </app-section>
 </template>
 
 <style scoped></style>
+
+<i18n>
+{
+  "ru": {
+    "about_card": [
+      {
+        "title": "Опытные специалисты",
+        "description": "Многолетний стаж и профессионализм",
+        "icon": "h-icon:achieve"
+      },
+      {
+        "title": "Авторские курсы",
+        "description": "Уникальные офлайн-программы для вашего развития",
+        "icon": "h-icon:star"
+      },
+      {
+        "title": "Индивидуальный подход",
+        "description": "Персональные планы терапии и полная конфиденциальность",
+        "icon": "h-icon:person"
+      },
+      {
+        "title": "Поддержка на пути",
+        "description": "Блог и материалы для самостоятельной помощи",
+        "icon": "h-icon:heart"
+      }
+    ]
+  }
+}
+</i18n>

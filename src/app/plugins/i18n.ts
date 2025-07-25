@@ -9,8 +9,7 @@ export default defineNuxtPlugin((nuxtApp) => {
 
   const locales = {
     uz: "uz-latn",
-    ru: "ru",
-    en: "en"
+    ru: "ru"
   }
 
   dayjs.locale(locales[$i18n.locale.value])

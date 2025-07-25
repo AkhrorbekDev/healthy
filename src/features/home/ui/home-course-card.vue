@@ -1,17 +1,18 @@
-<script setup lang="ts"></script>
+<script setup lang="ts">
+</script>
 
 <template>
   <div class="flex w-full shrink-0 flex-col flex-nowrap items-start gap-[25px]">
-    <div class="shrink-0 self-stretch overflow-hidden rounded-[20px] md:h-[400px]">
+    <div class="shrink-0 self-stretch overflow-hidden rounded-[20px]">
       <img
-        class="object-cover object-center"
+        class="object-cover object-center  md:h-[400px]"
         alt=""
         src="https://codia-f2c.s3.us-west-1.amazonaws.com/image/2025-07-20/3NnytMcGK2.png"
       />
     </div>
     <div class="flex shrink-0 flex-col flex-nowrap items-start gap-[20px] self-stretch">
       <div
-        class="flex shrink-0 flex-col flex-nowrap items-start gap-[15px] self-stretch border-t border-solid border-t-[#e0e5e3] pb-[20px] pl-0 pr-0 pt-0"
+        class="flex shrink-0 flex-col flex-nowrap items-start gap-[15px] self-stretch border-b border-solid border-b-[#e0e5e3] pb-[20px] pl-0 pr-0 pt-0"
       >
         <div class="flex shrink-0 flex-col flex-nowrap items-start gap-[15px] self-stretch">
           <div class="flex shrink-0 flex-nowrap items-center gap-[10px]">

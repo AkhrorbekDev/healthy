@@ -39,7 +39,7 @@ defineProps<IProps>()
 
 <style>
 .post-hero {
-  @apply relative flex min-h-[820px] flex-col overflow-hidden transition-all duration-500 ease-in-out;
+  @apply relative flex flex-col overflow-hidden py-[30px] transition-all duration-500 ease-in-out md:min-h-[820px] md:py-0;
 
   &__background {
     @apply absolute inset-0 -z-10 bg-green-500;

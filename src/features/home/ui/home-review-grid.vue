@@ -4,11 +4,11 @@ import HomeReviewCard from "~/features/home/ui/home-review-card.vue"
 </script>
 
 <template>
-  <app-section class="pb-[80px] md:py-[120px]">
+  <app-section class="pb-[80px] md:pb-[120px]">
     <span class="headline-1 text-left font-['Onest'] text-[50px] font-semibold  text-[#323232]">
       Отзывы и истории успеха
     </span>
-    <div class="mb-0 mr-0 mt-[40px] flex flex-nowrap items-center gap-[20px]">
+    <div class="mb-0 mr-0 mt-[40px] grid grid-cols-1 md:grid-cols-4  gap-[20px]">
       <home-review-card />
       <home-review-card />
       <home-review-card />

@@ -1,2 +1,13 @@
-export { default as HomeHero } from "./home-hero.vue";
-export { default as HomeSpecialistSection } from "./home-specialist-section.vue";
+export { default as HomeHero } from "./home-hero.vue"
+export { default as HomeSpecialistSection } from "./home-specialist-section.vue"
+export { default as HomeSpecialistCard } from "./home-specialist-card.vue"
+export { default as HomeAbout } from "./home-about.vue"
+export { default as HomeAboutCard } from "./home-about-card.vue"
+export { default as HomeCourseCard } from "./home-course-card.vue"
+export { default as HomeCourseGrid } from "./home-course-grid.vue"
+export { default as HomeLeedForm } from "./home-leed-form.vue"
+export { default as HomeNewsCard } from "./home-news-card.vue"
+export { default as HomeNewsGrid } from "./home-news-grid.vue"
+export { default as HomeReviewCard } from "./home-review-card.vue"
+export { default as HomeReviewGrid } from "./home-review-grid.vue"
+export { default as HomeSpecialistGrid } from "./home-specialist-grid.vue"
