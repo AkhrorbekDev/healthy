@@ -9,10 +9,11 @@ const carouselRef = ref<CarouselMethods>()
 const carouselConfig = computed<Partial<CarouselConfig>>(() => ({
   gap: 24,
   snapAlign: "start",
-  wrapAround: true,
+  wrapAround: false,
   breakpoints: {
     1024: {
-      itemsToShow: 3.5
+      mouseDrag: false,
+      itemsToShow: 4
     },
     360: {
       itemsToShow: 1.2
@@ -28,6 +29,9 @@ const carouselConfig = computed<Partial<CarouselConfig>>(() => ({
     </h2>
     <div class="relative mt-[40px]">
       <carousel v-bind="carouselConfig" ref="carouselRef">
+        <slide class="h-full w-full">
+          <home-specialist-card />
+        </slide>
         <slide class="h-full w-full">
           <home-specialist-card />
         </slide>

@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { SpecialistCard } from "~/features/specialist/ui"
+import SpecialistCard from "~/features/specialisty/ui/specialisty-card.vue"
 import AppSection from "~/widgets/layout/app-section.vue"
 </script>
 

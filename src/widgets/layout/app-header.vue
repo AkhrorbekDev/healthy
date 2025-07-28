@@ -21,7 +21,7 @@ import Logo from "~/shared/assets/Logo.svg"
 
       <div class="app-header-right">
         <ui-icon-button
-          class="!border-0 !border-white !bg-transparent md:border"
+          class="h-[25px] w-[25px] !border-0 !border-white !bg-transparent md:border"
           variant="solid"
           mode="svg"
           icon-class="!stroke-white !fill-white"
@@ -29,14 +29,14 @@ import Logo from "~/shared/assets/Logo.svg"
           href="+999999999999"
         />
         <ui-icon-button
-          class="!border-0 !border-white !bg-transparent md:border"
+          class="h-[25px] w-[25px] !border-0 !border-white !bg-transparent md:border"
           icon-class="!text-white !stroke-white"
           variant="solid"
           mode="svg"
           icon-name="h-icon:language"
         />
         <ui-icon-button
-          class="block !border-0 !border-white !bg-transparent md:hidden md:border"
+          class="block h-[25px] w-[25px] !border-0 !border-white !bg-transparent md:hidden md:border"
           icon-class="!text-white !stroke-white"
           variant="solid"
           mode="svg"

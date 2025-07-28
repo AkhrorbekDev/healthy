@@ -4,17 +4,18 @@ import HomeCourseCard from "~/features/home/ui/home-course-card.vue"
 import type { CarouselConfig, CarouselMethods } from "vue3-carousel"
 import { Carousel, Slide } from "vue3-carousel"
 
+const { t } = useI18n({ useScope: "local" })
 const carouselRef = ref<CarouselMethods>()
 const carouselConfig = computed<Partial<CarouselConfig>>(() => ({
   gap: 24,
   snapAlign: "start",
-  wrapAround: false,
+  wrapAround: true,
   breakpoints: {
     1024: {
       itemsToShow: 3.5
     },
     640: {
-      itemsToShow: 1
+      itemsToShow: 1.5
     }
   }
 }))
@@ -22,8 +23,13 @@ const carouselConfig = computed<Partial<CarouselConfig>>(() => ({
 
 <template>
   <app-section class="pb-[80px] md:pb-[120px]">
-    <p class="headline-1 whitespace-nowrap text-left font-['Onest'] font-semibold text-[#323232]">Курсы и тренинги</p>
+    <p class="headline-1 whitespace-nowrap text-left font-['Onest'] font-semibold text-[#323232]">
+      {{ t("title") }}
+    </p>
     <carousel v-bind="carouselConfig" ref="carouselRef">
+      <slide class="h-full">
+        <home-course-card @click="$router.push('/courses/123')" />
+      </slide>
       <slide class="h-full">
         <home-course-card @click="$router.push('/courses/123')" />
       </slide>
@@ -57,3 +63,14 @@ const carouselConfig = computed<Partial<CarouselConfig>>(() => ({
 </template>
 
 <style scoped></style>
+
+<i18n>
+{
+  "ru": {
+    "title": "Курсы и тренинги"
+  },
+  "uz": {
+    "title": "Kurslar va treninglar"
+  }
+}
+</i18n>

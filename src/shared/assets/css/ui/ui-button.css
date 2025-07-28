@@ -115,7 +115,7 @@
     @apply shadow-sm;
 
     &.ui-button-primary {
-        @apply bg-white text-green-500;
+        @apply bg-green-500 text-white hover:bg-green-400;
     }
 
     &.ui-button-secondary {
@@ -378,7 +378,7 @@
 /* Link */
 
 .ui-button-link {
-    @apply text-green-500 hover:text-green-400 focus-visible:text-green-focusin;
+    @apply h-auto p-0 text-green-500 hover:text-green-400 focus-visible:text-green-focusin;
 
     &.ui-button-secondary {
         @apply text-gray-700 hover:text-gray-800 dark:text-gray-400 dark:hover:text-gray-300;

@@ -8,7 +8,9 @@
     "save": "Сохранить",
     "sign_in": "Войти",
     "sign_out": "Выйти",
-    "toggle_sidebar": "Переключить боковую панель"
+    "toggle_sidebar": "Переключить боковую панель",
+    "add_review": "Оставить отзыв",
+    "load_more": "Загрузить еще"
   },
   "descriptions": {
     "roles": "Список ролей",

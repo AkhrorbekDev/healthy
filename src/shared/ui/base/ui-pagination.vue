@@ -46,7 +46,7 @@ const loadPage = (page: number) => {
 <template>
   <div v-if="lastPage > firstPage" class="ui-pagination">
     <button
-      class="ui-pagination-button ui-pagination-link"
+      class="ui-pagination-button ui-pagination-link !hidden"
       :disabled="model === firstPage"
       @click="loadPage(firstPage)"
     >
@@ -81,7 +81,11 @@ const loadPage = (page: number) => {
       <icon class="text-xl" name="lucide:chevron-right" />
     </button>
 
-    <button class="ui-pagination-button ui-pagination-link" :disabled="model === lastPage" @click="loadPage(lastPage)">
+    <button
+      class="ui-pagination-button ui-pagination-link !hidden"
+      :disabled="model === lastPage"
+      @click="loadPage(lastPage)"
+    >
       <icon class="text-xl" name="lucide:chevrons-right" />
     </button>
   </div>
