@@ -17,23 +17,23 @@
       <div
         class="relative z-[178] flex shrink-0 flex-col flex-nowrap items-start gap-[8px] self-stretch border-b border-solid border-b-[#e0e5e3] pb-[20px] pl-0 pr-0 pt-0"
       >
-        <span class="subtitle-24 text-left font-['Onest'] font-semibold leading-[29px] text-[#323232]">
+        <span class="subtitle-24 text-left font-['Onest'] font-semibold  text-[#323232]">
           5 способов справиться с панической атакой
         </span>
-        <span class="body-16 text-left font-['Onest'] text-[17px] font-normal leading-[21.675px] text-[#323232]">
+        <span class="body-16 text-left font-['Onest'] text-[17px] font-normal  text-[#323232]">
           Практические советы, как действовать при приступе тревоги
         </span>
       </div>
       <div class="relative z-[181] flex shrink-0 flex-nowrap items-start justify-between self-stretch">
         <div
-          class="relative z-[182] w-[112px] shrink-0 whitespace-nowrap text-left font-['Onest'] text-[17px] font-normal leading-[21.675px]"
+          class="relative z-[182] w-[112px] shrink-0 whitespace-nowrap text-left font-['Onest'] text-[17px] font-normal "
         >
-          <span class="body-17 font-['Onest'] text-[17px] font-normal leading-[21.675px] text-[#63845c] underline">
+          <span class="body-17 font-['Onest'] text-[17px] font-normal  text-[#63845c] underline">
             Ахмедов С. А.
           </span>
         </div>
         <span
-          class="body-17 text-left font-['Onest'] text-[17px] font-normal leading-[21.675px] text-[#848484]"
+          class="body-17 text-left font-['Onest'] text-[17px] font-normal  text-[#848484]"
         >
           27.06.2025
         </span>

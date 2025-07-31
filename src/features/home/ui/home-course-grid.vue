@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import AppSection from "~/widgets/layout/app-section.vue"
-import HomeCourseCard from "~/features/home/ui/home-course-card.vue"
+import HomeCourseCard from "~/features/courses/ui/home-course-card.vue"
 import type { CarouselConfig, CarouselMethods } from "vue3-carousel"
 import { Carousel, Slide } from "vue3-carousel"
 
@@ -23,7 +23,9 @@ const carouselConfig = computed<Partial<CarouselConfig>>(() => ({
 
 <template>
   <app-section class="pb-[80px] md:pb-[120px]">
-    <p class="headline-1 whitespace-nowrap text-left font-['Onest'] font-semibold text-[#323232]">
+    <p
+      class="md:mb[40px] mb-[20px] whitespace-nowrap text-left font-['Onest'] text-mobile-headline-1 font-semibold text-[#323232] md:text-headline-2"
+    >
       {{ t("title") }}
     </p>
     <carousel v-bind="carouselConfig" ref="carouselRef">
@@ -40,22 +42,21 @@ const carouselConfig = computed<Partial<CarouselConfig>>(() => ({
         <home-course-card @click="$router.push('/courses/123')" />
       </slide>
     </carousel>
-    <div class="relative mt-[40px] grid grid-cols-1 gap-[20px] md:grid-cols-3"></div>
-    <div class="relative ml-auto mt-[40px] flex w-[130px] flex-nowrap items-center gap-[10px]">
+    <div class="relative ml-auto mt-[21px] flex w-[130px] flex-nowrap items-center gap-[10px] md:mt-[40px]">
       <div
-        class="relative z-[290] flex h-[60px] w-[60px] shrink-0 flex-nowrap items-center justify-center gap-[10px] rounded-[30px] bg-[#fff] pb-[12px] pl-[12px] pr-[12px] pt-[12px]"
+        class="flex h-[50px] w-[50px] shrink-0 flex-nowrap items-center justify-center gap-[10px] rounded-[30px] bg-[#fff] pb-[12px] pl-[12px] pr-[12px] pt-[12px] md:h-[60px] md:w-[60px]"
         @click="carouselRef?.prev()"
       >
         <div
-          class="relative z-[291] shrink-0 grow basis-0 self-stretch overflow-hidden bg-[url(https://codia-f2c.s3.us-west-1.amazonaws.com/image/2025-07-20/7ogzDznKQF.png)] bg-cover bg-no-repeat"
+          class="shrink-0 grow basis-0 self-stretch overflow-hidden bg-[url(https://codia-f2c.s3.us-west-1.amazonaws.com/image/2025-07-20/7ogzDznKQF.png)] bg-cover bg-no-repeat"
         ></div>
       </div>
       <div
-        class="relative z-[292] flex h-[60px] w-[60px] shrink-0 flex-nowrap items-center justify-center gap-[10px] rounded-[30px] bg-[#fff] pb-[12px] pl-[12px] pr-[12px] pt-[12px]"
+        class="flex h-[50px] w-[50px] shrink-0 flex-nowrap items-center justify-center gap-[10px] rounded-[30px] bg-[#fff] pb-[12px] pl-[12px] pr-[12px] pt-[12px] md:h-[60px] md:w-[60px]"
         @click="carouselRef?.next()"
       >
         <div
-          class="relative z-[293] shrink-0 grow basis-0 self-stretch overflow-hidden bg-[url(https://codia-f2c.s3.us-west-1.amazonaws.com/image/2025-07-20/hznXha741O.png)] bg-cover bg-no-repeat"
+          class="shrink-0 grow basis-0 self-stretch overflow-hidden bg-[url(https://codia-f2c.s3.us-west-1.amazonaws.com/image/2025-07-20/hznXha741O.png)] bg-cover bg-no-repeat"
         ></div>
       </div>
     </div>

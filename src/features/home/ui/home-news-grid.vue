@@ -12,7 +12,7 @@ const { t } = useI18n({ useScope: "local" })
       <span class="headline-1 text-left font-['Onest'] text-[50px] font-semibold text-[#323232]">
         {{ t("title") }}
       </span>
-      <div class="relative z-[174] mb-0 mr-0 mt-[40px] grid grid-cols-3 gap-[19px]">
+      <div class="relative z-[174] mb-0 mr-0 mt-[40px] grid grid-cols-1 gap-[19px] md:grid-cols-3">
         <home-news-card @click="$router.push('/blog/123')" />
         <home-news-card @click="$router.push('/blog/123')" />
         <home-news-card @click="$router.push('/blog/123')" />

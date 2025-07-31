@@ -2,7 +2,7 @@
 import AppSection from "~/widgets/layout/app-section.vue"
 import type { CarouselConfig, CarouselMethods } from "vue3-carousel"
 import { Carousel, Slide } from "vue3-carousel"
-import HomeCourseCard from "~/features/home/ui/home-course-card.vue"
+import HomeCourseCard from "~/features/courses/ui/home-course-card.vue"
 import HomeSpecialistCard from "~/features/home/ui/home-specialist-card.vue"
 
 const carouselRef = ref<CarouselMethods>()

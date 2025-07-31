@@ -17,12 +17,12 @@ defineProps<IProps>()
     </div>
     <div class="relative z-[269] flex w-[305px] shrink-0 flex-col flex-nowrap items-start gap-[8px]">
       <span
-        class="subtitle-22 relative z-[270] text-left font-['Onest'] text-[24px] font-semibold leading-[29px] text-[#323232]"
+        class="subtitle-22 relative z-[270] text-left font-['Onest'] text-[24px] font-semibold  text-[#323232]"
       >
         {{ title }}
       </span>
       <span
-        class="body-16 relative z-[271] text-left font-['Onest'] text-[17px] font-medium leading-[21.675px] text-[#585958]"
+        class="body-16 relative z-[271] text-left font-['Onest'] text-[17px] font-medium  text-[#585958]"
       >
         {{ description }}
       </span>

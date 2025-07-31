@@ -15,7 +15,7 @@
               class="relative z-[81] flex shrink-0 flex-nowrap items-center justify-center gap-[10px] self-stretch pb-0 pl-0 pr-[220px] pt-0"
             >
               <span
-                class="relative z-[82] flex h-[46px] w-[654px] shrink-0 grow basis-0 items-start justify-start text-left font-['Onest'] text-[18px] font-normal leading-[22.95px] text-[#585958]"
+                class="relative z-[82] flex h-[46px] w-[654px] shrink-0 grow basis-0 items-start justify-start text-left font-['Onest'] text-[18px] font-normal text-[#585958]"
               >
                 Паническая атака может застать врасплох. Эти пять техник помогут вам быстро вернуть контроль над собой
               </span>
@@ -27,21 +27,21 @@
             ></div>
             <div class="relative z-[85] flex h-[22px] shrink-0 flex-nowrap items-start justify-between self-stretch">
               <div
-                class="relative z-[86] w-[170px] shrink-0 whitespace-nowrap text-left font-['Onest'] text-[17px] font-normal leading-[21.675px]"
+                class="relative z-[86] w-[170px] shrink-0 whitespace-nowrap text-left font-['Onest'] text-[17px] font-normal "
               >
                 <span
-                  class="relative text-left font-['Onest'] text-[17px] font-normal leading-[21.675px] text-[#63845c]"
+                  class="relative text-left font-['Onest'] text-[17px] font-normal  text-[#63845c]"
                 >
                   Автор:
                 </span>
                 <span
-                  class="relative text-left font-['Onest'] text-[17px] font-normal leading-[21.675px] text-[#63845c] underline"
+                  class="relative text-left font-['Onest'] text-[17px] font-normal  text-[#63845c] underline"
                 >
                   Ахмедов С. А.
                 </span>
               </div>
               <span
-                class="relative z-[87] h-[22px] shrink-0 basis-auto whitespace-nowrap text-left font-['Onest'] text-[17px] font-normal leading-[21.675px] text-[#848484]"
+                class="relative z-[87] h-[22px] shrink-0 basis-auto whitespace-nowrap text-left font-['Onest'] text-[17px] font-normal  text-[#848484]"
               >
                 27.06.2025
               </span>
@@ -51,12 +51,12 @@
         <div class="relative z-[88] flex w-[874px] shrink-0 flex-col flex-nowrap items-start gap-[50px]">
           <div class="relative z-[89] flex shrink-0 flex-col flex-nowrap items-start gap-[15px] self-stretch">
             <span
-              class="relative z-[90] h-[29px] shrink-0 basis-auto self-stretch whitespace-nowrap text-left font-['Onest'] text-[24px] font-semibold leading-[29px] text-[#323232]"
+              class="relative z-[90] h-[29px] shrink-0 basis-auto self-stretch whitespace-nowrap text-left font-['Onest'] text-[24px] font-semibold  text-[#323232]"
             >
               Что это такое?
             </span>
             <span
-              class="relative z-[91] flex h-[115px] w-[874px] shrink-0 items-start justify-start self-stretch text-left font-['Onest'] text-[18px] font-normal leading-[22.95px] text-[#323232]"
+              class="relative z-[91] flex h-[115px] w-[874px] shrink-0 items-start justify-start self-stretch text-left font-['Onest'] text-[18px] font-normal text-[#323232]"
             >
               Паническая атака (ПА) — внезапный приступ сильной тревоги, сопровождаемый мучительными телесными и
               психическими ощущениями (сердцебиение, удушье, головокружение, диарея, тошнота, тревога, страх, мысли о
@@ -68,12 +68,12 @@
           </div>
           <div class="relative z-[92] flex shrink-0 flex-col flex-nowrap items-start gap-[15px] self-stretch">
             <span
-              class="relative z-[93] h-[29px] shrink-0 basis-auto self-stretch whitespace-nowrap text-left font-['Onest'] text-[24px] font-semibold leading-[29px] text-[#323232]"
+              class="relative z-[93] h-[29px] shrink-0 basis-auto self-stretch whitespace-nowrap text-left font-['Onest'] text-[24px] font-semibold  text-[#323232]"
             >
               Причины появления
             </span>
             <span
-              class="relative z-[94] flex h-[391px] w-[874px] shrink-0 items-start justify-start self-stretch text-left font-['Onest'] text-[18px] font-normal leading-[22.95px] text-[#323232]"
+              class="relative z-[94] flex h-[391px] w-[874px] shrink-0 items-start justify-start self-stretch text-left font-['Onest'] text-[18px] font-normal text-[#323232]"
             >
               ПА являются основным проявлением панического расстройства, однако паническое расстройство имеет место не у
               всех пациентов, страдающих паническими атаками. Для панического расстройства характерны:
@@ -104,7 +104,7 @@
           </div>
           <div class="relative z-[95] flex shrink-0 flex-col flex-nowrap items-start gap-[20px] self-stretch">
             <span
-              class="relative z-[96] h-[29px] shrink-0 basis-auto self-stretch whitespace-nowrap text-left font-['Onest'] text-[24px] font-semibold leading-[29px] text-[#323232]"
+              class="relative z-[96] h-[29px] shrink-0 basis-auto self-stretch whitespace-nowrap text-left font-['Onest'] text-[24px] font-semibold  text-[#323232]"
             >
               Симптомы панической атаки
             </span>
@@ -112,7 +112,7 @@
               class="relative z-[97] h-[450px] shrink-0 self-stretch rounded-[20px] bg-[url(https://codia-f2c.s3.us-west-1.amazonaws.com/image/2025-07-21/hLL8vYM0bh.png)] bg-cover bg-no-repeat"
             ></div>
             <span
-              class="relative z-[98] flex h-[207px] w-[874px] shrink-0 items-start justify-start self-stretch text-left font-['Onest'] text-[18px] font-normal leading-[22.95px] text-[#323232]"
+              class="relative z-[98] flex h-[207px] w-[874px] shrink-0 items-start justify-start self-stretch text-left font-['Onest'] text-[18px] font-normal text-[#323232]"
             >
               Паническая атака характеризуется быстрым нарастанием страха и, чаще, кратковременностью. Обычно это
               состояние сопровождается страхами, например, смерти, потерять контроль над собой или сойти с ума. Также
@@ -126,12 +126,12 @@
           </div>
           <div class="relative z-[99] flex shrink-0 flex-col flex-nowrap items-start gap-[15px] self-stretch">
             <span
-              class="relative z-[100] h-[29px] shrink-0 basis-auto self-stretch whitespace-nowrap text-left font-['Onest'] text-[24px] font-semibold leading-[29px] text-[#323232]"
+              class="relative z-[100] h-[29px] shrink-0 basis-auto self-stretch whitespace-nowrap text-left font-['Onest'] text-[24px] font-semibold  text-[#323232]"
             >
               Лечение
             </span>
             <span
-              class="relative z-[101] flex h-[506px] w-[874px] shrink-0 items-start justify-start self-stretch text-left font-['Onest'] text-[18px] font-normal leading-[22.95px] text-[#323232]"
+              class="relative z-[101] flex h-[506px] w-[874px] shrink-0 items-start justify-start self-stretch text-left font-['Onest'] text-[18px] font-normal text-[#323232]"
             >
               В лечении ПА применяют психотерапию и психофармакологические методы.
               <br />
@@ -167,7 +167,7 @@
             class="relative z-[102] flex shrink-0 flex-nowrap items-center gap-[10px] self-stretch overflow-hidden rounded-[10px] bg-[#f0f4f1] pb-[20px] pl-[20px] pr-[20px] pt-[20px]"
           >
             <span
-              class="relative z-[103] flex h-[58px] w-[834px] shrink-0 grow basis-0 items-start justify-start text-left font-['Onest'] text-[24px] font-semibold leading-[29px] text-[#63845c]"
+              class="relative z-[103] flex h-[58px] w-[834px] shrink-0 grow basis-0 items-start justify-start text-left font-['Onest'] text-[24px] font-semibold  text-[#63845c]"
             >
               Паническая атака не опасна для жизни – помните об этом, и страх несколько утихнет
             </span>
@@ -185,7 +185,7 @@
         <div class="relative z-[106] flex shrink-0 grow basis-0 flex-col flex-nowrap items-start gap-[40px]">
           <div class="relative z-[107] flex shrink-0 flex-col flex-nowrap items-start gap-[20px] self-stretch">
             <span
-              class="relative z-[108] h-[23px] shrink-0 basis-auto whitespace-nowrap text-left font-['Onest'] text-[18px] font-semibold leading-[22.95px] text-[#63845c]"
+              class="relative z-[108] h-[23px] shrink-0 basis-auto whitespace-nowrap text-left font-['Onest'] text-[18px] font-semibold text-[#63845c]"
             >
               Автор статьи
             </span>
@@ -203,7 +203,7 @@
                 class="relative z-[112] flex shrink-0 flex-nowrap items-center justify-center gap-[10px] self-stretch pb-0 pl-0 pr-[120px] pt-0"
               >
                 <span
-                  class="relative z-[113] flex h-[46px] w-[483px] shrink-0 grow basis-0 items-start justify-start text-left font-['Onest'] text-[18px] font-normal leading-[22.95px] text-[#585958]"
+                  class="relative z-[113] flex h-[46px] w-[483px] shrink-0 grow basis-0 items-start justify-start text-left font-['Onest'] text-[18px] font-normal text-[#585958]"
                 >
                   Практикующий психотерапевт. Опыт работы 37 лет. Автор 158+ статей
                 </span>
@@ -228,12 +228,12 @@
       >
         <div class="relative z-[117] flex shrink-0 flex-col flex-nowrap items-start gap-[10px] self-stretch">
           <span
-            class="relative z-[118] flex h-[72px] w-[437px] shrink-0 items-start justify-start text-left font-['Onest'] text-[30px] font-semibold leading-[36px] text-[#323232]"
+            class="relative z-[118] flex h-[72px] w-[437px] shrink-0 items-start justify-start text-left font-['Onest'] text-[30px] font-semibold  text-[#323232]"
           >
             Поделитесь статьей с теми, кому это может быть важно
           </span>
           <span
-            class="relative z-[119] flex h-[46px] w-[437px] shrink-0 items-start justify-start text-left font-['Onest'] text-[18px] font-normal leading-[22.95px] text-[#585958]"
+            class="relative z-[119] flex h-[46px] w-[437px] shrink-0 items-start justify-start text-left font-['Onest'] text-[18px] font-normal text-[#585958]"
           >
             Один клик — и полезная информация дойдёт до нужного человека
           </span>
@@ -281,28 +281,28 @@
               class="relative z-[52] flex shrink-0 flex-col flex-nowrap items-start gap-[8px] self-stretch border-t border-solid border-t-[#e0e5e3] pb-[20px] pl-0 pr-0 pt-0"
             >
               <span
-                class="relative z-[53] flex h-[58px] w-[427px] shrink-0 items-start justify-start self-stretch text-left font-['Onest'] text-[24px] font-semibold leading-[29px] text-[#323232]"
+                class="relative z-[53] flex h-[58px] w-[427px] shrink-0 items-start justify-start self-stretch text-left font-['Onest'] text-[24px] font-semibold  text-[#323232]"
               >
                 5 способов справиться с панической атакой
               </span>
               <span
-                class="relative z-[54] flex h-[44px] w-[427px] shrink-0 items-start justify-start self-stretch text-left font-['Onest'] text-[17px] font-normal leading-[21.675px] text-[#323232]"
+                class="relative z-[54] flex h-[44px] w-[427px] shrink-0 items-start justify-start self-stretch text-left font-['Onest'] text-[17px] font-normal  text-[#323232]"
               >
                 Практические советы, как действовать при приступе тревоги
               </span>
             </div>
             <div class="relative z-[55] flex shrink-0 flex-nowrap items-start justify-between self-stretch">
               <div
-                class="relative z-[56] w-[112px] shrink-0 whitespace-nowrap text-left font-['Onest'] text-[17px] font-normal leading-[21.675px]"
+                class="relative z-[56] w-[112px] shrink-0 whitespace-nowrap text-left font-['Onest'] text-[17px] font-normal "
               >
                 <span
-                  class="relative text-left font-['Onest'] text-[17px] font-normal leading-[21.675px] text-[#63845c] underline"
+                  class="relative text-left font-['Onest'] text-[17px] font-normal  text-[#63845c] underline"
                 >
                   Ахмедов С. А.
                 </span>
               </div>
               <span
-                class="relative z-[57] h-[22px] shrink-0 basis-auto whitespace-nowrap text-left font-['Onest'] text-[17px] font-normal leading-[21.675px] text-[#848484]"
+                class="relative z-[57] h-[22px] shrink-0 basis-auto whitespace-nowrap text-left font-['Onest'] text-[17px] font-normal  text-[#848484]"
               >
                 27.06.2025
               </span>
@@ -322,28 +322,28 @@
               class="relative z-[61] flex shrink-0 flex-col flex-nowrap items-start gap-[8px] self-stretch border-t border-solid border-t-[#e0e5e3] pb-[20px] pl-0 pr-0 pt-0"
             >
               <span
-                class="relative z-[62] flex h-[58px] w-[427px] shrink-0 items-start justify-start self-stretch text-left font-['Onest'] text-[24px] font-semibold leading-[29px] text-[#323232]"
+                class="relative z-[62] flex h-[58px] w-[427px] shrink-0 items-start justify-start self-stretch text-left font-['Onest'] text-[24px] font-semibold  text-[#323232]"
               >
                 Как понять, что вам нужен психолог?
               </span>
               <span
-                class="relative z-[63] flex h-[44px] w-[427px] shrink-0 items-start justify-start self-stretch text-left font-['Onest'] text-[17px] font-normal leading-[21.675px] text-[#323232]"
+                class="relative z-[63] flex h-[44px] w-[427px] shrink-0 items-start justify-start self-stretch text-left font-['Onest'] text-[17px] font-normal  text-[#323232]"
               >
                 Признаки, что пора обратиться за помощью
               </span>
             </div>
             <div class="relative z-[64] flex shrink-0 flex-nowrap items-start justify-between self-stretch">
               <div
-                class="relative z-[65] w-[112px] shrink-0 whitespace-nowrap text-left font-['Onest'] text-[17px] font-normal leading-[21.675px]"
+                class="relative z-[65] w-[112px] shrink-0 whitespace-nowrap text-left font-['Onest'] text-[17px] font-normal "
               >
                 <span
-                  class="relative text-left font-['Onest'] text-[17px] font-normal leading-[21.675px] text-[#63845c] underline"
+                  class="relative text-left font-['Onest'] text-[17px] font-normal  text-[#63845c] underline"
                 >
                   Ахмедов С. А.
                 </span>
               </div>
               <span
-                class="relative z-[66] h-[22px] shrink-0 basis-auto whitespace-nowrap text-left font-['Onest'] text-[17px] font-normal leading-[21.675px] text-[#848484]"
+                class="relative z-[66] h-[22px] shrink-0 basis-auto whitespace-nowrap text-left font-['Onest'] text-[17px] font-normal  text-[#848484]"
               >
                 27.06.2025
               </span>
@@ -363,28 +363,28 @@
               class="relative z-[70] flex shrink-0 flex-col flex-nowrap items-start gap-[8px] self-stretch border-t border-solid border-t-[#e0e5e3] pb-[20px] pl-0 pr-0 pt-0"
             >
               <span
-                class="relative z-[71] flex h-[58px] w-[427px] shrink-0 items-start justify-start self-stretch text-left font-['Onest'] text-[24px] font-semibold leading-[29px] text-[#323232]"
+                class="relative z-[71] flex h-[58px] w-[427px] shrink-0 items-start justify-start self-stretch text-left font-['Onest'] text-[24px] font-semibold  text-[#323232]"
               >
                 История: мой путь к психическому здоровью
               </span>
               <span
-                class="relative z-[72] flex h-[44px] w-[427px] shrink-0 items-start justify-start self-stretch text-left font-['Onest'] text-[17px] font-normal leading-[21.675px] text-[#323232]"
+                class="relative z-[72] flex h-[44px] w-[427px] shrink-0 items-start justify-start self-stretch text-left font-['Onest'] text-[17px] font-normal  text-[#323232]"
               >
                 Вдохновляющий кейс от специалиста. Как он боролся со своими проблемами
               </span>
             </div>
             <div class="relative z-[73] flex shrink-0 flex-nowrap items-start justify-between self-stretch">
               <div
-                class="relative z-[74] w-[112px] shrink-0 whitespace-nowrap text-left font-['Onest'] text-[17px] font-normal leading-[21.675px]"
+                class="relative z-[74] w-[112px] shrink-0 whitespace-nowrap text-left font-['Onest'] text-[17px] font-normal "
               >
                 <span
-                  class="relative text-left font-['Onest'] text-[17px] font-normal leading-[21.675px] text-[#63845c] underline"
+                  class="relative text-left font-['Onest'] text-[17px] font-normal  text-[#63845c] underline"
                 >
                   Ахмедов С. А.
                 </span>
               </div>
               <span
-                class="relative z-[75] h-[22px] shrink-0 basis-auto whitespace-nowrap text-left font-['Onest'] text-[17px] font-normal leading-[21.675px] text-[#848484]"
+                class="relative z-[75] h-[22px] shrink-0 basis-auto whitespace-nowrap text-left font-['Onest'] text-[17px] font-normal  text-[#848484]"
               >
                 27.06.2025
               </span>

@@ -42,7 +42,7 @@
       </div>
     </div>
     <span
-      class="body-17 overflow-hidden text-left font-['Onest'] text-[17px] font-normal leading-[21.675px] text-[#323232]"
+      class="body-17 overflow-hidden text-left font-['Onest'] text-[17px] font-normal  text-[#323232]"
     >
           Когда мы начали работать, я чувствовала себя потерянной и обесточенной. Каждое утро было похоже на борьбу с
           собой, с тревогой, с ощущением, что я живу не свою жизнь. Внутри была постоянная усталость, раздражение,

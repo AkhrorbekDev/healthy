@@ -15,7 +15,7 @@ const { t } = useI18n({ useScope: "local" })
           <span class="headline-1 text-left font-['Onest'] font-semibold text-[#fff]">
             {{ t("title") }}
           </span>
-          <span class="body-18 text-left font-['Onest'] text-[20px] font-normal leading-[25.5px] text-[#fff]">
+          <span class="body-18 text-left font-['Onest'] text-[20px] font-normal text-[#fff]">
             {{ t("description") }}
           </span>
         </div>
@@ -28,7 +28,7 @@ const { t } = useI18n({ useScope: "local" })
           <div
             class="relative z-[223] w-[184px] shrink-0 whitespace-nowrap text-left font-['Onest'] text-[22px] font-semibold leading-[28px]"
           >
-            <span class="subtitle-20 font-['Onest'] text-[22px] font-semibold leading-[28.05px] text-[#fff]">
+            <span class="subtitle-20 font-['Onest'] text-[22px] font-semibold  text-[#fff]">
               +998 91 137 55 16
             </span>
           </div>

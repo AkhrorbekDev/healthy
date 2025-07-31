@@ -19,9 +19,7 @@
       <div
         class="!hidden shrink-0 flex-col flex-nowrap items-start gap-[10px] self-stretch border-b border-solid border-b-[#e7e7e7] pb-[25px] pl-0 pr-0 pt-0 md:flex"
       >
-        <span
-          class="overflow-hidden text-left font-['Onest'] text-subtitle-24 font-semibold leading-[29px] text-[#323232]"
-        >
+        <span class="overflow-hidden text-left font-['Onest'] text-subtitle-24 font-semibold text-[#323232]">
           Ахмедов Санджар Акбарович
         </span>
         <div class="flex w-[227px] shrink-0 flex-nowrap items-start gap-[5px]">
@@ -42,26 +40,22 @@
       >
         <div class="flex shrink-0 flex-nowrap items-center gap-[8px]">
           <icon class="text-[18px] text-green-500" name="h-icon:achieve"></icon>
-          <span class="text-mobile-body-15 font-medium leading-[21.675px] text-[#323232] md:text-body-17">
-            Опыт: 37 лет
-          </span>
+          <span class="text-mobile-body-15 font-medium text-[#323232] md:text-body-17">Опыт: 37 лет</span>
         </div>
         <div class="flex shrink-0 flex-nowrap items-center gap-[8px]">
           <icon class="text-[18px] text-green-500" name="h-icon:location"></icon>
 
-          <span class="text-mobile-body-15 font-medium leading-[21.675px] text-[#323232] md:text-body-17">
-            Рейтинг: 5.0
-          </span>
+          <span class="text-mobile-body-15 font-medium text-[#323232] md:text-body-17">Рейтинг: 5.0</span>
         </div>
         <div class="flex shrink-0 flex-nowrap items-center gap-[8px]">
           <icon class="text-[18px] text-green-500" name="h-icon:language"></icon>
 
-          <span class="text-mobile-body-15 font-medium leading-[21.675px] text-[#323232] md:text-body-17">Ташкент</span>
+          <span class="text-mobile-body-15 font-medium text-[#323232] md:text-body-17">Ташкент</span>
         </div>
         <div class="flex flex-nowrap items-center gap-[8px] self-stretch">
           <icon class="text-[18px] text-green-500" name="h-icon:achieve"></icon>
 
-          <span class="text-left font-['Onest'] text-[17px] font-medium leading-[21.675px] text-[#323232]">
+          <span class="text-left font-['Onest'] text-mobile-body-15 font-medium text-[#323232]">
             Русский, Узбекский
           </span>
         </div>
@@ -81,7 +75,7 @@
         </div>
       </div>
       <span
-        class="!hidden shrink-0 basis-auto self-stretch text-left font-['Onest'] text-[24px] font-semibold leading-[29px] text-[#63845c] md:block"
+        class="!hidden shrink-0 basis-auto self-stretch text-left font-['Onest'] text-[24px] font-semibold text-[#63845c] md:block"
       >
         от 200 000 сум
       </span>

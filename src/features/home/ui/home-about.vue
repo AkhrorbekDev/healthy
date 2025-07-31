@@ -24,7 +24,7 @@ const { t, tm, rt } = useI18n({ useScope: "local" })
               {{ t("about_title3") }}
             </span>
           </div>
-          <span class="body-18 text-left font-['Onest'] text-[20px] font-normal leading-[25.5px] text-[#323232]">
+          <span class="body-18 text-left font-['Onest'] text-[20px] font-normal text-[#323232]">
             {{ t("about_description") }}
           </span>
         </div>

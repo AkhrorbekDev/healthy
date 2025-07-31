@@ -42,9 +42,9 @@ const carouselConfig = computed<Partial<CarouselConfig>>(() => ({
         </slide>
       </carousel>
     </div>
-    <div class="ml-auto mt-[40px] flex w-[130px] flex-nowrap items-center gap-[10px]">
+    <div class="ml-auto mt-[21px] md:mt-[40px] flex w-[130px] flex-nowrap items-center gap-[10px]">
       <div
-        class="z-[168] flex h-[60px] w-[60px] shrink-0 flex-nowrap items-center justify-center gap-[10px] rounded-[30px] bg-[#fff] pb-[12px] pl-[12px] pr-[12px] pt-[12px]"
+        class="z-[168] flex h-[50px] w-[50px] shrink-0 flex-nowrap items-center justify-center gap-[10px] rounded-[30px] bg-[#fff] pb-[12px] pl-[12px] pr-[12px] pt-[12px] md:h-[60px] md:w-[60px]"
         @click="carouselRef?.prev()"
       >
         <div
@@ -52,7 +52,7 @@ const carouselConfig = computed<Partial<CarouselConfig>>(() => ({
         ></div>
       </div>
       <div
-        class="z-[170] flex h-[60px] w-[60px] shrink-0 flex-nowrap items-center justify-center gap-[10px] rounded-[30px] bg-[#fff] pb-[12px] pl-[12px] pr-[12px] pt-[12px]"
+        class="z-[170] flex h-[50px] w-[50px] shrink-0 flex-nowrap items-center justify-center gap-[10px] rounded-[30px] bg-[#fff] pb-[12px] pl-[12px] pr-[12px] pt-[12px] md:h-[60px] md:w-[60px]"
         @click="carouselRef?.next()"
       >
         <div

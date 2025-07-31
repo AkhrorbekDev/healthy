@@ -14,7 +14,7 @@
             </span>
           </div>
           <span
-            class="relative z-[3] flex h-[52px] w-[710px] shrink-0 items-start justify-start self-stretch text-left font-['Onest'] text-[20px] font-normal leading-[25.5px] text-[#585958]"
+            class="relative z-[3] flex h-[52px] w-[710px] shrink-0 items-start justify-start self-stretch text-left font-['Onest'] text-[20px] font-normal text-[#585958]"
           >
             Мы помогаем людям справляться со стрессом, понимать себя и жить устойчиво. Бережно, профессионально, с
             вниманием к каждому
@@ -33,7 +33,7 @@
           Наша миссия и ценности
         </span>
         <span
-          class="relative z-[55] flex h-[78px] w-[1075px] shrink-0 items-start justify-start self-stretch text-left font-['Onest'] text-[20px] font-normal leading-[25.5px] text-[#323232]"
+          class="relative z-[55] flex h-[78px] w-[1075px] shrink-0 items-start justify-start self-stretch text-left font-['Onest'] text-[20px] font-normal text-[#323232]"
         >
           Миссия «Душевного Здоровья» – сделать квалифицированную психологическую помощь доступной для каждого жителя
           Узбекистана. Мы верим, что психическое здоровье так же важно, как и физическое, и каждый заслуживает поддержки
@@ -49,12 +49,12 @@
           ></div>
           <div class="relative z-[59] flex shrink-0 flex-col flex-nowrap items-start gap-[8px] self-stretch">
             <span
-              class="relative z-[60] h-[29px] shrink-0 basis-auto whitespace-nowrap text-left font-['Onest'] text-[24px] font-semibold leading-[29px] text-[#323232]"
+              class="relative z-[60] h-[29px] shrink-0 basis-auto whitespace-nowrap text-left font-['Onest'] text-[24px] font-semibold  text-[#323232]"
             >
               Профессионализм
             </span>
             <span
-              class="relative z-[61] flex h-[44px] w-[427px] shrink-0 items-start justify-start self-stretch text-left font-['Onest'] text-[17px] font-normal leading-[21.675px] text-[#848484]"
+              class="relative z-[61] flex h-[44px] w-[427px] shrink-0 items-start justify-start self-stretch text-left font-['Onest'] text-[17px] font-normal  text-[#848484]"
             >
               У нас работают только дипломированные специалисты с опытом
             </span>
@@ -68,12 +68,12 @@
           ></div>
           <div class="relative z-[64] flex shrink-0 flex-col flex-nowrap items-start gap-[8px] self-stretch">
             <span
-              class="relative z-[65] h-[29px] shrink-0 basis-auto self-stretch whitespace-nowrap text-left font-['Onest'] text-[24px] font-semibold leading-[29px] text-[#323232]"
+              class="relative z-[65] h-[29px] shrink-0 basis-auto self-stretch whitespace-nowrap text-left font-['Onest'] text-[24px] font-semibold  text-[#323232]"
             >
               Эмпатия и уважение
             </span>
             <span
-              class="relative z-[66] flex h-[44px] w-[426px] shrink-0 items-start justify-start self-stretch text-left font-['Onest'] text-[17px] font-normal leading-[21.675px] text-[#848484]"
+              class="relative z-[66] flex h-[44px] w-[426px] shrink-0 items-start justify-start self-stretch text-left font-['Onest'] text-[17px] font-normal  text-[#848484]"
             >
               Каждое обращение рассматривается внимательно и с пониманием, без осуждения
             </span>
@@ -87,12 +87,12 @@
           ></div>
           <div class="relative z-[69] flex w-[305px] shrink-0 flex-col flex-nowrap items-start gap-[8px]">
             <span
-              class="relative z-[70] h-[29px] shrink-0 basis-auto whitespace-nowrap text-left font-['Onest'] text-[24px] font-semibold leading-[29px] text-[#323232]"
+              class="relative z-[70] h-[29px] shrink-0 basis-auto whitespace-nowrap text-left font-['Onest'] text-[24px] font-semibold  text-[#323232]"
             >
               Конфиденциальность
             </span>
             <span
-              class="relative z-[71] flex h-[44px] w-[305px] shrink-0 items-start justify-start self-stretch text-left font-['Onest'] text-[17px] font-normal leading-[21.675px] text-[#848484]"
+              class="relative z-[71] flex h-[44px] w-[305px] shrink-0 items-start justify-start self-stretch text-left font-['Onest'] text-[17px] font-normal  text-[#848484]"
             >
               Гарантия полной приватности ваших обращений и данных
             </span>
@@ -107,12 +107,12 @@
           ></div>
           <div class="relative z-[79] flex shrink-0 flex-col flex-nowrap items-start gap-[8px] self-stretch">
             <span
-              class="relative z-[80] h-[29px] shrink-0 basis-auto self-stretch whitespace-nowrap text-left font-['Onest'] text-[24px] font-semibold leading-[29px] text-[#323232]"
+              class="relative z-[80] h-[29px] shrink-0 basis-auto self-stretch whitespace-nowrap text-left font-['Onest'] text-[24px] font-semibold  text-[#323232]"
             >
               Доступность
             </span>
             <span
-              class="relative z-[81] h-[22px] shrink-0 basis-auto whitespace-nowrap text-left font-['Onest'] text-[17px] font-normal leading-[21.675px] text-[#848484]"
+              class="relative z-[81] h-[22px] shrink-0 basis-auto whitespace-nowrap text-left font-['Onest'] text-[17px] font-normal  text-[#848484]"
             >
               Стремимся убрать финансовые и психологические барьеры на пути за помощью
             </span>
@@ -126,12 +126,12 @@
           ></div>
           <div class="relative z-[74] flex shrink-0 flex-col flex-nowrap items-start gap-[8px] self-stretch">
             <span
-              class="relative z-[75] h-[29px] shrink-0 basis-auto self-stretch whitespace-nowrap text-left font-['Onest'] text-[24px] font-semibold leading-[29px] text-[#323232]"
+              class="relative z-[75] h-[29px] shrink-0 basis-auto self-stretch whitespace-nowrap text-left font-['Onest'] text-[24px] font-semibold  text-[#323232]"
             >
               Развитие
             </span>
             <span
-              class="relative z-[76] flex h-[44px] w-[448px] shrink-0 items-start justify-start text-left font-['Onest'] text-[17px] font-normal leading-[21.675px] text-[#848484]"
+              class="relative z-[76] flex h-[44px] w-[448px] shrink-0 items-start justify-start text-left font-['Onest'] text-[17px] font-normal  text-[#848484]"
             >
               Мы постоянно обучаемся и расширяем спектр услуг, внедряем современные методы терапии
             </span>
@@ -189,7 +189,7 @@
               </span>
             </div>
             <span
-              class="relative z-[113] flex h-[182px] w-[467px] shrink-0 items-start justify-start text-left font-['Onest'] text-[20px] font-normal leading-[25.5px] text-[#323232]"
+              class="relative z-[113] flex h-[182px] w-[467px] shrink-0 items-start justify-start text-left font-['Onest'] text-[20px] font-normal text-[#323232]"
             >
               Основатель платформы, врач-психотерапевт, к.м.н. Имеет 37 лет опыта и более 15 000 часов консультирования.
               <br />
@@ -223,12 +223,12 @@
           <div class="relative z-[122] flex shrink-0 flex-col flex-nowrap items-start gap-[12px] self-stretch">
             <div class="relative z-[123] flex shrink-0 flex-col flex-nowrap items-start gap-[5px] self-stretch">
               <span
-                class="relative z-[124] flex h-[58px] w-[345px] shrink-0 items-start justify-start self-stretch text-left font-['Onest'] text-[24px] font-semibold leading-[29px] text-[#323232]"
+                class="relative z-[124] flex h-[58px] w-[345px] shrink-0 items-start justify-start self-stretch text-left font-['Onest'] text-[24px] font-semibold  text-[#323232]"
               >
                 Ахмедова Азиза Тахировна
               </span>
               <span
-                class="relative z-[125] h-[22px] shrink-0 basis-auto self-stretch whitespace-nowrap text-left font-['Onest'] text-[17px] font-medium leading-[21.675px] text-[#585958]"
+                class="relative z-[125] h-[22px] shrink-0 basis-auto self-stretch whitespace-nowrap text-left font-['Onest'] text-[17px] font-medium  text-[#585958]"
               >
                 Клинический психолог
               </span>
@@ -242,12 +242,12 @@
           <div class="relative z-[128] flex shrink-0 flex-col flex-nowrap items-start gap-[12px] self-stretch">
             <div class="relative z-[129] flex shrink-0 flex-col flex-nowrap items-start gap-[5px] self-stretch">
               <span
-                class="relative z-[130] flex h-[58px] w-[345px] shrink-0 items-start justify-start self-stretch text-left font-['Onest'] text-[24px] font-semibold leading-[29px] text-[#323232]"
+                class="relative z-[130] flex h-[58px] w-[345px] shrink-0 items-start justify-start self-stretch text-left font-['Onest'] text-[24px] font-semibold  text-[#323232]"
               >
                 Исмоилов Жахонгир Абдулазизович
               </span>
               <span
-                class="relative z-[131] h-[22px] shrink-0 basis-auto self-stretch whitespace-nowrap text-left font-['Onest'] text-[17px] font-medium leading-[21.675px] text-[#585958]"
+                class="relative z-[131] h-[22px] shrink-0 basis-auto self-stretch whitespace-nowrap text-left font-['Onest'] text-[17px] font-medium  text-[#585958]"
               >
                 Гештальт-терапевт
               </span>
@@ -261,12 +261,12 @@
           <div class="relative z-[134] flex shrink-0 flex-col flex-nowrap items-start gap-[12px] self-stretch">
             <div class="relative z-[135] flex shrink-0 flex-col flex-nowrap items-start gap-[5px] self-stretch">
               <span
-                class="relative z-[136] flex h-[58px] w-[345px] shrink-0 items-start justify-start self-stretch text-left font-['Onest'] text-[24px] font-semibold leading-[29px] text-[#323232]"
+                class="relative z-[136] flex h-[58px] w-[345px] shrink-0 items-start justify-start self-stretch text-left font-['Onest'] text-[24px] font-semibold  text-[#323232]"
               >
                 Курбанова Мунира Махмудовна
               </span>
               <span
-                class="relative z-[137] h-[22px] shrink-0 basis-auto self-stretch whitespace-nowrap text-left font-['Onest'] text-[17px] font-medium leading-[21.675px] text-[#585958]"
+                class="relative z-[137] h-[22px] shrink-0 basis-auto self-stretch whitespace-nowrap text-left font-['Onest'] text-[17px] font-medium  text-[#585958]"
               >
                 Врач-психотерапевт
               </span>
@@ -280,12 +280,12 @@
           <div class="relative z-[140] flex shrink-0 flex-col flex-nowrap items-start gap-[12px] self-stretch">
             <div class="relative z-[141] flex shrink-0 flex-col flex-nowrap items-start gap-[5px] self-stretch">
               <span
-                class="relative z-[142] flex h-[58px] w-[345px] shrink-0 items-start justify-start self-stretch text-left font-['Onest'] text-[24px] font-semibold leading-[29px] text-[#323232]"
+                class="relative z-[142] flex h-[58px] w-[345px] shrink-0 items-start justify-start self-stretch text-left font-['Onest'] text-[24px] font-semibold  text-[#323232]"
               >
                 Ахмедова Азиза Тахировна
               </span>
               <span
-                class="relative z-[143] h-[22px] shrink-0 basis-auto self-stretch whitespace-nowrap text-left font-['Onest'] text-[17px] font-medium leading-[21.675px] text-[#585958]"
+                class="relative z-[143] h-[22px] shrink-0 basis-auto self-stretch whitespace-nowrap text-left font-['Onest'] text-[17px] font-medium  text-[#585958]"
               >
                 Клинический психолог
               </span>
@@ -298,7 +298,7 @@
       >
         <div class="relative z-[145] flex shrink-0 flex-col flex-nowrap items-start gap-[10px] self-stretch">
           <span
-            class="relative z-[146] flex h-[108px] w-[920px] shrink-0 items-start justify-start text-left font-['Onest'] text-[30px] font-medium leading-[36px] text-[#323232]"
+            class="relative z-[146] flex h-[108px] w-[920px] shrink-0 items-start justify-start text-left font-['Onest'] text-[30px] font-medium  text-[#323232]"
           >
             Всего на платформе сейчас работают 8 специалистов: психотерапевты, клинические психологи, гипнотерапевт...
             Каждый из них — профессионал с опытом от 5 до 30 лет
@@ -330,7 +330,7 @@
               Cделайте шаг к душевному здоровью
             </span>
             <span
-              class="relative z-[105] flex h-[52px] w-[467px] shrink-0 items-start justify-start text-left font-['Onest'] text-[20px] font-normal leading-[25.5px] text-[#fff]"
+              class="relative z-[105] flex h-[52px] w-[467px] shrink-0 items-start justify-start text-left font-['Onest'] text-[20px] font-normal text-[#fff]"
             >
               Запишитесь на консультацию и мы поможем решить ваши проблемы
             </span>
@@ -345,7 +345,7 @@
               class="relative z-[108] w-[184px] shrink-0 whitespace-nowrap text-left font-['Onest'] text-[22px] font-semibold leading-[28px]"
             >
               <span
-                class="relative text-left font-['Onest'] text-[22px] font-semibold leading-[28.05px] text-[#fff] underline"
+                class="relative text-left font-['Onest'] text-[22px] font-semibold  text-[#fff] underline"
               >
                 +998 91 137 55 16
               </span>
@@ -360,7 +360,7 @@
               class="relative z-[94] flex shrink-0 flex-nowrap items-start gap-[10px] self-stretch border-t border-solid border-t-[#fff] pb-[15px] pl-0 pr-0 pt-0"
             >
               <span
-                class="relative z-[95] h-[26px] shrink-0 basis-auto whitespace-nowrap text-left font-['Onest'] text-[20px] font-normal leading-[25.5px] text-[#fff]"
+                class="relative z-[95] h-[26px] shrink-0 basis-auto whitespace-nowrap text-left font-['Onest'] text-[20px] font-normal text-[#fff]"
               >
                 ФИО
               </span>
@@ -369,7 +369,7 @@
               class="relative z-[96] flex shrink-0 flex-nowrap items-start gap-[10px] self-stretch border-t border-solid border-t-[#fff] pb-[15px] pl-0 pr-0 pt-0"
             >
               <span
-                class="relative z-[97] h-[26px] shrink-0 basis-auto whitespace-nowrap text-left font-['Onest'] text-[20px] font-normal leading-[25.5px] text-[#fff]"
+                class="relative z-[97] h-[26px] shrink-0 basis-auto whitespace-nowrap text-left font-['Onest'] text-[20px] font-normal text-[#fff]"
               >
                 Номер телефона
               </span>
@@ -378,7 +378,7 @@
               class="relative z-[98] flex shrink-0 flex-nowrap items-start gap-[10px] self-stretch border-t border-solid border-t-[#fff] pb-[15px] pl-0 pr-0 pt-0"
             >
               <span
-                class="relative z-[99] h-[26px] shrink-0 basis-auto whitespace-nowrap text-left font-['Onest'] text-[20px] font-normal leading-[25.5px] text-[#fff]"
+                class="relative z-[99] h-[26px] shrink-0 basis-auto whitespace-nowrap text-left font-['Onest'] text-[20px] font-normal text-[#fff]"
               >
                 Что вы хотите изменить?
               </span>
@@ -412,12 +412,12 @@
             ></div>
             <div class="relative z-[157] flex shrink-0 grow basis-0 flex-col flex-nowrap items-start gap-[12px]">
               <span
-                class="relative z-[158] h-[29px] shrink-0 basis-auto self-stretch whitespace-nowrap text-left font-['Onest'] text-[24px] font-semibold leading-[29px] text-[#323232]"
+                class="relative z-[158] h-[29px] shrink-0 basis-auto self-stretch whitespace-nowrap text-left font-['Onest'] text-[24px] font-semibold  text-[#323232]"
               >
                 Комплексный подход
               </span>
               <span
-                class="relative z-[159] flex h-[46px] w-[620px] shrink-0 items-start justify-start text-left font-['Onest'] text-[18px] font-normal leading-[22.95px] text-[#585958]"
+                class="relative z-[159] flex h-[46px] w-[620px] shrink-0 items-start justify-start text-left font-['Onest'] text-[18px] font-normal text-[#585958]"
               >
                 Объединяем психологию и медицину — при необходимости доступно психиатрическое сопровождение под
                 наблюдением врача
@@ -432,12 +432,12 @@
             ></div>
             <div class="relative z-[167] flex shrink-0 grow basis-0 flex-col flex-nowrap items-start gap-[12px]">
               <span
-                class="relative z-[168] h-[29px] shrink-0 basis-auto self-stretch whitespace-nowrap text-left font-['Onest'] text-[24px] font-semibold leading-[29px] text-[#323232]"
+                class="relative z-[168] h-[29px] shrink-0 basis-auto self-stretch whitespace-nowrap text-left font-['Onest'] text-[24px] font-semibold  text-[#323232]"
               >
                 Проверенные методы
               </span>
               <span
-                class="relative z-[169] flex h-[46px] w-[635px] shrink-0 items-start justify-start self-stretch text-left font-['Onest'] text-[18px] font-normal leading-[22.95px] text-[#585958]"
+                class="relative z-[169] flex h-[46px] w-[635px] shrink-0 items-start justify-start self-stretch text-left font-['Onest'] text-[18px] font-normal text-[#585958]"
               >
                 Используем научно обоснованные, проверенные практики — без эзотерики и модных псевдоподходов
               </span>
@@ -451,12 +451,12 @@
             ></div>
             <div class="relative z-[162] flex shrink-0 grow basis-0 flex-col flex-nowrap items-start gap-[12px]">
               <span
-                class="relative z-[163] h-[29px] shrink-0 basis-auto self-stretch whitespace-nowrap text-left font-['Onest'] text-[24px] font-semibold leading-[29px] text-[#323232]"
+                class="relative z-[163] h-[29px] shrink-0 basis-auto self-stretch whitespace-nowrap text-left font-['Onest'] text-[24px] font-semibold  text-[#323232]"
               >
                 Бережность
               </span>
               <span
-                class="relative z-[164] flex h-[46px] w-[605px] shrink-0 items-start justify-start self-stretch text-left font-['Onest'] text-[18px] font-normal leading-[22.95px] text-[#585958]"
+                class="relative z-[164] flex h-[46px] w-[605px] shrink-0 items-start justify-start self-stretch text-left font-['Onest'] text-[18px] font-normal text-[#585958]"
               >
                 Главное для нас — тёплое, уважительное отношение и безопасное пространство, где можно быть собой
               </span>
@@ -472,12 +472,12 @@
             </div>
             <div class="relative z-[173] flex shrink-0 grow basis-0 flex-col flex-nowrap items-start gap-[12px]">
               <span
-                class="relative z-[174] h-[29px] shrink-0 basis-auto self-stretch whitespace-nowrap text-left font-['Onest'] text-[24px] font-semibold leading-[29px] text-[#323232]"
+                class="relative z-[174] h-[29px] shrink-0 basis-auto self-stretch whitespace-nowrap text-left font-['Onest'] text-[24px] font-semibold  text-[#323232]"
               >
                 От диагностики до восстановления
               </span>
               <span
-                class="relative z-[175] flex h-[46px] w-[605px] shrink-0 items-start justify-start self-stretch text-left font-['Onest'] text-[18px] font-normal leading-[22.95px] text-[#585958]"
+                class="relative z-[175] flex h-[46px] w-[605px] shrink-0 items-start justify-start self-stretch text-left font-['Onest'] text-[18px] font-normal text-[#585958]"
               >
                 Сопровождаем клиента на всех этапах: выявление запроса, работа с причинами, поддержка после терапии
               </span>

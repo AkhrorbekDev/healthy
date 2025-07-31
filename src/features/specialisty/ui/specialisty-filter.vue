@@ -13,7 +13,7 @@
           class="relative z-[52] flex w-[223px] shrink-0 flex-nowrap items-center justify-between rounded-[100px] bg-[#f7f7f7] pb-[15px] pl-[20px] pr-[20px] pt-[15px]"
         >
           <span
-            class="relative z-[53] h-[23px] shrink-0 basis-auto text-left font-['Onest'] text-[18px] font-normal leading-[22.95px] text-[#323232]"
+            class="relative z-[53] h-[23px] shrink-0 basis-auto text-left font-['Onest'] text-[18px] font-normal text-[#323232]"
           >
             {{ t("filters.specialization") }}
           </span>
@@ -25,7 +25,7 @@
           class="relative z-[55] flex w-[223px] shrink-0 flex-nowrap items-center justify-between rounded-[100px] bg-[#f7f7f7] pb-[15px] pl-[20px] pr-[20px] pt-[15px]"
         >
           <span
-            class="relative z-[56] h-[23px] shrink-0 basis-auto text-left font-['Onest'] text-[18px] font-normal leading-[22.95px] text-[#323232]"
+            class="relative z-[56] h-[23px] shrink-0 basis-auto text-left font-['Onest'] text-[18px] font-normal text-[#323232]"
           >
             {{ t("filters.gender") }}
           </span>
@@ -37,7 +37,7 @@
           class="relative z-[58] flex w-[223px] shrink-0 flex-nowrap items-center justify-between rounded-[100px] bg-[#f7f7f7] pb-[15px] pl-[20px] pr-[20px] pt-[15px]"
         >
           <span
-            class="relative z-[59] h-[23px] shrink-0 basis-auto text-left font-['Onest'] text-[18px] font-normal leading-[22.95px] text-[#323232]"
+            class="relative z-[59] h-[23px] shrink-0 basis-auto text-left font-['Onest'] text-[18px] font-normal text-[#323232]"
           >
             {{ t("filters.language") }}
           </span>
@@ -49,7 +49,7 @@
           class="relative z-[61] flex w-[223px] shrink-0 flex-nowrap items-center justify-between rounded-[100px] bg-[#f7f7f7] pb-[15px] pl-[20px] pr-[20px] pt-[15px]"
         >
           <span
-            class="relative z-[62] h-[23px] shrink-0 basis-auto text-left font-['Onest'] text-[18px] font-normal leading-[22.95px] text-[#323232]"
+            class="relative z-[62] h-[23px] shrink-0 basis-auto text-left font-['Onest'] text-[18px] font-normal text-[#323232]"
           >
             {{ t("filters.city") }}
           </span>
