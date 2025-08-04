@@ -56,8 +56,8 @@ const buttonAttrs = computed(() => {
     </slot>
 
     <slot v-else>
-      <icon v-if="iconName" :name="iconName" :class="iconClass" />
       <span>{{ label }}</span>
+      <icon v-if="iconName" :name="iconName" :class="iconClass" />
     </slot>
   </component>
 </template>

@@ -16,3 +16,7 @@
         @apply px-4;
     }
 }
+
+.p-section {
+  @apply py-[120px]
+}

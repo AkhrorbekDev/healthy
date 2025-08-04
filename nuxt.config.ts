@@ -76,11 +76,16 @@ export default defineNuxtConfig({
     }
   },
 
-  css: ["floating-vue/dist/style.css", "@vuepic/vue-datepicker/dist/main.css", "~/shared/assets/css/index.css"],
+  css: [
+    "vue3-carousel/carousel.css",
+    "floating-vue/dist/style.css",
+    "@vuepic/vue-datepicker/dist/main.css",
+    "~/shared/assets/css/index.css"
+  ],
 
   i18n: {
     lazy: true,
-    defaultLocale: "uz",
+    defaultLocale: "ru",
     restructureDir: false,
     langDir: "app/locales/",
     bundle: {
@@ -98,12 +103,6 @@ export default defineNuxtConfig({
         language: "ru",
         file: "ru.json",
         name: "Русский"
-      },
-      {
-        code: "en",
-        language: "en",
-        file: "en.json",
-        name: "English"
       }
     ]
   },

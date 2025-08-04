@@ -22,14 +22,14 @@ defineProps<IProps>()
     <!--  Content  -->
     <div class="post-hero__content max-w-screen-2xl">
       <div class="max-w-[832px]">
-        <h1 class="post-hero__title headline-1 mb-[15px]">{{ title }}</h1>
+        <h1 class="post-hero__title mb-[10px] text-mobile-headline-1 md:mb-[15px] md:text-headline-1">{{ title }}</h1>
         <p class="post-hero__description body-20">{{ description }}</p>
       </div>
-      <div class="mt-[50px] flex flex-col gap-[15px] sm:flex-row">
-        <ui-button :to="specialistsLink">
+      <div class="mt-[25px] flex flex-col gap-[15px] sm:flex-row md:mt-[50px]">
+        <ui-button class="!bg-white !text-green-500" :to="specialistsLink">
           {{ t("select_specialist") }}
         </ui-button>
-        <ui-button class="!border-white !bg-transparent" variant="outline" :to="coursesLink">
+        <ui-button class="!border-white !bg-transparent !text-white" variant="outline" :to="coursesLink">
           {{ t("select_course") }}
         </ui-button>
       </div>
@@ -39,13 +39,13 @@ defineProps<IProps>()
 
 <style>
 .post-hero {
-  @apply relative flex min-h-[820px] flex-col overflow-hidden transition-all duration-500 ease-in-out;
+  @apply relative flex min-h-[730px] flex-col overflow-hidden py-[30px] transition-all duration-500 ease-in-out md:min-h-[820px] md:py-0;
 
   &__background {
-    @apply absolute inset-0 -z-10 bg-green-500;
+    @apply absolute inset-0 bg-green-500;
 
     img {
-      @apply h-full w-full object-cover object-center opacity-60;
+      @apply h-full w-full object-cover object-center;
     }
   }
 
@@ -58,7 +58,7 @@ defineProps<IProps>()
   }
 
   &__content {
-    @apply z-10 mx-auto grid w-full grow content-center items-center px-4;
+    @apply z-10 mx-auto grid w-full grow content-start items-center px-4 md:content-center;
 
     &-heading {
       @apply mb-6 text-4xl font-bold text-white;

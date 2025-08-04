@@ -14,7 +14,7 @@
                   ></div>
                 </div>
                 <span
-                  class="relative z-[8] h-[22px] shrink-0 basis-auto whitespace-nowrap text-left font-['Onest'] text-[17px] font-medium leading-[21.675px] text-[#63845c]"
+                  class="relative z-[8] h-[22px] shrink-0 basis-auto whitespace-nowrap text-left font-['Onest'] text-[17px] font-medium  text-[#63845c]"
                 >
                   10 июля 2025
                 </span>
@@ -23,7 +23,7 @@
                 class="relative z-[9] flex w-[98px] shrink-0 flex-nowrap items-center gap-[8px] rounded-[100px] border border-solid border-[#63845c] pb-[8px] pl-[12px] pr-[12px] pt-[8px]"
               >
                 <span
-                  class="relative z-10 h-[22px] shrink-0 basis-auto whitespace-nowrap text-left font-['Onest'] text-[17px] font-medium leading-[21.675px] text-[#63845c]"
+                  class="relative z-10 h-[22px] shrink-0 basis-auto whitespace-nowrap text-left font-['Onest'] text-[17px] font-medium  text-[#63845c]"
                 >
                   Для всех
                 </span>
@@ -32,7 +32,7 @@
                 class="relative z-[11] flex w-[102px] shrink-0 flex-nowrap items-center gap-[8px] rounded-[100px] border border-solid border-[#63845c] pb-[8px] pl-[12px] pr-[12px] pt-[8px]"
               >
                 <span
-                  class="relative z-[12] h-[22px] shrink-0 basis-auto whitespace-nowrap text-left font-['Onest'] text-[17px] font-medium leading-[21.675px] text-[#63845c]"
+                  class="relative z-[12] h-[22px] shrink-0 basis-auto whitespace-nowrap text-left font-['Onest'] text-[17px] font-medium  text-[#63845c]"
                 >
                   Оффлайн
                 </span>
@@ -48,7 +48,7 @@
                 class="relative z-[15] flex shrink-0 flex-nowrap items-center justify-center gap-[10px] self-stretch pb-0 pl-0 pr-[112px] pt-0"
               >
                 <span
-                  class="relative z-[16] flex h-[46px] w-[598px] shrink-0 grow basis-0 items-start justify-start text-left font-['Onest'] text-[18px] font-normal leading-[22.95px] text-[#585958]"
+                  class="relative z-[16] flex h-[46px] w-[598px] shrink-0 grow basis-0 items-start justify-start text-left font-['Onest'] text-[18px] font-normal text-[#585958]"
                 >
                   Научитесь справляться с тревогой и восстановите эмоциональный баланс под руководством опытного
                   психотерапевта
@@ -115,13 +115,13 @@
             class="relative z-[78] flex w-[98px] shrink-0 flex-nowrap items-center gap-[8px] rounded-[100px] border border-solid border-[#63845c] pb-[8px] pl-[12px] pr-[12px] pt-[8px]"
           >
             <span
-              class="relative z-[79] h-[22px] shrink-0 basis-auto whitespace-nowrap text-left font-['Onest'] text-[17px] font-medium leading-[21.675px] text-[#63845c]"
+              class="relative z-[79] h-[22px] shrink-0 basis-auto whitespace-nowrap text-left font-['Onest'] text-[17px] font-medium  text-[#63845c]"
             >
               Для всех
             </span>
           </div>
           <span
-            class="relative z-[80] flex h-[130px] w-[660px] shrink-0 items-start justify-start self-stretch text-left font-['Onest'] text-[20px] font-normal leading-[25.5px] text-[#323232]"
+            class="relative z-[80] flex h-[130px] w-[660px] shrink-0 items-start justify-start self-stretch text-left font-['Onest'] text-[20px] font-normal text-[#323232]"
           >
             Курс предназначен для тех, кто испытывает постоянный стресс на работе или дома, чувствует эмоциональное
             выгорание и хочет научиться восстанавливаться. Подойдет как новичкам, ранее не посещавшим психологические
@@ -148,7 +148,7 @@
             ></div>
           </div>
           <span
-            class="relative z-[87] flex h-[52px] w-[377px] shrink-0 grow basis-0 items-start justify-start text-left font-['Onest'] text-[20px] font-normal leading-[25.5px] text-[#323232]"
+            class="relative z-[87] flex h-[52px] w-[377px] shrink-0 grow basis-0 items-start justify-start text-left font-['Onest'] text-[20px] font-normal text-[#323232]"
           >
             Понимать причины своего стресса и тревоги
           </span>
@@ -164,7 +164,7 @@
             ></div>
           </div>
           <span
-            class="relative z-[99] flex h-[52px] w-[377px] shrink-0 grow basis-0 items-start justify-start text-left font-['Onest'] text-[20px] font-normal leading-[25.5px] text-[#323232]"
+            class="relative z-[99] flex h-[52px] w-[377px] shrink-0 grow basis-0 items-start justify-start text-left font-['Onest'] text-[20px] font-normal text-[#323232]"
           >
             Применять навыки эмоциональной саморегуляции в повседневной жизни
           </span>
@@ -180,7 +180,7 @@
             ></div>
           </div>
           <span
-            class="relative z-[91] flex h-[78px] w-[377px] shrink-0 grow basis-0 items-start justify-start text-left font-['Onest'] text-[20px] font-normal leading-[25.5px] text-[#323232]"
+            class="relative z-[91] flex h-[78px] w-[377px] shrink-0 grow basis-0 items-start justify-start text-left font-['Onest'] text-[20px] font-normal text-[#323232]"
           >
             Практиковать дыхательные и медитативные техники для расслабления
           </span>
@@ -196,7 +196,7 @@
             ></div>
           </div>
           <span
-            class="relative z-[103] flex h-[52px] w-[377px] shrink-0 grow basis-0 items-start justify-start text-left font-['Onest'] text-[20px] font-normal leading-[25.5px] text-[#323232]"
+            class="relative z-[103] flex h-[52px] w-[377px] shrink-0 grow basis-0 items-start justify-start text-left font-['Onest'] text-[20px] font-normal text-[#323232]"
           >
             Распознавать и осознанно проживать свои эмоции, не подавляя их
           </span>
@@ -212,7 +212,7 @@
             ></div>
           </div>
           <span
-            class="relative z-[95] flex h-[52px] w-[377px] shrink-0 grow basis-0 items-start justify-start text-left font-['Onest'] text-[20px] font-normal leading-[25.5px] text-[#323232]"
+            class="relative z-[95] flex h-[52px] w-[377px] shrink-0 grow basis-0 items-start justify-start text-left font-['Onest'] text-[20px] font-normal text-[#323232]"
           >
             Укреплять устойчивость к стрессовым факторам
           </span>
@@ -228,7 +228,7 @@
             ></div>
           </div>
           <span
-            class="relative z-[107] flex h-[52px] w-[377px] shrink-0 grow basis-0 items-start justify-start text-left font-['Onest'] text-[20px] font-normal leading-[25.5px] text-[#323232]"
+            class="relative z-[107] flex h-[52px] w-[377px] shrink-0 grow basis-0 items-start justify-start text-left font-['Onest'] text-[20px] font-normal text-[#323232]"
           >
             Понимать, как стресс влияет на тело и поведение
           </span>
@@ -252,7 +252,7 @@
           Формат проведения и требования
         </span>
         <span
-          class="relative z-[113] flex h-[52px] w-[953px] shrink-0 items-start justify-start self-stretch text-left font-['Onest'] text-[20px] font-normal leading-[25.5px] text-[#585958]"
+          class="relative z-[113] flex h-[52px] w-[953px] shrink-0 items-start justify-start self-stretch text-left font-['Onest'] text-[20px] font-normal text-[#585958]"
         >
           Специальной подготовки не требуется. Достаточно желание работать над собой и готовность выполнять практические
           упражнения. При себе иметь удобную одежду и блокнот.
@@ -269,12 +269,12 @@
           </div>
           <div class="relative z-[118] flex w-[305px] shrink-0 flex-col flex-nowrap items-start gap-[8px]">
             <span
-              class="relative z-[119] h-[29px] shrink-0 basis-auto self-stretch whitespace-nowrap text-left font-['Onest'] text-[24px] font-semibold leading-[29px] text-[#323232]"
+              class="relative z-[119] h-[29px] shrink-0 basis-auto self-stretch whitespace-nowrap text-left font-['Onest'] text-[24px] font-semibold  text-[#323232]"
             >
               Оффлайн
             </span>
             <span
-              class="relative z-[120] flex h-[44px] w-[305px] shrink-0 items-start justify-start self-stretch text-left font-['Onest'] text-[17px] font-normal leading-[21.675px] text-[#848484]"
+              class="relative z-[120] flex h-[44px] w-[305px] shrink-0 items-start justify-start self-stretch text-left font-['Onest'] text-[17px] font-normal  text-[#848484]"
             >
               Курс проходит в формате живых групповых занятий
             </span>
@@ -288,12 +288,12 @@
           ></div>
           <div class="relative z-[123] flex w-[305px] shrink-0 flex-col flex-nowrap items-start gap-[8px]">
             <span
-              class="relative z-[124] h-[29px] shrink-0 basis-auto self-stretch whitespace-nowrap text-left font-['Onest'] text-[24px] font-semibold leading-[29px] text-[#323232]"
+              class="relative z-[124] h-[29px] shrink-0 basis-auto self-stretch whitespace-nowrap text-left font-['Onest'] text-[24px] font-semibold  text-[#323232]"
             >
               10 человек
             </span>
             <span
-              class="relative z-[125] flex h-[66px] w-[305px] shrink-0 items-start justify-start self-stretch text-left font-['Onest'] text-[17px] font-normal leading-[21.675px] text-[#848484]"
+              class="relative z-[125] flex h-[66px] w-[305px] shrink-0 items-start justify-start self-stretch text-left font-['Onest'] text-[17px] font-normal  text-[#848484]"
             >
               Группа до 10 человек, что обеспечивает комфортную атмосферу и внимание каждому
             </span>
@@ -307,12 +307,12 @@
           ></div>
           <div class="relative z-[128] flex w-[305px] shrink-0 flex-col flex-nowrap items-start gap-[8px]">
             <span
-              class="relative z-[129] h-[29px] shrink-0 basis-auto whitespace-nowrap text-left font-['Onest'] text-[24px] font-semibold leading-[29px] text-[#323232]"
+              class="relative z-[129] h-[29px] shrink-0 basis-auto whitespace-nowrap text-left font-['Onest'] text-[24px] font-semibold  text-[#323232]"
             >
               70% практика
             </span>
             <span
-              class="relative z-[130] flex h-[44px] w-[305px] shrink-0 items-start justify-start self-stretch text-left font-['Onest'] text-[17px] font-normal leading-[21.675px] text-[#848484]"
+              class="relative z-[130] flex h-[44px] w-[305px] shrink-0 items-start justify-start self-stretch text-left font-['Onest'] text-[17px] font-normal  text-[#848484]"
             >
               Ролевые упражнения, обсуждения, домашние задания
             </span>
@@ -326,12 +326,12 @@
           ></div>
           <div class="relative z-[133] flex w-[305px] shrink-0 flex-col flex-nowrap items-start gap-[8px]">
             <span
-              class="relative z-[134] h-[29px] shrink-0 basis-auto self-stretch whitespace-nowrap text-left font-['Onest'] text-[24px] font-semibold leading-[29px] text-[#323232]"
+              class="relative z-[134] h-[29px] shrink-0 basis-auto self-stretch whitespace-nowrap text-left font-['Onest'] text-[24px] font-semibold  text-[#323232]"
             >
               30% теория
             </span>
             <span
-              class="relative z-[135] flex h-[44px] w-[305px] shrink-0 items-start justify-start self-stretch text-left font-['Onest'] text-[17px] font-normal leading-[21.675px] text-[#848484]"
+              class="relative z-[135] flex h-[44px] w-[305px] shrink-0 items-start justify-start self-stretch text-left font-['Onest'] text-[17px] font-normal  text-[#848484]"
             >
               Чёткие концепции и база для практики
             </span>
@@ -353,7 +353,7 @@
               01
             </span>
             <span
-              class="relative z-[430] mb-0 ml-[63px] mr-0 mt-[-7px] flex h-[23px] w-[74px] items-start justify-center whitespace-nowrap text-center font-['Onest'] text-[18px] font-medium leading-[22.949px] text-[#fff] opacity-80"
+              class="relative z-[430] mb-0 ml-[63px] mr-0 mt-[-7px] flex h-[23px] w-[74px] items-start justify-center whitespace-nowrap text-center font-['Onest'] text-[18px] font-medium  text-[#fff] opacity-80"
             >
               месяцев
             </span>
@@ -370,7 +370,7 @@
               10
             </span>
             <span
-              class="relative z-[434] mb-0 ml-[79px] mr-0 mt-[-7px] flex h-[23px] w-[43px] items-start justify-center whitespace-nowrap text-center font-['Onest'] text-[18px] font-medium leading-[22.949px] text-[#fff] opacity-80"
+              class="relative z-[434] mb-0 ml-[79px] mr-0 mt-[-7px] flex h-[23px] w-[43px] items-start justify-center whitespace-nowrap text-center font-['Onest'] text-[18px] font-medium  text-[#fff] opacity-80"
             >
               дней
             </span>
@@ -387,7 +387,7 @@
               08
             </span>
             <span
-              class="relative z-[438] mb-0 ml-[75px] mr-0 mt-[-7px] flex h-[23px] w-[51px] items-start justify-center whitespace-nowrap text-center font-['Onest'] text-[18px] font-medium leading-[22.949px] text-[#fff] opacity-80"
+              class="relative z-[438] mb-0 ml-[75px] mr-0 mt-[-7px] flex h-[23px] w-[51px] items-start justify-center whitespace-nowrap text-center font-['Onest'] text-[18px] font-medium  text-[#fff] opacity-80"
             >
               часов
             </span>
@@ -406,7 +406,7 @@
               Осталось до старта курса
             </span>
             <span
-              class="relative z-[442] h-[26px] shrink-0 basis-auto self-stretch whitespace-nowrap text-center font-['Onest'] text-[20px] font-normal leading-[25.5px] text-[#fff]"
+              class="relative z-[442] h-[26px] shrink-0 basis-auto self-stretch whitespace-nowrap text-center font-['Onest'] text-[20px] font-normal text-[#fff]"
             >
               Успейте записаться, количество мест ограничено
             </span>
@@ -485,7 +485,7 @@
                   class="relative z-[143] flex w-[92px] shrink-0 flex-nowrap items-center justify-center gap-[10px] rounded-[100px] border border-solid border-[#63845c] pb-[5px] pl-[10px] pr-[10px] pt-[5px]"
                 >
                   <span
-                    class="relative z-[144] h-[20px] shrink-0 basis-auto whitespace-nowrap text-left font-['Onest'] text-[16px] font-bold leading-[20px] text-[#63845c]"
+                    class="relative z-[144] h-[20px] shrink-0 basis-auto whitespace-nowrap text-left font-['Onest'] text-[16px] font-bold  text-[#63845c]"
                   >
                     Модуль 1
                   </span>
@@ -494,14 +494,14 @@
                   class="relative z-[145] flex w-[83px] shrink-0 flex-nowrap items-center justify-center gap-[10px] rounded-[100px] border border-solid border-[#63845c] pb-[5px] pl-[10px] pr-[10px] pt-[5px]"
                 >
                   <span
-                    class="relative z-[146] h-[20px] shrink-0 basis-auto whitespace-nowrap text-left font-['Onest'] text-[16px] font-bold leading-[20px] text-[#63845c]"
+                    class="relative z-[146] h-[20px] shrink-0 basis-auto whitespace-nowrap text-left font-['Onest'] text-[16px] font-bold  text-[#63845c]"
                   >
                     Месяц 1
                   </span>
                 </div>
               </div>
               <span
-                class="relative z-[147] h-[36px] shrink-0 basis-auto self-stretch whitespace-nowrap text-left font-['Onest'] text-[30px] font-semibold leading-[36px] text-[#323232]"
+                class="relative z-[147] h-[36px] shrink-0 basis-auto self-stretch whitespace-nowrap text-left font-['Onest'] text-[30px] font-semibold  text-[#323232]"
               >
                 От осознания к действию
               </span>
@@ -515,12 +515,12 @@
               class="relative z-[150] flex w-[1440px] shrink-0 flex-col flex-nowrap items-start gap-[8px] border-t border-solid border-t-[#e7e7e7] bg-[#fff] pb-[15px] pl-[30px] pr-[30px] pt-[15px]"
             >
               <span
-                class="relative z-[151] h-[28px] shrink-0 basis-auto self-stretch whitespace-nowrap text-left font-['Onest'] text-[22px] font-semibold leading-[28px] text-[#63845c]"
+                class="relative z-[151] h-[28px] shrink-0 basis-auto self-stretch whitespace-nowrap text-left font-['Onest'] text-[22px] font-semibold  text-[#63845c]"
               >
                 Первое занятие
               </span>
               <span
-                class="relative z-[152] flex h-[69px] w-[1380px] shrink-0 items-start justify-start self-stretch overflow-hidden text-left font-['Onest'] text-[18px] font-normal leading-[22.95px] text-[#585958]"
+                class="relative z-[152] flex h-[69px] w-[1380px] shrink-0 items-start justify-start self-stretch overflow-hidden text-left font-['Onest'] text-[18px] font-normal text-[#585958]"
               >
                 знакомство
                 <br />
@@ -533,12 +533,12 @@
               class="relative z-[153] flex w-[1440px] shrink-0 flex-col flex-nowrap items-start gap-[8px] border-t border-solid border-t-[#e7e7e7] bg-[#fff] pb-[15px] pl-[30px] pr-[30px] pt-[15px]"
             >
               <span
-                class="relative z-[154] h-[28px] shrink-0 basis-auto self-stretch whitespace-nowrap text-left font-['Onest'] text-[22px] font-semibold leading-[28px] text-[#63845c]"
+                class="relative z-[154] h-[28px] shrink-0 basis-auto self-stretch whitespace-nowrap text-left font-['Onest'] text-[22px] font-semibold  text-[#63845c]"
               >
                 Второе занятие
               </span>
               <span
-                class="relative z-[155] flex h-[69px] w-[1380px] shrink-0 items-start justify-start self-stretch overflow-hidden text-left font-['Onest'] text-[18px] font-normal leading-[22.95px] text-[#585958]"
+                class="relative z-[155] flex h-[69px] w-[1380px] shrink-0 items-start justify-start self-stretch overflow-hidden text-left font-['Onest'] text-[18px] font-normal text-[#585958]"
               >
                 Техники релаксации:
                 <br />
@@ -551,12 +551,12 @@
               class="relative z-[156] flex w-[1440px] shrink-0 flex-col flex-nowrap items-start gap-[8px] border-t border-solid border-t-[#e7e7e7] bg-[#fff] pb-[15px] pl-[30px] pr-[30px] pt-[15px]"
             >
               <span
-                class="relative z-[157] h-[28px] shrink-0 basis-auto self-stretch whitespace-nowrap text-left font-['Onest'] text-[22px] font-semibold leading-[28px] text-[#63845c]"
+                class="relative z-[157] h-[28px] shrink-0 basis-auto self-stretch whitespace-nowrap text-left font-['Onest'] text-[22px] font-semibold  text-[#63845c]"
               >
                 Третье занятие
               </span>
               <span
-                class="relative z-[158] h-[23px] shrink-0 basis-auto self-stretch whitespace-nowrap text-left font-['Onest'] text-[18px] font-normal leading-[22.95px] text-[#585958]"
+                class="relative z-[158] h-[23px] shrink-0 basis-auto self-stretch whitespace-nowrap text-left font-['Onest'] text-[18px] font-normal text-[#585958]"
               >
                 Когнитивные методы управления эмоциями (работа с мыслями, которые усиливают стресс)
               </span>
@@ -565,12 +565,12 @@
               class="relative z-[159] flex w-[1440px] shrink-0 flex-col flex-nowrap items-start gap-[8px] rounded-bl-[20px] rounded-br-[20px] rounded-tl-none rounded-tr-none bg-[#fff] pb-[15px] pl-[30px] pr-[30px] pt-[15px]"
             >
               <span
-                class="relative z-[160] h-[28px] shrink-0 basis-auto self-stretch whitespace-nowrap text-left font-['Onest'] text-[22px] font-semibold leading-[28px] text-[#63845c]"
+                class="relative z-[160] h-[28px] shrink-0 basis-auto self-stretch whitespace-nowrap text-left font-['Onest'] text-[22px] font-semibold  text-[#63845c]"
               >
                 Четвертое занятие
               </span>
               <span
-                class="relative z-[161] flex h-[69px] w-[1380px] shrink-0 items-start justify-start self-stretch overflow-hidden text-left font-['Onest'] text-[18px] font-normal leading-[22.95px] text-[#585958]"
+                class="relative z-[161] flex h-[69px] w-[1380px] shrink-0 items-start justify-start self-stretch overflow-hidden text-left font-['Onest'] text-[18px] font-normal text-[#585958]"
               >
                 планирование здорового образа жизни
                 <br />
@@ -590,7 +590,7 @@
                 class="relative z-[165] flex w-[95px] shrink-0 flex-nowrap items-center justify-center gap-[10px] rounded-[100px] border border-solid border-[#63845c] pb-[5px] pl-[10px] pr-[10px] pt-[5px]"
               >
                 <span
-                  class="relative z-[166] h-[20px] shrink-0 basis-auto whitespace-nowrap text-left font-['Onest'] text-[16px] font-bold leading-[20px] text-[#63845c]"
+                  class="relative z-[166] h-[20px] shrink-0 basis-auto whitespace-nowrap text-left font-['Onest'] text-[16px] font-bold  text-[#63845c]"
                 >
                   Модуль 2
                 </span>
@@ -599,14 +599,14 @@
                 class="relative z-[167] flex w-[86px] shrink-0 flex-nowrap items-center justify-center gap-[10px] rounded-[100px] border border-solid border-[#63845c] pb-[5px] pl-[10px] pr-[10px] pt-[5px]"
               >
                 <span
-                  class="relative z-[168] h-[20px] shrink-0 basis-auto whitespace-nowrap text-left font-['Onest'] text-[16px] font-bold leading-[20px] text-[#63845c]"
+                  class="relative z-[168] h-[20px] shrink-0 basis-auto whitespace-nowrap text-left font-['Onest'] text-[16px] font-bold  text-[#63845c]"
                 >
                   Месяц 2
                 </span>
               </div>
             </div>
             <span
-              class="relative z-[169] h-[36px] shrink-0 basis-auto self-stretch whitespace-nowrap text-left font-['Onest'] text-[30px] font-semibold leading-[36px] text-[#323232]"
+              class="relative z-[169] h-[36px] shrink-0 basis-auto self-stretch whitespace-nowrap text-left font-['Onest'] text-[30px] font-semibold  text-[#323232]"
             >
               Ресурсное состояние и восстановление
             </span>
@@ -624,7 +624,7 @@
                 class="relative z-[174] flex w-[96px] shrink-0 flex-nowrap items-center justify-center gap-[10px] rounded-[100px] border border-solid border-[#63845c] pb-[5px] pl-[10px] pr-[10px] pt-[5px]"
               >
                 <span
-                  class="relative z-[175] h-[20px] shrink-0 basis-auto whitespace-nowrap text-left font-['Onest'] text-[16px] font-bold leading-[20px] text-[#63845c]"
+                  class="relative z-[175] h-[20px] shrink-0 basis-auto whitespace-nowrap text-left font-['Onest'] text-[16px] font-bold  text-[#63845c]"
                 >
                   Модуль 3
                 </span>
@@ -633,14 +633,14 @@
                 class="relative z-[176] flex w-[86px] shrink-0 flex-nowrap items-center justify-center gap-[10px] rounded-[100px] border border-solid border-[#63845c] pb-[5px] pl-[10px] pr-[10px] pt-[5px]"
               >
                 <span
-                  class="relative z-[177] h-[20px] shrink-0 basis-auto whitespace-nowrap text-left font-['Onest'] text-[16px] font-bold leading-[20px] text-[#63845c]"
+                  class="relative z-[177] h-[20px] shrink-0 basis-auto whitespace-nowrap text-left font-['Onest'] text-[16px] font-bold  text-[#63845c]"
                 >
                   Месяц 3
                 </span>
               </div>
             </div>
             <span
-              class="relative z-[178] h-[36px] shrink-0 basis-auto self-stretch whitespace-nowrap text-left font-['Onest'] text-[30px] font-semibold leading-[36px] text-[#323232]"
+              class="relative z-[178] h-[36px] shrink-0 basis-auto self-stretch whitespace-nowrap text-left font-['Onest'] text-[30px] font-semibold  text-[#323232]"
             >
               Границы, баланс и уверенность
             </span>
@@ -684,7 +684,7 @@
                   class="relative z-[191] flex w-[87px] shrink-0 flex-nowrap items-center gap-[8px] rounded-[100px] border border-solid border-[#63845c] pb-[8px] pl-[12px] pr-[12px] pt-[8px]"
                 >
                   <span
-                    class="relative z-[192] h-[22px] shrink-0 basis-auto whitespace-nowrap text-left font-['Onest'] text-[17px] font-medium leading-[21.675px] text-[#63845c]"
+                    class="relative z-[192] h-[22px] shrink-0 basis-auto whitespace-nowrap text-left font-['Onest'] text-[17px] font-medium  text-[#63845c]"
                   >
                     Ментор
                   </span>
@@ -696,7 +696,7 @@
                     Ахмедов Санджар Акбарович
                   </span>
                   <span
-                    class="relative z-[195] h-[26px] shrink-0 basis-auto self-stretch whitespace-nowrap text-left font-['Onest'] text-[20px] font-semibold leading-[25.5px] text-[#63845c]"
+                    class="relative z-[195] h-[26px] shrink-0 basis-auto self-stretch whitespace-nowrap text-left font-['Onest'] text-[20px] font-semibold text-[#63845c]"
                   >
                     врач-психотерапевт, к.м.н., доцент с 37-летним стажем
                   </span>
@@ -704,12 +704,12 @@
               </div>
               <div class="relative z-[196] flex shrink-0 flex-col flex-nowrap items-start gap-[15px] self-stretch">
                 <span
-                  class="relative z-[197] h-[36px] shrink-0 basis-auto self-stretch whitespace-nowrap text-left font-['Onest'] text-[30px] font-semibold leading-[36px] text-[#323232]"
+                  class="relative z-[197] h-[36px] shrink-0 basis-auto self-stretch whitespace-nowrap text-left font-['Onest'] text-[30px] font-semibold  text-[#323232]"
                 >
                   О менторе
                 </span>
                 <span
-                  class="relative z-[198] flex h-[138px] w-[832px] shrink-0 items-start justify-start self-stretch text-left font-['Onest'] text-[18px] font-normal leading-[22.95px] text-[#585958]"
+                  class="relative z-[198] flex h-[138px] w-[832px] shrink-0 items-start justify-start self-stretch text-left font-['Onest'] text-[18px] font-normal text-[#585958]"
                 >
                   Автор уникальной методики стресс-менеджмента, обучил уже 200+ человек навыкам эмоциональной
                   саморегуляции.
@@ -808,7 +808,7 @@
             7 из 10 мест осталось
           </span>
           <span
-            class="relative z-[213] h-[26px] shrink-0 basis-auto self-stretch whitespace-nowrap text-center font-['Onest'] text-[20px] font-medium leading-[25.5px] text-[#848484] opacity-80"
+            class="relative z-[213] h-[26px] shrink-0 basis-auto self-stretch whitespace-nowrap text-center font-['Onest'] text-[20px] font-medium text-[#848484] opacity-80"
           >
             Успейте забронировать место на курс
           </span>
@@ -838,12 +838,12 @@
             </div>
             <div class="relative z-[236] flex shrink-0 flex-col flex-nowrap items-start gap-[8px] self-stretch">
               <span
-                class="relative z-[237] h-[22px] shrink-0 basis-auto self-stretch whitespace-nowrap text-left font-['Onest'] text-[17px] font-medium leading-[21.675px] text-[rgba(255,255,255,0.7)]"
+                class="relative z-[237] h-[22px] shrink-0 basis-auto self-stretch whitespace-nowrap text-left font-['Onest'] text-[17px] font-medium  text-[rgba(255,255,255,0.7)]"
               >
                 Даты проведения
               </span>
               <span
-                class="relative z-[238] flex h-[58px] w-[416px] shrink-0 items-start justify-start self-stretch text-left font-['Onest'] text-[24px] font-semibold leading-[29px] text-[#fff]"
+                class="relative z-[238] flex h-[58px] w-[416px] shrink-0 items-start justify-start self-stretch text-left font-['Onest'] text-[24px] font-semibold  text-[#fff]"
               >
                 10 июля – 10 октября 2025 (каждую среду и пятницу)
               </span>
@@ -857,18 +857,18 @@
             ></div>
             <div class="relative z-[246] flex shrink-0 flex-col flex-nowrap items-start gap-[8px] self-stretch">
               <span
-                class="relative z-[247] h-[22px] shrink-0 basis-auto self-stretch whitespace-nowrap text-left font-['Onest'] text-[17px] font-medium leading-[21.675px] text-[rgba(255,255,255,0.7)]"
+                class="relative z-[247] h-[22px] shrink-0 basis-auto self-stretch whitespace-nowrap text-left font-['Onest'] text-[17px] font-medium  text-[rgba(255,255,255,0.7)]"
               >
                 Количество мест
               </span>
               <div class="relative z-[248] flex shrink-0 flex-col flex-nowrap items-start gap-[2px] self-stretch">
                 <span
-                  class="relative z-[249] h-[29px] shrink-0 basis-auto self-stretch whitespace-nowrap text-left font-['Onest'] text-[24px] font-semibold leading-[29px] text-[#fff]"
+                  class="relative z-[249] h-[29px] shrink-0 basis-auto self-stretch whitespace-nowrap text-left font-['Onest'] text-[24px] font-semibold  text-[#fff]"
                 >
                   10 мест
                 </span>
                 <span
-                  class="relative z-[250] h-[20px] shrink-0 basis-auto self-stretch whitespace-nowrap text-left font-['Onest'] text-[16px] font-normal leading-[20px] text-[#fff]"
+                  class="relative z-[250] h-[20px] shrink-0 basis-auto self-stretch whitespace-nowrap text-left font-['Onest'] text-[16px] font-normal  text-[#fff]"
                 >
                   *предварительная запись
                 </span>
@@ -885,12 +885,12 @@
             </div>
             <div class="relative z-[262] flex shrink-0 flex-col flex-nowrap items-start gap-[8px] self-stretch">
               <span
-                class="relative z-[263] h-[22px] shrink-0 basis-auto self-stretch whitespace-nowrap text-left font-['Onest'] text-[17px] font-medium leading-[21.675px] text-[rgba(255,255,255,0.7)]"
+                class="relative z-[263] h-[22px] shrink-0 basis-auto self-stretch whitespace-nowrap text-left font-['Onest'] text-[17px] font-medium  text-[rgba(255,255,255,0.7)]"
               >
                 Время проведения
               </span>
               <span
-                class="relative z-[264] h-[29px] shrink-0 basis-auto self-stretch whitespace-nowrap text-left font-['Onest'] text-[24px] font-semibold leading-[29px] text-[#fff]"
+                class="relative z-[264] h-[29px] shrink-0 basis-auto self-stretch whitespace-nowrap text-left font-['Onest'] text-[24px] font-semibold  text-[#fff]"
               >
                 с 17:00 до 19:00
               </span>
@@ -904,12 +904,12 @@
             ></div>
             <div class="relative z-[241] flex shrink-0 flex-col flex-nowrap items-start gap-[8px] self-stretch">
               <span
-                class="relative z-[242] h-[22px] shrink-0 basis-auto self-stretch whitespace-nowrap text-left font-['Onest'] text-[17px] font-medium leading-[21.675px] text-[rgba(255,255,255,0.7)]"
+                class="relative z-[242] h-[22px] shrink-0 basis-auto self-stretch whitespace-nowrap text-left font-['Onest'] text-[17px] font-medium  text-[rgba(255,255,255,0.7)]"
               >
                 Место проведения
               </span>
               <span
-                class="relative z-[243] flex h-[58px] w-[386px] shrink-0 items-start justify-start self-stretch text-left font-['Onest'] text-[24px] font-semibold leading-[29px] text-[#fff]"
+                class="relative z-[243] flex h-[58px] w-[386px] shrink-0 items-start justify-start self-stretch text-left font-['Onest'] text-[24px] font-semibold  text-[#fff]"
               >
                 г. Ташкент, ул. Навнихол, 3-й проезд, д.7, учебный зал №5
               </span>
@@ -925,18 +925,18 @@
             </div>
             <div class="relative z-[254] flex shrink-0 flex-col flex-nowrap items-start gap-[8px] self-stretch">
               <span
-                class="relative z-[255] h-[22px] shrink-0 basis-auto self-stretch whitespace-nowrap text-left font-['Onest'] text-[17px] font-medium leading-[21.675px] text-[rgba(255,255,255,0.7)]"
+                class="relative z-[255] h-[22px] shrink-0 basis-auto self-stretch whitespace-nowrap text-left font-['Onest'] text-[17px] font-medium  text-[rgba(255,255,255,0.7)]"
               >
                 Стоимость за весь курс
               </span>
               <div class="relative z-[256] flex shrink-0 flex-col flex-nowrap items-start gap-[2px] self-stretch">
                 <span
-                  class="relative z-[257] h-[29px] shrink-0 basis-auto self-stretch whitespace-nowrap text-left font-['Onest'] text-[24px] font-semibold leading-[29px] text-[#fff]"
+                  class="relative z-[257] h-[29px] shrink-0 basis-auto self-stretch whitespace-nowrap text-left font-['Onest'] text-[24px] font-semibold  text-[#fff]"
                 >
                   7 000 000 сум
                 </span>
                 <span
-                  class="relative z-[258] h-[20px] shrink-0 basis-auto self-stretch whitespace-nowrap text-left font-['Onest'] text-[16px] font-normal leading-[20px] text-[#fff]"
+                  class="relative z-[258] h-[20px] shrink-0 basis-auto self-stretch whitespace-nowrap text-left font-['Onest'] text-[16px] font-normal  text-[#fff]"
                 >
                   *возможна оплата по месяцам
                 </span>
@@ -951,12 +951,12 @@
             ></div>
             <div class="relative z-[267] flex shrink-0 flex-col flex-nowrap items-start gap-[8px] self-stretch">
               <span
-                class="relative z-[268] h-[22px] shrink-0 basis-auto self-stretch whitespace-nowrap text-left font-['Onest'] text-[17px] font-medium leading-[21.675px] text-[rgba(255,255,255,0.7)]"
+                class="relative z-[268] h-[22px] shrink-0 basis-auto self-stretch whitespace-nowrap text-left font-['Onest'] text-[17px] font-medium  text-[rgba(255,255,255,0.7)]"
               >
                 По вопросам курса
               </span>
               <span
-                class="relative z-[269] flex h-[58px] w-[386px] shrink-0 items-start justify-start self-stretch text-left font-['Onest'] text-[24px] font-semibold leading-[29px] text-[#fff]"
+                class="relative z-[269] flex h-[58px] w-[386px] shrink-0 items-start justify-start self-stretch text-left font-['Onest'] text-[24px] font-semibold  text-[#fff]"
               >
                 +998 90 123 45 67 name@domain.com
               </span>
@@ -1005,12 +1005,12 @@
           <div class="relative z-[277] flex shrink-0 flex-col flex-nowrap items-start gap-[15px] self-stretch">
             <div class="relative z-[278] flex shrink-0 flex-col flex-nowrap items-start gap-[2px] self-stretch">
               <span
-                class="relative z-[279] h-[28px] shrink-0 basis-auto self-stretch whitespace-nowrap text-left font-['Onest'] text-[22px] font-semibold leading-[28px] text-[#323232]"
+                class="relative z-[279] h-[28px] shrink-0 basis-auto self-stretch whitespace-nowrap text-left font-['Onest'] text-[22px] font-semibold  text-[#323232]"
               >
                 Анастасия
               </span>
               <span
-                class="relative z-[280] h-[20px] shrink-0 basis-auto whitespace-nowrap text-left font-['Onest'] text-[16px] font-normal leading-[20px] text-[#848484]"
+                class="relative z-[280] h-[20px] shrink-0 basis-auto whitespace-nowrap text-left font-['Onest'] text-[16px] font-normal  text-[#848484]"
               >
                 28 лет
               </span>
@@ -1030,15 +1030,15 @@
               </div>
               <div class="relative z-[285] flex w-[160px] shrink-0 flex-nowrap items-center gap-[10px]">
                 <span
-                  class="relative z-[286] h-[20px] shrink-0 basis-auto whitespace-nowrap text-left font-['Onest'] text-[16px] font-normal leading-[20px] text-[#848484]"
+                  class="relative z-[286] h-[20px] shrink-0 basis-auto whitespace-nowrap text-left font-['Onest'] text-[16px] font-normal  text-[#848484]"
                 >
                   Кому:
                 </span>
                 <div
-                  class="relative z-[287] w-[106px] shrink-0 whitespace-nowrap text-left font-['Onest'] text-[16px] font-normal leading-[20px]"
+                  class="relative z-[287] w-[106px] shrink-0 whitespace-nowrap text-left font-['Onest'] text-[16px] font-normal "
                 >
                   <span
-                    class="relative text-left font-['Onest'] text-[16px] font-normal leading-[20.4px] text-[#848484] underline"
+                    class="relative text-left font-['Onest'] text-[16px] font-normal  text-[#848484] underline"
                   >
                     Ахмедов С. А.
                   </span>
@@ -1047,7 +1047,7 @@
             </div>
           </div>
           <span
-            class="relative z-[288] flex h-[247px] w-[305px] shrink-0 items-start justify-start self-stretch overflow-hidden text-left font-['Onest'] text-[17px] font-normal leading-[21.675px] text-[#323232]"
+            class="relative z-[288] flex h-[247px] w-[305px] shrink-0 items-start justify-start self-stretch overflow-hidden text-left font-['Onest'] text-[17px] font-normal  text-[#323232]"
           >
             Когда мы начали работать, я чувствовала себя потерянной и обесточенной. Каждое утро было похоже на борьбу с
             собой, с тревогой, с ощущением, что я живу не свою жизнь. Внутри была постоянная усталость, раздражение,
@@ -1073,12 +1073,12 @@
           <div class="relative z-[293] flex shrink-0 flex-col flex-nowrap items-start gap-[15px] self-stretch">
             <div class="relative z-[294] flex shrink-0 flex-col flex-nowrap items-start gap-[2px] self-stretch">
               <span
-                class="relative z-[295] h-[28px] shrink-0 basis-auto self-stretch whitespace-nowrap text-left font-['Onest'] text-[22px] font-semibold leading-[28px] text-[#323232]"
+                class="relative z-[295] h-[28px] shrink-0 basis-auto self-stretch whitespace-nowrap text-left font-['Onest'] text-[22px] font-semibold  text-[#323232]"
               >
                 Олег
               </span>
               <span
-                class="relative z-[296] h-[20px] shrink-0 basis-auto whitespace-nowrap text-left font-['Onest'] text-[16px] font-normal leading-[20px] text-[#848484]"
+                class="relative z-[296] h-[20px] shrink-0 basis-auto whitespace-nowrap text-left font-['Onest'] text-[16px] font-normal  text-[#848484]"
               >
                 34 года
               </span>
@@ -1098,15 +1098,15 @@
               </div>
               <div class="relative z-[301] flex w-[160px] shrink-0 flex-nowrap items-center gap-[10px]">
                 <span
-                  class="relative z-[302] h-[20px] shrink-0 basis-auto whitespace-nowrap text-left font-['Onest'] text-[16px] font-normal leading-[20px] text-[#848484]"
+                  class="relative z-[302] h-[20px] shrink-0 basis-auto whitespace-nowrap text-left font-['Onest'] text-[16px] font-normal  text-[#848484]"
                 >
                   Кому:
                 </span>
                 <div
-                  class="relative z-[303] w-[106px] shrink-0 whitespace-nowrap text-left font-['Onest'] text-[16px] font-normal leading-[20px]"
+                  class="relative z-[303] w-[106px] shrink-0 whitespace-nowrap text-left font-['Onest'] text-[16px] font-normal "
                 >
                   <span
-                    class="relative text-left font-['Onest'] text-[16px] font-normal leading-[20.4px] text-[#848484] underline"
+                    class="relative text-left font-['Onest'] text-[16px] font-normal  text-[#848484] underline"
                   >
                     Ахмедов С. А.
                   </span>
@@ -1115,7 +1115,7 @@
             </div>
           </div>
           <span
-            class="relative z-[304] flex h-[247px] w-[305px] shrink-0 items-start justify-start self-stretch overflow-hidden text-left font-['Onest'] text-[17px] font-normal leading-[21.675px] text-[#323232]"
+            class="relative z-[304] flex h-[247px] w-[305px] shrink-0 items-start justify-start self-stretch overflow-hidden text-left font-['Onest'] text-[17px] font-normal  text-[#323232]"
           >
             После нескольких сеансов на платформе я почувствовала реальные улучшения. Спасибо моему психологу за
             профессионализм и поддержку!
@@ -1127,12 +1127,12 @@
           <div class="relative z-[306] flex shrink-0 flex-col flex-nowrap items-start gap-[15px] self-stretch">
             <div class="relative z-[307] flex shrink-0 flex-col flex-nowrap items-start gap-[2px] self-stretch">
               <span
-                class="relative z-[308] h-[28px] shrink-0 basis-auto self-stretch whitespace-nowrap text-left font-['Onest'] text-[22px] font-semibold leading-[28px] text-[#323232]"
+                class="relative z-[308] h-[28px] shrink-0 basis-auto self-stretch whitespace-nowrap text-left font-['Onest'] text-[22px] font-semibold  text-[#323232]"
               >
                 Мария
               </span>
               <span
-                class="relative z-[309] h-[20px] shrink-0 basis-auto whitespace-nowrap text-left font-['Onest'] text-[16px] font-normal leading-[20px] text-[#848484]"
+                class="relative z-[309] h-[20px] shrink-0 basis-auto whitespace-nowrap text-left font-['Onest'] text-[16px] font-normal  text-[#848484]"
               >
                 30 лет
               </span>
@@ -1152,15 +1152,15 @@
               </div>
               <div class="relative z-[314] flex w-[160px] shrink-0 flex-nowrap items-center gap-[10px]">
                 <span
-                  class="relative z-[315] h-[20px] shrink-0 basis-auto whitespace-nowrap text-left font-['Onest'] text-[16px] font-normal leading-[20px] text-[#848484]"
+                  class="relative z-[315] h-[20px] shrink-0 basis-auto whitespace-nowrap text-left font-['Onest'] text-[16px] font-normal  text-[#848484]"
                 >
                   Кому:
                 </span>
                 <div
-                  class="relative z-[316] w-[106px] shrink-0 whitespace-nowrap text-left font-['Onest'] text-[16px] font-normal leading-[20px]"
+                  class="relative z-[316] w-[106px] shrink-0 whitespace-nowrap text-left font-['Onest'] text-[16px] font-normal "
                 >
                   <span
-                    class="relative text-left font-['Onest'] text-[16px] font-normal leading-[20.4px] text-[#848484] underline"
+                    class="relative text-left font-['Onest'] text-[16px] font-normal  text-[#848484] underline"
                   >
                     Ахмедов С. А.
                   </span>
@@ -1169,7 +1169,7 @@
             </div>
           </div>
           <span
-            class="relative z-[317] flex h-[247px] w-[305px] shrink-0 items-start justify-start self-stretch overflow-hidden text-left font-['Onest'] text-[17px] font-normal leading-[21.675px] text-[#323232]"
+            class="relative z-[317] flex h-[247px] w-[305px] shrink-0 items-start justify-start self-stretch overflow-hidden text-left font-['Onest'] text-[17px] font-normal  text-[#323232]"
           >
             Я пришла в терапию с ощущением, что постоянно живу «на автомате». Работа, бытовые заботы, ожидания
             окружающих — всё это будто вытеснило меня саму. Я не понимала, чего хочу, чувствовала вину, даже когда
@@ -1196,12 +1196,12 @@
           <div class="relative z-[322] flex shrink-0 flex-col flex-nowrap items-start gap-[15px] self-stretch">
             <div class="relative z-[323] flex shrink-0 flex-col flex-nowrap items-start gap-[2px] self-stretch">
               <span
-                class="relative z-[324] h-[28px] shrink-0 basis-auto self-stretch whitespace-nowrap text-left font-['Onest'] text-[22px] font-semibold leading-[28px] text-[#323232]"
+                class="relative z-[324] h-[28px] shrink-0 basis-auto self-stretch whitespace-nowrap text-left font-['Onest'] text-[22px] font-semibold  text-[#323232]"
               >
                 Максим
               </span>
               <span
-                class="relative z-[325] h-[20px] shrink-0 basis-auto whitespace-nowrap text-left font-['Onest'] text-[16px] font-normal leading-[20px] text-[#848484]"
+                class="relative z-[325] h-[20px] shrink-0 basis-auto whitespace-nowrap text-left font-['Onest'] text-[16px] font-normal  text-[#848484]"
               >
                 26 лет
               </span>
@@ -1221,15 +1221,15 @@
               </div>
               <div class="relative z-[330] flex w-[160px] shrink-0 flex-nowrap items-center gap-[10px]">
                 <span
-                  class="relative z-[331] h-[20px] shrink-0 basis-auto whitespace-nowrap text-left font-['Onest'] text-[16px] font-normal leading-[20px] text-[#848484]"
+                  class="relative z-[331] h-[20px] shrink-0 basis-auto whitespace-nowrap text-left font-['Onest'] text-[16px] font-normal  text-[#848484]"
                 >
                   Кому:
                 </span>
                 <div
-                  class="relative z-[332] w-[106px] shrink-0 whitespace-nowrap text-left font-['Onest'] text-[16px] font-normal leading-[20px]"
+                  class="relative z-[332] w-[106px] shrink-0 whitespace-nowrap text-left font-['Onest'] text-[16px] font-normal "
                 >
                   <span
-                    class="relative text-left font-['Onest'] text-[16px] font-normal leading-[20.4px] text-[#848484] underline"
+                    class="relative text-left font-['Onest'] text-[16px] font-normal  text-[#848484] underline"
                   >
                     Ахмедов С. А.
                   </span>
@@ -1238,7 +1238,7 @@
             </div>
           </div>
           <span
-            class="relative z-[333] flex h-[247px] w-[305px] shrink-0 items-start justify-start self-stretch overflow-hidden text-left font-['Onest'] text-[17px] font-normal leading-[21.675px] text-[#323232]"
+            class="relative z-[333] flex h-[247px] w-[305px] shrink-0 items-start justify-start self-stretch overflow-hidden text-left font-['Onest'] text-[17px] font-normal  text-[#323232]"
           >
             Я научился дышать, останавливаться, не накручивать себя до бессонницы. Это было не быстро, но очень ценно.
             Сейчас я спокойнее, внимательнее к себе и наконец могу высыпаться
@@ -1250,12 +1250,12 @@
           <div class="relative z-[335] flex shrink-0 flex-col flex-nowrap items-start gap-[15px] self-stretch">
             <div class="relative z-[336] flex shrink-0 flex-col flex-nowrap items-start gap-[2px] self-stretch">
               <span
-                class="relative z-[337] h-[28px] shrink-0 basis-auto self-stretch whitespace-nowrap text-left font-['Onest'] text-[22px] font-semibold leading-[28px] text-[#323232]"
+                class="relative z-[337] h-[28px] shrink-0 basis-auto self-stretch whitespace-nowrap text-left font-['Onest'] text-[22px] font-semibold  text-[#323232]"
               >
                 Лера
               </span>
               <span
-                class="relative z-[338] h-[20px] shrink-0 basis-auto whitespace-nowrap text-left font-['Onest'] text-[16px] font-normal leading-[20px] text-[#848484]"
+                class="relative z-[338] h-[20px] shrink-0 basis-auto whitespace-nowrap text-left font-['Onest'] text-[16px] font-normal  text-[#848484]"
               >
                 42 года
               </span>
@@ -1275,15 +1275,15 @@
               </div>
               <div class="relative z-[343] flex w-[160px] shrink-0 flex-nowrap items-center gap-[10px]">
                 <span
-                  class="relative z-[344] h-[20px] shrink-0 basis-auto whitespace-nowrap text-left font-['Onest'] text-[16px] font-normal leading-[20px] text-[#848484]"
+                  class="relative z-[344] h-[20px] shrink-0 basis-auto whitespace-nowrap text-left font-['Onest'] text-[16px] font-normal  text-[#848484]"
                 >
                   Кому:
                 </span>
                 <div
-                  class="relative z-[345] w-[106px] shrink-0 whitespace-nowrap text-left font-['Onest'] text-[16px] font-normal leading-[20px]"
+                  class="relative z-[345] w-[106px] shrink-0 whitespace-nowrap text-left font-['Onest'] text-[16px] font-normal "
                 >
                   <span
-                    class="relative text-left font-['Onest'] text-[16px] font-normal leading-[20.4px] text-[#848484] underline"
+                    class="relative text-left font-['Onest'] text-[16px] font-normal  text-[#848484] underline"
                   >
                     Ахмедов С. А.
                   </span>
@@ -1292,7 +1292,7 @@
             </div>
           </div>
           <span
-            class="relative z-[346] flex h-[247px] w-[305px] shrink-0 items-start justify-start self-stretch overflow-hidden text-left font-['Onest'] text-[17px] font-normal leading-[21.675px] text-[#323232]"
+            class="relative z-[346] flex h-[247px] w-[305px] shrink-0 items-start justify-start self-stretch overflow-hidden text-left font-['Onest'] text-[17px] font-normal  text-[#323232]"
           >
             Я впервые позволила себе быть уязвимой и не бояться осуждения. Спасибо за бережность и профессионализм. Это
             изменило моё отношение к себе
@@ -1363,7 +1363,7 @@
               Присоединяйтесь к обучению
             </span>
             <span
-              class="relative z-[406] flex h-[52px] w-[467px] shrink-0 items-start justify-start text-left font-['Onest'] text-[20px] font-normal leading-[25.5px] text-[#fff]"
+              class="relative z-[406] flex h-[52px] w-[467px] shrink-0 items-start justify-start text-left font-['Onest'] text-[20px] font-normal text-[#fff]"
             >
               Освойте новые навыки, получайте поддержку от экспертов и применяйте знания на практике
             </span>
@@ -1375,10 +1375,10 @@
               class="relative z-[408] h-[22px] w-[22px] shrink-0 overflow-hidden bg-[url(https://codia-f2c.s3.us-west-1.amazonaws.com/image/2025-07-21/9kNhCK0Cxp.png)] bg-cover bg-no-repeat"
             ></div>
             <div
-              class="relative z-[409] w-[184px] shrink-0 whitespace-nowrap text-left font-['Onest'] text-[22px] font-semibold leading-[28px]"
+              class="relative z-[409] w-[184px] shrink-0 whitespace-nowrap text-left font-['Onest'] text-[22px] font-semibold "
             >
               <span
-                class="relative text-left font-['Onest'] text-[22px] font-semibold leading-[28.05px] text-[#fff] underline"
+                class="relative text-left font-['Onest'] text-[22px] font-semibold  text-[#fff] underline"
               >
                 +998 91 137 55 16
               </span>
@@ -1391,7 +1391,7 @@
               class="relative z-[395] flex shrink-0 flex-nowrap items-start gap-[10px] self-stretch border-t border-solid border-t-[#fff] pb-[15px] pl-0 pr-0 pt-0"
             >
               <span
-                class="relative z-[396] h-[26px] shrink-0 basis-auto whitespace-nowrap text-left font-['Onest'] text-[20px] font-normal leading-[25.5px] text-[#fff]"
+                class="relative z-[396] h-[26px] shrink-0 basis-auto whitespace-nowrap text-left font-['Onest'] text-[20px] font-normal text-[#fff]"
               >
                 ФИО
               </span>
@@ -1400,7 +1400,7 @@
               class="relative z-[397] flex shrink-0 flex-nowrap items-start gap-[10px] self-stretch border-t border-solid border-t-[#fff] pb-[15px] pl-0 pr-0 pt-0"
             >
               <span
-                class="relative z-[398] h-[26px] shrink-0 basis-auto whitespace-nowrap text-left font-['Onest'] text-[20px] font-normal leading-[25.5px] text-[#fff]"
+                class="relative z-[398] h-[26px] shrink-0 basis-auto whitespace-nowrap text-left font-['Onest'] text-[20px] font-normal text-[#fff]"
               >
                 Номер телефона
               </span>
@@ -1409,7 +1409,7 @@
               class="relative z-[399] flex shrink-0 flex-nowrap items-start gap-[10px] self-stretch border-t border-solid border-t-[#fff] pb-[15px] pl-0 pr-0 pt-0"
             >
               <span
-                class="relative z-[400] h-[26px] shrink-0 basis-auto whitespace-nowrap text-left font-['Onest'] text-[20px] font-normal leading-[25.5px] text-[#fff]"
+                class="relative z-[400] h-[26px] shrink-0 basis-auto whitespace-nowrap text-left font-['Onest'] text-[20px] font-normal text-[#fff]"
               >
                 Комментарий
               </span>
@@ -1441,7 +1441,7 @@
         >
           <div class="relative z-[371] flex shrink-0 flex-nowrap items-center justify-between self-stretch">
             <span
-              class="relative z-[372] h-[28px] shrink-0 basis-auto whitespace-nowrap text-left font-['Onest'] text-[22px] font-semibold leading-[28px] text-[#323232]"
+              class="relative z-[372] h-[28px] shrink-0 basis-auto whitespace-nowrap text-left font-['Onest'] text-[22px] font-semibold  text-[#323232]"
             >
               Что делать, если я пропущу одно из занятий?
             </span>
@@ -1450,7 +1450,7 @@
             ></div>
           </div>
           <span
-            class="relative z-[374] flex h-[46px] w-[1390px] shrink-0 items-start justify-start self-stretch text-left font-['Onest'] text-[18px] font-normal leading-[22.95px] text-[#585958]"
+            class="relative z-[374] flex h-[46px] w-[1390px] shrink-0 items-start justify-start self-stretch text-left font-['Onest'] text-[18px] font-normal text-[#585958]"
           >
             Вы сможете получить краткий конспект, материалы занятия и при необходимости — индивидуальную консультацию с
             ментором, чтобы восполнить пропущенное. Мы поддерживаем участников на каждом этапе
@@ -1461,7 +1461,7 @@
         >
           <div class="relative z-[376] flex shrink-0 flex-nowrap items-center justify-between self-stretch">
             <span
-              class="relative z-[377] h-[28px] shrink-0 basis-auto whitespace-nowrap text-left font-['Onest'] text-[22px] font-semibold leading-[28px] text-[#323232]"
+              class="relative z-[377] h-[28px] shrink-0 basis-auto whitespace-nowrap text-left font-['Onest'] text-[22px] font-semibold  text-[#323232]"
             >
               Нужно ли иметь психологическое образование, чтобы пройти курс?
             </span>
@@ -1475,7 +1475,7 @@
         >
           <div class="relative z-[380] flex shrink-0 flex-nowrap items-center justify-between self-stretch">
             <span
-              class="relative z-[381] h-[28px] shrink-0 basis-auto whitespace-nowrap text-left font-['Onest'] text-[22px] font-semibold leading-[28px] text-[#323232]"
+              class="relative z-[381] h-[28px] shrink-0 basis-auto whitespace-nowrap text-left font-['Onest'] text-[22px] font-semibold  text-[#323232]"
             >
               Сколько человек в группе и какой формат общения с ментором?
             </span>
@@ -1489,7 +1489,7 @@
         >
           <div class="relative z-[384] flex shrink-0 flex-nowrap items-center justify-between self-stretch">
             <span
-              class="relative z-[385] h-[28px] shrink-0 basis-auto whitespace-nowrap text-left font-['Onest'] text-[22px] font-semibold leading-[28px] text-[#323232]"
+              class="relative z-[385] h-[28px] shrink-0 basis-auto whitespace-nowrap text-left font-['Onest'] text-[22px] font-semibold  text-[#323232]"
             >
               Будут ли практические задания между занятиями?
             </span>
@@ -1503,7 +1503,7 @@
         >
           <div class="relative z-[388] flex shrink-0 flex-nowrap items-center justify-between self-stretch">
             <span
-              class="relative z-[389] h-[28px] shrink-0 basis-auto whitespace-nowrap text-left font-['Onest'] text-[22px] font-semibold leading-[28px] text-[#323232]"
+              class="relative z-[389] h-[28px] shrink-0 basis-auto whitespace-nowrap text-left font-['Onest'] text-[22px] font-semibold  text-[#323232]"
             >
               Что я получу по завершении курса — сертификат, рекомендации?
             </span>

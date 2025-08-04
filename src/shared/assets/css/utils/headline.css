@@ -101,22 +101,22 @@
     }
 
 
-    .body-20 {
-        font-size: 17px;
-        line-height: 22px;
-    }
-
-    .body-18 {
-        font-size: 16px;
-        line-height: 20px;
-    }
-
     .body-17 {
         font-size: 15px;
         line-height: 19px;
     }
 
     .body-16 {
+        font-size: 14px;
+        line-height: 18px;
+    }
+
+    .body-15 {
+        font-size: 15px;
+        line-height: 19px;
+    }
+
+    .body-14 {
         font-size: 14px;
         line-height: 18px;
     }

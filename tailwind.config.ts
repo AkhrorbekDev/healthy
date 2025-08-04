@@ -36,6 +36,38 @@ const config: Config = {
   theme: {
     extend: {
       colors,
+      fontSize: {
+        // Headlines
+        "headline-1": ["58px", { lineHeight: "74px" }],
+        "headline-2": ["50px", { lineHeight: "64px" }],
+        "headline-3": ["40px", { lineHeight: "48px" }],
+        "headline-4": ["30px", { lineHeight: "36px" }],
+
+        // Subtitles
+        "subtitle-24": ["24px", { lineHeight: "29px" }],
+        "subtitle-22": ["22px", { lineHeight: "28px" }],
+        "subtitle-20": ["20px", { lineHeight: "25px" }],
+        "subtitle-18": ["18px", { lineHeight: "23px" }],
+        "subtitle-16": ["16px", { lineHeight: "22px" }],
+
+        // Body
+        "body-20": ["20px", { lineHeight: "25px" }],
+        "body-18": ["18px", { lineHeight: "23px" }],
+        "body-17": ["17px", { lineHeight: "22px" }],
+        "body-16": ["16px", { lineHeight: "20px" }],
+
+        // Mobile (used via responsive classes)
+        "mobile-headline-1": ["32px", { lineHeight: "41px" }],
+        "mobile-headline-2": ["28px", { lineHeight: "36px" }],
+        "mobile-subtitle-22": ["20px", { lineHeight: "25px" }],
+        "mobile-subtitle-20": ["18px", { lineHeight: "23px" }],
+        "mobile-subtitle-18": ["16px", { lineHeight: "20px" }],
+        "mobile-subtitle-16": ["16px", { lineHeight: "22px" }],
+        "mobile-body-17": ["15px", { lineHeight: "19px" }],
+        "mobile-body-16": ["14px", { lineHeight: "18px" }],
+        "mobile-body-15": ["15px", { lineHeight: "19px" }],
+        "mobile-body-14": ["14px", { lineHeight: "18px" }]
+      },
       fontFamily: {
         sans: ["Onest", "sans-serif"],
         manrope: ["Manrope", "sans-serif"],

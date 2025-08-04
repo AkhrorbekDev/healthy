@@ -2,27 +2,27 @@
 import AppSection from "~/widgets/layout/app-section.vue"
 import AppSectionFluid from "~/widgets/layout/app-section-fluid.vue"
 import HomeNewsCard from "~/features/home/ui/home-news-card.vue"
+
+const { t } = useI18n({ useScope: "local" })
 </script>
 
 <template>
   <app-section-fluid class="py-[40px] md:py-[120px]">
     <div class="relative bg-[#fff] text-[0px]">
       <span class="headline-1 text-left font-['Onest'] text-[50px] font-semibold text-[#323232]">
-        Блог – последние статьи
+        {{ t("title") }}
       </span>
-      <div class="relative z-[174] mb-0 mr-0 mt-[40px] grid grid-cols-3 gap-[19px]">
+      <div class="mt-[20px] grid grid-cols-1 gap-[19px] md:mt-[40px] md:grid-cols-3">
         <home-news-card @click="$router.push('/blog/123')" />
         <home-news-card @click="$router.push('/blog/123')" />
         <home-news-card @click="$router.push('/blog/123')" />
       </div>
       <nuxt-link-locale
-        class="relative z-[203] mx-auto mb-0 mt-[40px] flex w-[224px] flex-nowrap items-center justify-center gap-[10px] rounded-[15px] bg-[#63845c] px-[20px] py-[16px]"
+        class="mx-auto mt-[30px] flex w-[224px] flex-nowrap items-center justify-center gap-[10px] rounded-[15px] bg-[#63845c] px-[20px] py-[14px] md:mt-[40px] md:py-[16px]"
         to="/blog"
       >
-        <span
-          class="relative z-[204] h-[23px] shrink-0 basis-auto whitespace-nowrap text-left font-['Manrope'] text-[17px] font-bold leading-[23px] text-[#fff]"
-        >
-          Все статьи
+        <span class="font-['Manrope'] text-[15px] font-bold leading-[23px] text-[#fff] md:text-[17px]">
+          {{ t("read_more") }}
         </span>
       </nuxt-link-locale>
     </div>
@@ -30,3 +30,16 @@ import HomeNewsCard from "~/features/home/ui/home-news-card.vue"
 </template>
 
 <style scoped></style>
+
+<i18n>
+{
+  "ru": {
+    "title": "Блог – последние статьи",
+    "read_more": "Все статьи"
+  },
+  "uz": {
+    "title": "Blog – so'nggi maqolalar",
+    "read_more": "Barcha maqolalar"
+  }
+}
+</i18n>

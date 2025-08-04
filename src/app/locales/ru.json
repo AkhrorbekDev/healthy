@@ -8,7 +8,10 @@
     "save": "Сохранить",
     "sign_in": "Войти",
     "sign_out": "Выйти",
-    "toggle_sidebar": "Переключить боковую панель"
+    "toggle_sidebar": "Переключить боковую панель",
+    "add_review": "Оставить отзыв",
+    "load_more": "Загрузить еще",
+    "sign": "Записаться"
   },
   "descriptions": {
     "roles": "Список ролей",
@@ -38,7 +41,8 @@
     "role": "Роль",
     "roles": "Роли",
     "updated_at": "Обновлено в",
-    "users": "Пользователи"
+    "users": "Пользователи",
+    "for_specialist": "Специалистам"
   },
   "messages": {
     "confirm": {
