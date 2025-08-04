@@ -27,7 +27,7 @@ const carouselConfig = computed<Partial<CarouselConfig>>(() => ({
     <h2 class="headline-2 relative whitespace-nowrap text-left font-['Onest'] font-semibold text-[#323232]">
       Наши специалисты
     </h2>
-    <div class="relative mt-[40px]">
+    <div class="relative mt-[20px] md:mt-[40px]">
       <carousel v-bind="carouselConfig" ref="carouselRef">
         <slide class="h-full w-full">
           <home-specialist-card />
@@ -44,14 +44,10 @@ const carouselConfig = computed<Partial<CarouselConfig>>(() => ({
       </carousel>
     </div>
     <nuxt-link-locale
-      class="relative z-[91] mx-auto mb-0 mt-[52px] flex w-[224px] flex-nowrap items-center justify-center gap-[10px] rounded-[15px] bg-[#63845c] px-[20px] py-[16px]"
+      class="mx-auto mt-[31px] block w-[200px] rounded-[15px] bg-[#63845c] py-[15px] text-center font-['Manrope'] text-[15px] font-bold text-[#fff] md:mt-[52px] md:w-[224px] md:px-[20px] md:py-[16px]"
       to="/specialisty"
     >
-      <span
-        class="relative z-[92] h-[23px] shrink-0 basis-auto whitespace-nowrap text-left font-['Manrope'] text-[17px] font-bold leading-[23px] text-[#fff]"
-      >
-        Все специалисты
-      </span>
+      <span>Все специалисты</span>
     </nuxt-link-locale>
   </app-section>
 </template>

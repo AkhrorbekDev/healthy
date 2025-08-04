@@ -1,5 +1,4 @@
 export { default as HomeHero } from "./home-hero.vue"
-export { default as HomeSpecialistSection } from "./home-specialist-section.vue"
 export { default as HomeSpecialistCard } from "./home-specialist-card.vue"
 export { default as HomeAbout } from "./home-about.vue"
 export { default as HomeAboutCard } from "./home-about-card.vue"

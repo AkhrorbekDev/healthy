@@ -9,7 +9,7 @@ import AppSectionFluid from "~/widgets/layout/app-section-fluid.vue"
   <app-section-fluid class="!bg-[#6f8f6e] py-[10px]">
     <div class="flex items-center justify-between">
       <nuxt-link-locale to="/">
-        <logo class="h-[70px] w-[70px] md:h-[80px] md:w-[80px]" alt="Logo" />
+        <logo class="h-[70px] w-[70px] text-white md:h-[80px] md:w-[80px]" alt="Logo" />
       </nuxt-link-locale>
       <div class="relative flex items-center gap-[20px] md:w-[160px]">
         <div

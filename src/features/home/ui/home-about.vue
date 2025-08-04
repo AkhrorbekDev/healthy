@@ -6,29 +6,41 @@ const { t, tm, rt } = useI18n({ useScope: "local" })
 </script>
 
 <template>
-  <app-section class="py-[40px] md:py-[120px]">
-    <div class="mb-[120px] flex flex-col md:flex-row md:items-center md:justify-between">
+  <app-section class="py-[80px] md:py-[120px]">
+    <div
+      class="mb-[80px] flex flex-col gap-[30px] md:mb-[120px] md:flex-row md:items-center md:justify-between md:gap-[60px]"
+    >
+      <div class="h-[275px] w-full overflow-hidden rounded-[20px] md:h-[559px] md:w-[670px]">
+        <img src="https://codia-f2c.s3.us-west-1.amazonaws.com/image/2025-07-20/rUsWz6jVNz.png" alt="" />
+      </div>
       <div
-        class="relative z-[234] h-[275px] w-full shrink-0 overflow-hidden rounded-[20px] bg-[url(https://codia-f2c.s3.us-west-1.amazonaws.com/image/2025-07-20/rUsWz6jVNz.png)] bg-cover bg-no-repeat md:h-[559px] md:w-[670px]"
-      ></div>
-      <div
-        class="relative z-[225] mt-[20px] flex shrink-0 flex-col flex-nowrap items-start gap-[60px] md:mt-0 md:w-[710px]"
+        class="flex shrink-0 flex-col flex-nowrap items-start justify-between gap-[30px] md:mt-0 md:w-[710px] md:gap-[60px]"
       >
-        <div class="relative z-[226] flex shrink-0 flex-col flex-nowrap items-start gap-[30px] self-stretch">
-          <div>
-            <span class="headline-1 text-left font-['Onest'] font-semibold text-[#323232]">
+        <div class="flex shrink-0 flex-col flex-nowrap items-start self-stretch">
+          <div class="mb-[15px] md:mb-[30px]">
+            <span
+              class="text-left font-['Onest'] text-mobile-headline-1 font-semibold text-[#323232] md:text-headline-2"
+            >
               {{ t("about_title") }}
             </span>
             <br />
-            <span class="headline-1 text-left font-['Onest'] font-semibold text-[#63845c]">
+            <span
+              class="text-left font-['Onest'] text-mobile-headline-1 font-semibold text-[#63845c] md:text-headline-2"
+            >
               {{ t("about_title3") }}
             </span>
           </div>
-          <span class="body-18 text-left font-['Onest'] text-[20px] font-normal text-[#323232]">
+          <span class="text-left font-['Onest'] text-mobile-body-16 font-normal text-[#323232] md:text-body-20">
             {{ t("about_description") }}
+            <br />
+            <br />
+            {{ t("about_description2") }}
+            <br />
+            <br />
+            {{ t("about_description3") }}
           </span>
         </div>
-        <div class="relative z-[229] flex w-full flex-col flex-nowrap gap-[15px] md:flex-row md:items-center">
+        <div class="flex w-full flex-col flex-nowrap gap-[15px] md:flex-row md:items-center">
           <ui-button class="w-full md:w-fit" variant="filled" label="Подобрать специалиста" />
           <ui-button
             class="w-full md:w-fit"
@@ -43,7 +55,7 @@ const { t, tm, rt } = useI18n({ useScope: "local" })
       <span class="headline-1 font-semibold text-[#323232]">
         {{ t("about_title2") }}
       </span>
-      <div class="mt-[30px] grid grid-cols-1 gap-[20px] md:grid-cols-4">
+      <div class="mt-[20px] grid grid-cols-1 gap-[10px] md:mt-[30px] md:grid-cols-4 md:gap-[20px]">
         <home-about-card
           v-for="(content, index) in tm('about_card')"
           :key="index"
@@ -64,7 +76,9 @@ const { t, tm, rt } = useI18n({ useScope: "local" })
     "about_title": "О проекте",
     "about_title2": "Наш подход",
     "about_title3": "Душевное здоровье",
-    "about_description": " Проект «Душевное Здоровье» создан Ахмедовым Санджаром Акбаровичем — врачом-психотерапевтом, к.м.н., доцентом. /n /n   Наша большая миссия — сделать качественную психотерапию доступной и помогать людям укреплять своё ментальное здоровье без избыточной фармакологии /n /n  Мы объединяем команду опытных специалистов, развиваем авторские образовательные курсы и всегда подбираем индивидуальный подход. Для нас важно, чтобы каждый смог получить поддержку, восстановить внутреннее равновесие и почувствовать гармонию с собой",
+    "about_description": " Проект «Душевное Здоровье» создан Ахмедовым Санджаром Акбаровичем — врачом-психотерапевтом, к.м.н., доцентом. ",
+    "about_description2": " Наша большая миссия — сделать качественную психотерапию доступной и помогать людям укреплять своё ментальное здоровье без избыточной фармакологии",
+    "about_description3": "  Мы объединяем команду опытных специалистов, развиваем авторские образовательные курсы и всегда подбираем индивидуальный подход. Для нас важно, чтобы каждый смог получить поддержку, восстановить внутреннее равновесие и почувствовать гармонию с собой",
     "about_card": [
       {
         "title": "Опытные специалисты",

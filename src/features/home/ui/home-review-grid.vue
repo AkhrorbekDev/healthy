@@ -7,15 +7,16 @@ import { Carousel, Slide } from "vue3-carousel"
 const { t } = useI18n({ useScope: "local" })
 const carouselRef = ref<CarouselMethods>()
 const carouselConfig = computed<Partial<CarouselConfig>>(() => ({
-  gap: 24,
   snapAlign: "start",
   wrapAround: true,
   breakpoints: {
     1024: {
-      itemsToShow: 4
+      itemsToShow: 4,
+      gap: 20
     },
-    640: {
-      itemsToShow: 1.5
+    360: {
+      itemsToShow: 1.15,
+      gap: 16
     }
   }
 }))
@@ -42,7 +43,7 @@ const carouselConfig = computed<Partial<CarouselConfig>>(() => ({
         </slide>
       </carousel>
     </div>
-    <div class="ml-auto mt-[21px] md:mt-[40px] flex w-[130px] flex-nowrap items-center gap-[10px]">
+    <div class="ml-auto mt-[21px] hidden w-[130px] flex-nowrap items-center gap-[10px] md:mt-[40px] md:flex">
       <div
         class="z-[168] flex h-[50px] w-[50px] shrink-0 flex-nowrap items-center justify-center gap-[10px] rounded-[30px] bg-[#fff] pb-[12px] pl-[12px] pr-[12px] pt-[12px] md:h-[60px] md:w-[60px]"
         @click="carouselRef?.prev()"

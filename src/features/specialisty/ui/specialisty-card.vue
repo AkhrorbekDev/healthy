@@ -1,5 +1,6 @@
 <template>
   <div
+    @click="$router.push('/specialisty/12')"
     class="flex w-full flex-col flex-nowrap items-start gap-[20px] rounded-[20px] bg-[#fff] p-[15px] md:flex-row md:p-[20px]"
   >
     <div class="flex items-start gap-[15px]">

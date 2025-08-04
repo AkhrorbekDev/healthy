@@ -342,7 +342,7 @@
               class="relative z-[107] h-[22px] w-[22px] shrink-0 overflow-hidden bg-[url(https://codia-f2c.s3.us-west-1.amazonaws.com/image/2025-07-21/poPOzi78LD.png)] bg-cover bg-no-repeat"
             ></div>
             <div
-              class="relative z-[108] w-[184px] shrink-0 whitespace-nowrap text-left font-['Onest'] text-[22px] font-semibold leading-[28px]"
+              class="relative z-[108] w-[184px] shrink-0 whitespace-nowrap text-left font-['Onest'] text-[22px] font-semibold "
             >
               <span
                 class="relative text-left font-['Onest'] text-[22px] font-semibold  text-[#fff] underline"

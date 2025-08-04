@@ -12,7 +12,7 @@ const carouselConfig = computed<Partial<CarouselConfig>>(() => ({
   wrapAround: true,
   breakpoints: {
     1024: {
-      itemsToShow: 3.5
+      itemsToShow: 2.5
     },
     640: {
       itemsToShow: 1.5

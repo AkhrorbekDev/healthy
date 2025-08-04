@@ -70,7 +70,7 @@
                     class="relative flex w-[183px] items-center justify-center gap-[10px] rounded-[100px] border border-solid border-[#63845c] pb-[5px] pl-[10px] pr-[10px] pt-[5px]"
                   >
                     <span
-                      class="relative h-[20px] shrink-0 basis-auto text-left font-['Onest'] text-[16px] font-bold leading-[20px] text-[#63845c]"
+                      class="relative h-[20px] shrink-0 basis-auto text-left font-['Onest'] text-[16px] font-bold  text-[#63845c]"
                     >
                       врач-психотерапевт
                     </span>
@@ -79,7 +79,7 @@
                     class="relative flex w-[205px] items-center justify-center gap-[10px] rounded-[100px] border border-solid border-[#63845c] pb-[5px] pl-[10px] pr-[10px] pt-[5px]"
                   >
                     <span
-                      class="relative h-[20px] shrink-0 basis-auto text-left font-['Onest'] text-[16px] font-bold leading-[20px] text-[#63845c]"
+                      class="relative h-[20px] shrink-0 basis-auto text-left font-['Onest'] text-[16px] font-bold  text-[#63845c]"
                     >
                       медицинский психолог
                     </span>
@@ -88,7 +88,7 @@
                     class="relative flex w-[176px] items-center justify-center gap-[10px] rounded-[100px] border border-solid border-[#63845c] pb-[5px] pl-[10px] pr-[10px] pt-[5px]"
                   >
                     <span
-                      class="relative h-[20px] shrink-0 basis-auto text-left font-['Onest'] text-[16px] font-bold leading-[20px] text-[#63845c]"
+                      class="relative h-[20px] shrink-0 basis-auto text-left font-['Onest'] text-[16px] font-bold  text-[#63845c]"
                     >
                       кандидат мед. наук
                     </span>
