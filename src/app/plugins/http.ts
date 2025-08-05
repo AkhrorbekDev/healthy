@@ -25,9 +25,9 @@ export default defineNuxtPlugin(() => {
       config.headers = config.headers || {}
       config.headers["Accept-Language"] = $i18n.locale.value
 
-      const headerToken = config.headers["Authorization"]
-      const token = localStorage.getItem("token")
-      if (!headerToken && token) config.headers["Authorization"] = `Bearer ${token}`
+      // const headerToken = config.headers["Authorization"]
+      // const token = localStorage.getItem("token")
+      // if (!headerToken && token) config.headers["Authorization"] = `Bearer ${token}`
 
       return config
     },
@@ -39,7 +39,7 @@ export default defineNuxtPlugin(() => {
 
   http.interceptors.response.use(
     (response) => {
-      const { code, description } = response?.data?.result || {}
+      const { code, description } = response?.data || {}
 
       if (code && code.toLowerCase() !== "ok") {
         const result = description?.split("_")

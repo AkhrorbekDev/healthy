@@ -3,7 +3,7 @@
     <div
       class="md:mb[60px] mb-[40px] mt-[40px] flex flex-col flex-nowrap items-start gap-[12px] md:mt-[80px] md:w-[751px]"
     >
-      <h2 class="headline-1 md:-text-headline-2 text-left font-['Onest'] font-semibold text-[#323232]">
+      <h2 class="text-mobile-headline-1 md:text-headline-2 text-left font-['Onest'] font-semibold text-[#323232]">
         {{ t("title") }}
       </h2>
       <span class="text-left font-['Onest'] text-mobile-body-16 font-normal text-[#585958] md:text-body-18">

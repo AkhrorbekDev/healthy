@@ -53,7 +53,6 @@ defineProps<IProps>()
 
   background: white;
   z-index: 1000;
-
   padding: 30px 16px;
   /* Add padding, shadow, etc. as needed */
 

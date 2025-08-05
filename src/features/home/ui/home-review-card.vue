@@ -35,10 +35,12 @@
       начала думать о том, что хочу я.
     </span>
     <div class="flex shrink-0 flex-nowrap items-center">
-      <span class="h-[23px] font-['Manrope'] text-[17px] font-bold leading-[23px] text-[#63845c]">
+      <span class="font-['Manrope'] text-[15px] font-bold leading-[23px] text-[#63845c] md:text-[17px]">
         Читать полностью
       </span>
-      <icon class="text-green-500" name="h-icon:arrow"></icon>
+      <div class="h-5 w-5">
+        <icon class="h-full w-full text-green-500" name="h-icon:arrow"></icon>
+      </div>
     </div>
   </div>
 </template>

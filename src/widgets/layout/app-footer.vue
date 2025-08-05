@@ -41,32 +41,32 @@ import AppSectionFluid from "~/widgets/layout/app-section-fluid.vue"
         </div>
       </div>
       <div class="flex w-[131px] flex-col flex-nowrap items-start gap-[10px] md:gap-[15px]">
-        <span class="relative font-['Onest'] text-body-16 font-normal text-[#fff] md:text-[20px] md:font-medium">
+        <span class="relative font-['Onest'] text-mobile-body-16 font-normal text-[#fff] md:text-[20px] md:font-medium">
           Специалисты
         </span>
-        <span class="relative font-['Onest'] text-body-16 font-normal text-[#fff] md:text-[20px] md:font-medium">
+        <span class="relative font-['Onest'] text-mobile-body-16 font-normal text-[#fff] md:text-[20px] md:font-medium">
           Курсы
         </span>
-        <span class="relative font-['Onest'] text-body-16 font-normal text-[#fff] md:text-[20px] md:font-medium">
+        <span class="relative font-['Onest'] text-mobile-body-16 font-normal text-[#fff] md:text-[20px] md:font-medium">
           О проекте
         </span>
       </div>
       <div class="flex w-[142px] flex-col flex-nowrap items-start gap-[10px] md:gap-[15px]">
-        <span class="relative font-['Onest'] text-body-16 font-normal text-[#fff] md:text-[20px] md:font-medium">
+        <span class="relative font-['Onest'] text-mobile-body-16 font-normal text-[#fff] md:text-[20px] md:font-medium">
           Блог
         </span>
-        <span class="relative font-['Onest'] text-body-16 font-normal text-[#fff] md:text-[20px] md:font-medium">
+        <span class="relative font-['Onest'] text-mobile-body-16 font-normal text-[#fff] md:text-[20px] md:font-medium">
           Контакты
         </span>
-        <span class="relative font-['Onest'] text-body-16 font-normal text-[#fff] md:text-[20px] md:font-medium">
+        <span class="relative font-['Onest'] text-mobile-body-16 font-normal text-[#fff] md:text-[20px] md:font-medium">
           Специалистам
         </span>
       </div>
       <div class="col-span-full flex flex-col flex-nowrap items-start gap-[10px] md:gap-[15px]">
-        <span class="relative font-['Onest'] text-body-16 font-normal text-[#fff] md:text-[20px] md:font-medium">
+        <span class="relative font-['Onest'] text-mobile-body-16 font-normal text-[#fff] md:text-[20px] md:font-medium">
           Политика конфиденциальности
         </span>
-        <span class="relative font-['Onest'] text-body-16 font-normal text-[#fff] md:text-[20px] md:font-medium">
+        <span class="relative font-['Onest'] text-mobile-body-16 font-normal text-[#fff] md:text-[20px] md:font-medium">
           Пользовательское соглашение
         </span>
       </div>

@@ -61,7 +61,7 @@
             >
               <div class="relative flex shrink-0 flex-col flex-nowrap items-start gap-[12px] self-stretch">
                 <span
-                  class="relative h-[48px] shrink-0 basis-auto self-stretch text-left font-['Onest'] text-[40px] font-semibold leading-[48px] text-[#323232]"
+                  class="relative h-[48px] shrink-0 basis-auto self-stretch text-left font-['Onest'] text-[40px] font-semibold  text-[#323232]"
                 >
                   Ахмедов Санджар Акбарович
                 </span>

@@ -4,12 +4,12 @@
       <div class="relative flex h-[820px] items-center justify-between overflow-hidden">
         <div class="flex h-[220px] w-[710px] flex-col flex-nowrap items-start gap-[20px]">
           <div
-            class="relative z-[2] w-[581px] shrink-0 text-left font-['Onest'] text-[58px] font-semibold leading-[73.95px]"
+            class="relative z-[2] w-[581px] shrink-0 text-left font-['Onest'] text-[58px] font-semibold"
           >
-            <span class="relative text-left font-['Onest'] text-[58px] font-semibold leading-[73.95px] text-[#323232]">
+            <span class="relative text-left font-['Onest'] text-[58px] font-semibold text-[#323232]">
               О проекте
             </span>
-            <span class="relative text-left font-['Onest'] text-[58px] font-semibold leading-[73.95px] text-[#63845c]">
+            <span class="relative text-left font-['Onest'] text-[58px] font-semibold text-[#63845c]">
               Душевное Здоровье
             </span>
           </div>
@@ -28,7 +28,7 @@
     <app-section class="py-[120px]">
       <div class="relative z-[53] mb-0 mr-0 mt-[120px] flex w-[1075px] flex-col flex-nowrap items-start gap-[20px]">
         <span
-          class="relative z-[54] h-[64px] shrink-0 basis-auto self-stretch whitespace-nowrap text-left font-['Onest'] text-[50px] font-semibold leading-[63.75px] text-[#323232]"
+          class="relative z-[54] h-[64px] shrink-0 basis-auto self-stretch whitespace-nowrap text-left font-['Onest']  font-semibold  text-[#323232]"
         >
           Наша миссия и ценности
         </span>
@@ -175,15 +175,15 @@
         <div class="relative z-[110] flex w-[758px] shrink-0 flex-col flex-nowrap items-start gap-[60px]">
           <div class="relative z-[111] flex shrink-0 flex-col flex-nowrap items-start gap-[30px] self-stretch">
             <div
-              class="relative z-[112] w-[588px] shrink-0 text-left font-['Onest'] text-[50px] font-semibold leading-[63.75px]"
+              class="relative z-[112] w-[588px] shrink-0 text-left font-['Onest']  font-semibold "
             >
               <span
-                class="relative text-left font-['Onest'] text-[50px] font-semibold leading-[63.75px] text-[#63845c]"
+                class="relative text-left font-['Onest']  font-semibold  text-[#63845c]"
               >
                 Основатель:
               </span>
               <span
-                class="relative text-left font-['Onest'] text-[50px] font-semibold leading-[63.75px] text-[#323232]"
+                class="relative text-left font-['Onest']  font-semibold  text-[#323232]"
               >
                 Ахмедов Санджар Акбарович
               </span>
@@ -211,7 +211,7 @@
     </app-section>
     <app-section>
       <span
-        class="relative z-[118] mb-0 mr-0 mt-[120px] block h-[64px] whitespace-nowrap text-left font-['Onest'] text-[50px] font-semibold leading-[63.75px] text-[#323232]"
+        class="relative z-[118] mb-0 mr-0 mt-[120px] block h-[64px] whitespace-nowrap text-left font-['Onest']  font-semibold  text-[#323232]"
       >
         Команда
       </span>
@@ -325,7 +325,7 @@
         >
           <div class="relative z-[103] flex shrink-0 flex-col flex-nowrap items-start gap-[15px] self-stretch">
             <span
-              class="relative z-[104] flex h-[128px] w-[588px] shrink-0 items-start justify-start self-stretch text-left font-['Onest'] text-[50px] font-semibold leading-[63.75px] text-[#fff]"
+              class="relative z-[104] flex h-[128px] w-[588px] shrink-0 items-start justify-start self-stretch text-left font-['Onest']  font-semibold  text-[#fff]"
             >
               Cделайте шаг к душевному здоровью
             </span>
@@ -399,7 +399,7 @@
     <app-section-fluid class="bg-[#fff]">
       <div class="relative z-[152] h-[678px] text-[0px]">
         <span
-          class="relative z-[153] mb-0 mr-0 mt-[120px] block h-[64px] whitespace-nowrap text-left font-['Onest'] text-[50px] font-semibold leading-[63.75px] text-[#323232]"
+          class="relative z-[153] mb-0 mr-0 mt-[120px] block h-[64px] whitespace-nowrap text-left font-['Onest']  font-semibold  text-[#323232]"
         >
           Наши особенности
         </span>

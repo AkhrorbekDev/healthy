@@ -1,0 +1,93 @@
+<script setup lang="ts">
+import AppSection from "~/widgets/layout/app-section.vue"
+import AppSectionFluid from "~/widgets/layout/app-section-fluid.vue"
+
+const { t } = useI18n({ useScope: "local" })
+</script>
+
+<template>
+  <app-section-fluid
+    class="my-[40px] bg-[url(https://codia-f2c.s3.us-west-1.amazonaws.com/image/2025-07-20/ornGaxc2yP.png)] bg-[length:100%_100%] bg-no-repeat py-[20px] md:my-[120px] md:py-[100px]"
+  >
+    <div class="flex flex-col gap-[40px] overflow-hidden md:flex-row md:items-center md:justify-between">
+      <div class="flex flex-col flex-nowrap items-start gap-[30px] md:w-[50.63%]">
+        <div class="relative flex shrink-0 flex-col flex-nowrap items-start gap-[10px] self-stretch md:gap-[15px]">
+          <span class="text-left font-['Onest'] text-mobile-headline-1 font-semibold text-[#fff] md:text-headline-2">
+            {{ t("title") }}
+          </span>
+          <span class="text-left font-['Onest'] text-mobile-body-16 font-normal text-[#fff] md:text-body-18">
+            {{ t("description") }}
+          </span>
+        </div>
+        <div
+          class="relative mt-0 flex shrink-0 flex-nowrap items-center gap-[8px] self-stretch border-b border-solid border-t-[#ffffff20] pb-5 md:border-b-0 md:border-t md:pb-0 md:pt-[30px]"
+        >
+          <icon class="text-[22px] !text-white" name="h-icon:phone"></icon>
+          <div class="relative w-[184px]">
+            <span class="font-['Onest'] text-mobile-subtitle-18 font-semibold text-[#fff] md:text-subtitle-22">
+              +998 91 137 55 16
+            </span>
+          </div>
+        </div>
+      </div>
+      <div class="flex w-full flex-col flex-nowrap items-start gap-[40px] md:mr-[121px] md:w-[345px]">
+        <div class="relative flex shrink-0 flex-col flex-nowrap items-start gap-[10px] self-stretch">
+          <ui-form-group class="w-full">
+            <ui-input
+              class="ui-input-outline !h-auto !border-0 !border-b-2 py-[10px] md:py-[15px]"
+              :placeholder="t('form-inputs.fio')"
+            ></ui-input>
+          </ui-form-group>
+          <ui-form-group class="w-full">
+            <ui-input
+              class="ui-input-outline !h-auto !border-0 !border-b-2 py-[10px] md:py-[15px]"
+              :placeholder="t('form-inputs.phone')"
+            ></ui-input>
+          </ui-form-group>
+          <ui-form-group class="w-full">
+            <ui-input
+              class="ui-input-outline !h-auto !border-0 !border-b-2 py-[10px] md:py-[15px]"
+              :placeholder="t('form-inputs.reason')"
+            ></ui-input>
+          </ui-form-group>
+        </div>
+        <ui-button class="!w-full !bg-white !text-green-500 md:w-auto" :label="t('Записаться')" />
+      </div>
+    </div>
+  </app-section-fluid>
+</template>
+
+<style scoped></style>
+
+<i18n>
+{
+  "ru": {
+    "title": "Присоединяйтесь к обучению",
+    "description": "Освойте новые навыки, получайте поддержку от экспертов и применяйте знания на практике",
+    "form-inputs": {
+      "fio": "ФИО",
+      "phone": "Номер телефона",
+      "reason": "Что вы хотите изменить?"
+    },
+    "Записаться": "Записаться"
+  },
+  "en": {
+    "form-inputs": {
+      "fio": "Full Name",
+      "phone": "Phone Number",
+      "reason": "What do you want to change?"
+    },
+    "Записаться": "Sign Up"
+  },
+  "uz": {
+    "title": "O'qishga qo'shiling",
+    "description": "Yangi ko'nikmalarni o'zlashtiring, mutaxassislardan yordam oling va bilimlaringizni amalda qo'llang",
+    "form-inputs": {
+      "fio": "F.I.O",
+      "phone": "Telefon raqami",
+      "reason": "Nima o'zgartirmoqchisiz?"
+    },
+    "Записаться": "Ro'yxatdan o'tish"
+  }
+}
+</i18n>

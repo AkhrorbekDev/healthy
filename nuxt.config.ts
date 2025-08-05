@@ -88,6 +88,10 @@ export default defineNuxtConfig({
     defaultLocale: "ru",
     restructureDir: false,
     langDir: "app/locales/",
+    compilation: {
+      strictMessage: false,
+      escapeHtml: false
+    },
     bundle: {
       optimizeTranslationDirective: false
     },

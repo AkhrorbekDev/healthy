@@ -24,7 +24,7 @@ const carouselConfig = computed<Partial<CarouselConfig>>(() => ({
 
 <template>
   <app-section class="pb-[80px] md:pb-[120px]">
-    <span class="headline-1 text-left font-['Onest'] text-[50px] font-semibold text-[#323232]">
+    <span class="headline-1 text-left font-['Onest']  font-semibold text-[#323232]">
       {{ t("title") }}
     </span>
     <div class="mt-[40px]">

@@ -7,7 +7,7 @@
         <div class="relative z-[78] flex w-[874px] shrink-0 flex-col flex-nowrap items-start gap-[30px]">
           <div class="relative z-[79] flex shrink-0 flex-col flex-nowrap items-start gap-[12px] self-stretch">
             <span
-              class="relative z-[80] flex h-[128px] w-[874px] shrink-0 items-start justify-start self-stretch text-left font-['Onest'] text-[50px] font-semibold leading-[63.75px] text-[#323232]"
+              class="relative z-[80] flex h-[128px] w-[874px] shrink-0 items-start justify-start self-stretch text-left font-['Onest']  font-semibold  text-[#323232]"
             >
               5 способов справиться с панической атакой
             </span>
@@ -194,7 +194,7 @@
                 class="relative z-[110] flex shrink-0 flex-nowrap items-center justify-center gap-[10px] self-stretch pb-0 pl-0 pr-[20px] pt-0"
               >
                 <span
-                  class="relative z-[111] flex h-[96px] w-[583px] shrink-0 grow basis-0 items-start justify-start text-left font-['Onest'] text-[40px] font-semibold leading-[48px] text-[#323232]"
+                  class="relative z-[111] flex h-[96px] w-[583px] shrink-0 grow basis-0 items-start justify-start text-left font-['Onest'] text-[40px] font-semibold  text-[#323232]"
                 >
                   Ахмедов Санджар Акбарович
                 </span>
@@ -263,7 +263,7 @@
     </app-section>
     <app-section class="py-[120px]">
       <span
-        class="relative z-[76] mb-0 mr-0 block h-[64px] whitespace-nowrap text-left font-['Onest'] text-[50px] font-semibold leading-[63.75px] text-[#323232]"
+        class="relative z-[76] mb-0 mr-0 block h-[64px] whitespace-nowrap text-left font-['Onest']  font-semibold  text-[#323232]"
       >
         Читайте так же
       </span>

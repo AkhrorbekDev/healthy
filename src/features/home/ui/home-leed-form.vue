@@ -22,9 +22,11 @@ const { t } = useI18n({ useScope: "local" })
         <div
           class="relative mt-0 flex shrink-0 flex-nowrap items-center gap-[8px] self-stretch border-b border-solid border-t-[#ffffff20] pb-5 md:border-b-0 md:border-t md:pb-0 md:pt-[30px]"
         >
-          <icon class="text-[18px] !text-green-500" name="h-icon:phone"></icon>
-          <div class="relative w-[184px] shrink-0 whitespace-nowrap text-left font-['Onest'] text-[22px] font-semibold">
-            <span class="subtitle-20 font-['Onest'] text-[22px] font-semibold text-[#fff]">+998 91 137 55 16</span>
+          <icon class="text-[18px] !text-white" name="h-icon:phone"></icon>
+          <div class="relative w-[184px] shrink-0 whitespace-nowrap text-left font-['Onest'] font-semibold">
+            <span class="font-['Onest'] text-mobile-subtitle-18 font-semibold text-[#fff] md:text-subtitle-22">
+              +998 91 137 55 16
+            </span>
           </div>
         </div>
       </div>
