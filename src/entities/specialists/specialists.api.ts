@@ -2,7 +2,7 @@ export const useSpecialistsApi = () => {
   const baseURL = "/specialists"
   const { $http } = useNuxtApp()
 
-  const getSpecialistsList = (params: Record<string, any>): AsyncResponseContainer<any[]> => {
+  const getSpecialistsList = (params?: Record<string, any>): AsyncResponseContainer<any[]> => {
     return $http.$get(baseURL, { params })
   }
 

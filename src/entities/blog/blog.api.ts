@@ -2,7 +2,7 @@ export const useBlogApi = () => {
   const baseURL = "/posts"
   const { $http } = useNuxtApp()
 
-  const getBlogList = (params: Record<string, any>): AsyncResponseContainer<any[]> => {
+  const getBlogList = (params?: Record<string, any>): AsyncResponseContainer<any[]> => {
     return $http.$get(baseURL, { params })
   }
 

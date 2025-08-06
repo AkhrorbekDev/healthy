@@ -22,7 +22,8 @@ export const useAuthService = () => {
       .signIn(payload.value)
       .then(({ content }) => {
         if (!content.token) return
-        localStorage.setItem("token", content.token)
+        const token = useCookie('token')
+        token.value = content.token
         $session.profile.value = content.profile
         router.replace(localePath("/"))
       })

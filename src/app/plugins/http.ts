@@ -15,15 +15,15 @@ const addExtraMethods = (axiosInstance: Record<string, any>) => {
 }
 
 export default defineNuxtPlugin(() => {
-  const { $i18n, $toast } = useNuxtApp()
-
-  const http = axios.create({ baseURL: "/gateway" })
+  const { $i18n, $toast,  } = useNuxtApp()
+  console.log(import.meta.env, 'import.meta.env.APP_API_URL')
+  const http = axios.create({ baseURL: import.meta.env.APP_API_URL })
   addExtraMethods(http)
 
   http.interceptors.request.use(
     (config) => {
       config.headers = config.headers || {}
-      config.headers["Accept-Language"] = $i18n.locale.value
+      // config.headers["Accept-Language"] = $i18n.locale.value
 
       // const headerToken = config.headers["Authorization"]
       // const token = localStorage.getItem("token")
@@ -39,18 +39,20 @@ export default defineNuxtPlugin(() => {
 
   http.interceptors.response.use(
     (response) => {
-      const { code, description } = response?.data || {}
-
-      if (code && code.toLowerCase() !== "ok") {
-        const result = description?.split("_")
-        if (result?.length > 1) $toast.error($i18n.t(`messages.error.${description}`))
-        else $toast.error(description)
-        return Promise.reject(response)
-      }
+      console.log(response, "respossss")
+      // const { code, description } = response?.data || {}
+      //
+      // if (code && code.toLowerCase() !== "ok") {
+      //   const result = description?.split("_")
+      //   if (result?.length > 1) $toast.error($i18n.t(`messages.error.${description}`))
+      //   else $toast.error(description)
+      //   return Promise.reject(response)
+      // }
 
       return response
     },
     (error: any) => {
+      console.log(error, "errorrrrrrr")
       const errors = error?.response?.data?.errors
       if (errors?.length) errors?.forEach((message: string) => $toast.error(message))
       return Promise.reject(error.response)
