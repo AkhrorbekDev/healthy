@@ -1,13 +1,16 @@
 <script setup lang="ts">
+import { getValue } from "~/shared/lib/common"
+
 const { t } = useI18n({ useScope: "local" })
 
 interface IProps {
   description: string
   title: string
   background: string
-  specialistsLink: string
-  coursesLink: string
+  buttons: any[]
 }
+
+const { locale } = useI18n()
 
 defineProps<IProps>()
 </script>
@@ -25,12 +28,17 @@ defineProps<IProps>()
         <h1 class="post-hero__title mb-[10px] text-mobile-headline-1 md:mb-[15px] md:text-headline-1">{{ title }}</h1>
         <p class="post-hero__description body-20">{{ description }}</p>
       </div>
-      <div class="mt-[25px] flex flex-col gap-[15px] sm:flex-row md:mt-[50px]">
-        <ui-button class="!bg-white !text-green-500" :to="specialistsLink">
-          {{ t("select_specialist") }}
+      <div v-if="buttons?.length > 0" class="mt-[25px] flex flex-col gap-[15px] sm:flex-row md:mt-[50px]">
+        <ui-button v-if="buttons[0]" class="!bg-white !text-green-500" :to="buttons[0]?.link">
+          {{ getValue(buttons[0], "label", locale) }}
         </ui-button>
-        <ui-button class="!border-white !bg-transparent !text-white" variant="outline" :to="coursesLink">
-          {{ t("select_course") }}
+        <ui-button
+          v-if="buttons[1]"
+          class="!border-white !bg-transparent !text-white"
+          variant="outline"
+          :to="buttons[1]?.link"
+        >
+          {{ getValue(buttons[1], "label", locale) }}
         </ui-button>
       </div>
     </div>

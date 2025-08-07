@@ -27,3 +27,8 @@ export const transformParams = (cleanedParams: Record<string, any>, transformati
 export const disableKeys = (event: KeyboardEvent, keys: string[]) => {
   if (keys.includes(event.key)) event.preventDefault()
 }
+
+export const getValue = (obj: Record<string, any>, path: string, locale: string) => {
+  if (!obj || !path) return undefined
+  return obj[`${path}_${locale}`]
+}

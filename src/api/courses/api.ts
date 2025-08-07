@@ -2,7 +2,7 @@ export const useCoursesApi = () => {
   const baseURL = "/courses"
   const { $http } = useNuxtApp()
 
-  const getCoursesList = (params: Record<string, any>): AsyncResponseContainer<any[]> => {
+  const getCoursesList = (params?: Record<string, any>): AsyncResponseContainer<any[]> => {
     return $http.$get(baseURL, { params })
   }
 

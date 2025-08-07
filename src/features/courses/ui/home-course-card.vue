@@ -1,15 +1,21 @@
 <script setup lang="ts">
 import HTag from "~/features/base/h-tag.vue"
+
+interface IProps {
+  course: any
+}
+
+defineProps<IProps>()
+
+const { t } = useI18n({
+  useScope: "local"
+})
 </script>
 
 <template>
-  <div class="flex w-full flex-col flex-nowrap items-start gap-[25px]" @click="$router.push('/course/12')">
+  <nuxt-link-locale class="flex w-full flex-col flex-nowrap items-start gap-[25px]" :to="`/courses/${course.slug}`">
     <div class="self-stretch overflow-hidden rounded-[20px]">
-      <img
-        class="object-cover object-center md:h-[400px]"
-        alt=""
-        src="https://codia-f2c.s3.us-west-1.amazonaws.com/image/2025-07-20/3NnytMcGK2.png"
-      />
+      <img class="object-cover object-center md:h-[400px]" alt="" :src="course.photo" />
     </div>
     <div class="flex flex-col flex-nowrap items-start gap-[15px] self-stretch md:gap-[20px]">
       <div
@@ -20,36 +26,57 @@ import HTag from "~/features/base/h-tag.vue"
             <h-tag>
               <div class="flex flex-nowrap items-center gap-[8px]">
                 <icon class="text-[18px] text-green-500" name="h-icon:calendar"></icon>
-                <span>10 июля 2025</span>
+                <span>{{ formatDate(course.start_date, "LL") }}</span>
               </div>
             </h-tag>
-            <h-tag>Для всех</h-tag>
-            <h-tag>Оффлайн</h-tag>
+            <h-tag>{{ course.type }}</h-tag>
+            <h-tag v-if="course.format">
+              {{ course.format }}
+            </h-tag>
           </div>
           <div class="flex flex-col flex-nowrap items-start gap-[8px] self-stretch">
             <span class="font-['Onest'] text-mobile-subtitle-22 font-semibold text-[#323232] md:text-headline-4">
-              Управление стрессом и эмоциями
+              {{ course.title }}
             </span>
             <span class="font-['Onest'] text-mobile-body-14 font-normal text-[#585958] md:text-body-17">
-              Практический курс для всех, кто хочет научиться справляться со стрессом, тревогой и выгоранием. Включает
-              техники релаксации и эмоциональной саморегуляции
+              {{ course.description }}
             </span>
           </div>
         </div>
-        <span class="text-[22px] font-semibold text-[#63845c] md:text-[24px]">7 000 000 сум</span>
+        <span class="text-[22px] font-semibold text-[#63845c] md:text-subtitle-24">
+          {{ course.price }} {{ t("currency") }}
+        </span>
       </div>
       <div class="flex flex-nowrap items-center gap-[10px] self-stretch">
         <img
           class="h-[25px] w-[25px] overflow-hidden rounded-[100px] object-cover md:h-[30px] md:w-[30px]"
-          src="/42cc1aa73c85ed366b29b4433baa2534c9513268.png"
           alt=""
+          :src="course.specialist?.photo"
         />
         <div class="whitespace-nowrap text-left font-['Onest'] text-[17px] font-normal">
-          <span class="body-16 text-left font-['Onest'] text-[17px] font-normal text-[#323232]">Ахмедов С. А.</span>
+          <span
+            class="text-left font-['Onest'] text-mobile-body-14 font-normal text-[#323232] md:text-subtitle-24 md:font-semibold"
+          >
+            {{ course.specialist?.full_name }}
+          </span>
         </div>
       </div>
     </div>
-  </div>
+  </nuxt-link-locale>
 </template>
 
 <style scoped></style>
+
+<i18n>
+{
+  "ru": {
+    "currency": "сум"
+  },
+  "en": {
+    "currency": "sum"
+  },
+  "uz": {
+    "currency": "so'm"
+  }
+}
+</i18n>

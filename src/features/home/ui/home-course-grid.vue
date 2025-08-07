@@ -4,7 +4,15 @@ import HomeCourseCard from "~/features/courses/ui/home-course-card.vue"
 import type { CarouselConfig, CarouselMethods } from "vue3-carousel"
 import { Carousel, Slide } from "vue3-carousel"
 
-const { t } = useI18n({ useScope: "local" })
+interface IProps {
+  items: any[]
+}
+
+defineProps<IProps>()
+
+const { t } = useI18n({
+  useScope: "local"
+})
 const carouselRef = ref<CarouselMethods>()
 const carouselConfig = computed<Partial<CarouselConfig>>(() => ({
   gap: 24,
@@ -29,17 +37,8 @@ const carouselConfig = computed<Partial<CarouselConfig>>(() => ({
       {{ t("title") }}
     </p>
     <carousel v-bind="carouselConfig" ref="carouselRef">
-      <slide class="h-full">
-        <home-course-card @click="$router.push('/courses/123')" />
-      </slide>
-      <slide class="h-full">
-        <home-course-card @click="$router.push('/courses/123')" />
-      </slide>
-      <slide class="h-full">
-        <home-course-card @click="$router.push('/courses/123')" />
-      </slide>
-      <slide class="h-full">
-        <home-course-card @click="$router.push('/courses/123')" />
+      <slide v-for="item in items" class="h-full" :item="item.id">
+        <home-course-card :course="item" />
       </slide>
     </carousel>
     <div class="relative ml-auto mt-[21px] flex w-[130px] flex-nowrap items-center gap-[10px] md:mt-[40px]">
@@ -69,6 +68,9 @@ const carouselConfig = computed<Partial<CarouselConfig>>(() => ({
 {
   "ru": {
     "title": "Курсы и тренинги"
+  },
+  "en": {
+    "title": "Courses and Trainings"
   },
   "uz": {
     "title": "Kurslar va treninglar"

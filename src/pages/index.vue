@@ -1,14 +1,14 @@
 <template>
   <div class="main-container relative mx-auto my-0 w-full overflow-hidden bg-[#f0f4f1]">
     <home-hero
-      title="Душевное Здоровье – ваш путь к психическому благополучию"
-      description="Наша миссия – обеспечить вас профессиональной поддержкой для душевного равновесия"
+      :buttons="banner.buttons"
+      :description="banner.description"
+      :title="banner.title"
       :background="HomeHeroBg"
-      specialists-link="asddd"
     />
-    <home-specialist-grid />
-    <home-course-grid />
-    <home-review-grid />
+    <home-specialist-grid :items="specialists"  />
+    <home-course-grid :items="courses" />
+    <home-review-grid :items="reviews"/>
     <home-news-grid />
     <home-leed-form />
     <home-about />
@@ -29,27 +29,48 @@ import { useSiteSettingsApi } from "~/api/site-settings/api"
 import { useSiteSettingsStore } from "~/entities/site-settings/site-settings.store"
 import { useSpecialistsApi } from "~/entities/specialists/specialists.api"
 import { useBlogApi } from "~/entities/blog/blog.api"
+import { useCoursesApi } from "~/api/courses/api"
+import { useReviewApi } from "~/api/reviews/api"
 
 const bannerApi = useBannerApi()
 const blogApi = useBlogApi()
+const courseApi = useCoursesApi()
+const reviewApi = useReviewApi()
 const specialistsApi = useSpecialistsApi()
 const siteSettingsApi = useSiteSettingsApi()
 const siteSettingsStore = useSiteSettingsStore()
 
-const { data, error } = await useAsyncData("home", () => {
+const banner = ref({})
+const specialists = ref([])
+const blog = ref([])
+const courses = ref([])
+const reviews = ref([])
+
+const { data, error } = await useAsyncData("home", async () => {
   const request = [
     siteSettingsApi.getSiteSettings(),
-    // bannerApi.getBanner(),
-    // specialistsApi.getSpecialistsList(),
-    // blogApi.getBlogList()
+    bannerApi.getBanner(),
+    specialistsApi.getSpecialistsList(),
+    blogApi.getBlogList(),
+    courseApi.getCoursesList(),
+    reviewApi.getReviewList()
   ]
 
-  return Promise.allSettled(request)
+  return await Promise.all(request)
 })
+const [siteSettings, _banner, _specialists, _blog, _courses, _review] = data.value || []
 
-console.log(data.value)
+if (error.value) {
+  console.error("Error fetching data:", error.value)
+}
+
+banner.value = _banner?.data || {}
+specialists.value = _specialists?.data || []
+blog.value = _blog?.data || []
+courses.value = _courses?.data || []
+reviews.value = _review?.data || []
 
 onMounted(() => {
-  siteSettingsStore.siteSettings.value = data.value?.[0] || {}
+  siteSettingsStore.siteSettings.value = siteSettings?.data
 })
 </script>
