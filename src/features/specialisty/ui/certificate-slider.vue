@@ -2,6 +2,12 @@
 import HomeCourseCard from "../../courses/ui/home-course-card.vue"
 import { Carousel, type CarouselConfig, type CarouselMethods, Slide } from "vue3-carousel"
 
+
+interface IProps {
+  items: any[]
+}
+
+defineProps<IProps>()
 const carouselRef = ref<CarouselMethods>()
 const carouselConfig = computed<Partial<CarouselConfig>>(() => ({
   gap: 24,
@@ -20,17 +26,8 @@ const carouselConfig = computed<Partial<CarouselConfig>>(() => ({
 
 <template>
   <carousel v-bind="carouselConfig" ref="carouselRef">
-    <slide class="h-full">
-      <img class="h-[302px]" src="/img/image.jpg" alt="" />
-    </slide>
-    <slide class="h-full">
-      <img class="h-[302px]" src="/img/image.jpg" alt="" />
-    </slide>
-    <slide class="h-full">
-      <img class="h-[302px]" src="/img/image.jpg" alt="" />
-    </slide>
-    <slide class="h-full">
-      <img class="h-[302px]" src="/img/image.jpg" alt="" />
+    <slide v-for="item in items" :key="item" class="h-full">
+      <img class="h-[302px]" :src="item" alt="" />
     </slide>
   </carousel>
   <div class="relative ml-auto mt-[21px] flex w-[130px] flex-nowrap items-center gap-[10px] md:mt-[40px]">

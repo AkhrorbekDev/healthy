@@ -2,19 +2,34 @@
   <app-section>
     <div class="mt-[40px] flex flex-nowrap items-center gap-[10px] overflow-auto">
       <div
-        class="flex items-center gap-[8px] rounded-[100px] border border-solid border-[#63845c] bg-[#63845c] px-[15px] py-[10px] md:px-[20px] md:py-[12px]"
+        class="flex cursor-pointer items-center gap-[8px] rounded-[100px] border border-solid px-[15px] py-[10px] md:px-[20px] md:py-[12px]"
+        :class="{
+          'border-[#63845c] bg-[#63845c] text-[#fff]': !model,
+          'border-[#e0e5e3] text-[#323232]': model
+        }"
+        @click="change(undefined)"
       >
-        <span class="text-nowrap text-mobile-body-15 font-medium text-[#fff] md:text-body-18">Все курсы</span>
+        <span class="text-nowrap text-mobile-body-15 font-medium md:text-body-18">Все курсы</span>
       </div>
       <div
-        class="flex items-center gap-[8px] rounded-[100px] border border-solid border-[#e0e5e3] px-[15px] py-[10px] md:px-[20px] md:py-[12px]"
+        class="flex cursor-pointer items-center gap-[8px] rounded-[100px] border border-solid px-[15px] py-[10px] md:px-[20px] md:py-[12px]"
+        :class="{
+          'border-[#63845c] bg-[#63845c] text-[#fff]': model === 'specialization',
+          'border-[#e0e5e3] text-[#323232]': model !== 'specialization'
+        }"
+        @click="change('specialization')"
       >
-        <span class="text-nowrap text-mobile-body-15 font-medium text-[#323232] md:text-body-18">Для специалистов</span>
+        <span class="text-nowrap text-mobile-body-15 font-medium md:text-body-18">Для специалистов</span>
       </div>
       <div
-        class="flex items-center gap-[8px] rounded-[100px] border border-solid border-[#e0e5e3] px-[15px] py-[10px] md:px-[20px] md:py-[12px]"
+        class="flex cursor-pointer items-center gap-[8px] rounded-[100px] border border-solid px-[15px] py-[10px] md:px-[20px] md:py-[12px]"
+        :class="{
+          'border-[#63845c] bg-[#63845c] text-[#fff]': model === 'for_all',
+          'border-[#e0e5e3] text-[#323232]': model !== 'for_all'
+        }"
+        @click="change('for_all')"
       >
-        <span class="text-nowrap text-mobile-body-15 font-medium text-[#323232] md:text-body-18">Для всех</span>
+        <span class="text-nowrap text-mobile-body-15 font-medium md:text-body-18">Для всех</span>
       </div>
     </div>
   </app-section>
@@ -24,6 +39,12 @@
 import AppSection from "~/widgets/layout/app-section.vue"
 
 const { t } = useI18n({ useScope: "local" })
+
+const model = defineModel<string | undefined>()
+
+const change = (value?: string) => {
+  model.value = value
+}
 </script>
 
 <i18n>

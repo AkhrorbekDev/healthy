@@ -4,9 +4,19 @@ import AppSection from "~/widgets/layout/app-section.vue"
 import HomeCourseCard from "../../features/courses/ui/home-course-card.vue"
 import { Carousel, type CarouselConfig, type CarouselMethods, Slide } from "vue3-carousel"
 
+interface IProps {
+  items: any[]
+}
+
+defineProps<IProps>()
+defineEmits<{
+  (e: "loadMore"): void
+}>()
 const { t } = useI18n({
   useScope: "local"
 })
+
+const modal = useModal()
 
 const carouselRef = ref<CarouselMethods>()
 const carouselConfig = computed<Partial<CarouselConfig>>(() => ({
@@ -25,50 +35,32 @@ const carouselConfig = computed<Partial<CarouselConfig>>(() => ({
 }))
 
 const showModal = () => {
-  // useModal().show("review-modal")
+  modal.show("review-modal")
+}
+const showCreateReviewModal = () => {
+  modal.show("review-create-modal")
 }
 </script>
 
 <template>
   <app-section class="mb-[80px] mt-[90px] flex flex-col flex-nowrap items-start gap-[20px] md:mt-[124px] md:gap-[40px]">
-    <div class="flex items-center justify-between self-stretch">
+    <div class="flex flex-nowrap items-center justify-between self-stretch">
       <span class="text-mobile-headline-1 font-semibold text-[#323232] md:text-headline-2">
         {{ t("title") }}
       </span>
 
-      <ui-button class="!hidden px-[20px] py-[16px] md:flex">
+      <ui-button class="!hidden px-[20px] py-[16px] md:!flex" @click="showCreateReviewModal">
         {{ $t("actions.add_review") }}
       </ui-button>
     </div>
     <div class="hidden grid-cols-4 gap-[20px] self-stretch md:grid">
-      <review-card />
-      <review-card />
-      <review-card />
-      <review-card />
-      <review-card />
-      <review-card />
+      <review-card v-for="item in items" :key="item.id" :review="item" />
     </div>
-    <!--    <div class="md:hidden">-->
-    <!--      <carousel v-bind="carouselConfig" ref="carouselRef">-->
-    <!--        <slide class="h-full">-->
-    <!--          <review-card />-->
-    <!--        </slide>-->
-    <!--        <slide class="h-full">-->
-    <!--          <review-card />-->
-    <!--        </slide>-->
-    <!--        <slide class="h-full">-->
-    <!--          <review-card />-->
-    <!--        </slide>-->
-    <!--        <slide class="h-full">-->
-    <!--          <review-card />-->
-    <!--        </slide>-->
-    <!--      </carousel>-->
-    <!--    </div>-->
 
-    <ui-button class="!md:hidden flex w-full px-[20px] py-[16px]" color="primary" @click="showModal">
+    <ui-button class="flex w-full px-[20px] py-[16px] md:!hidden" color="primary" @click="showCreateReviewModal">
       {{ $t("actions.add_review") }}
     </ui-button>
-    <ui-button class="!hidden w-full px-[20px] py-[16px] md:flex" variant="outline">
+    <ui-button class="!hidden w-full px-[20px] py-[16px] md:flex" variant="outline" @click="$emit('loadMore')">
       {{ $t("actions.load_more") }}
     </ui-button>
   </app-section>
@@ -83,6 +75,9 @@ const showModal = () => {
   },
   "uz": {
     "title": "Sharhlar"
+  },
+  "en": {
+    "title": "Reviews"
   }
 }
 </i18n>

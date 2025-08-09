@@ -3,8 +3,17 @@ import AppSection from "~/widgets/layout/app-section.vue"
 import HomeReviewCard from "~/features/home/ui/home-review-card.vue"
 import type { CarouselConfig, CarouselMethods } from "vue3-carousel"
 import { Carousel, Slide } from "vue3-carousel"
+import ReviewCard from "~/features/review/ui/review-card.vue"
 
-const { t } = useI18n({ useScope: "local" })
+interface IProps {
+  items: any[]
+}
+
+defineProps<IProps>()
+
+const { t } = useI18n({
+  useScope: "local"
+})
 const carouselRef = ref<CarouselMethods>()
 const carouselConfig = computed<Partial<CarouselConfig>>(() => ({
   snapAlign: "start",
@@ -29,17 +38,8 @@ const carouselConfig = computed<Partial<CarouselConfig>>(() => ({
     </span>
     <div class="mt-[40px]">
       <carousel v-bind="carouselConfig" ref="carouselRef">
-        <slide class="h-full w-full">
-          <home-review-card />
-        </slide>
-        <slide class="h-full w-full">
-          <home-review-card />
-        </slide>
-        <slide class="h-full w-full">
-          <home-review-card />
-        </slide>
-        <slide class="h-full w-full">
-          <home-review-card />
+        <slide v-for="item in items" class="h-full w-full" :key="item.id">
+          <review-card :review="item" />
         </slide>
       </carousel>
     </div>
@@ -68,6 +68,9 @@ const carouselConfig = computed<Partial<CarouselConfig>>(() => ({
 
 <i18n>
 {
+  "en": {
+    "title": "Reviews and Success Stories"
+  },
   "ru": {
     "title": "Отзывы и истории успеха"
   },

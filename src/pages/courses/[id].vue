@@ -1,17 +1,17 @@
 <template>
   <div class="w-full overflow-hidden bg-[#f0f4f1]">
-    <course-detail-hero />
-    <course-about />
-    <course-format />
-    <course-due-time />
-    <course-modules />
-    <course-author />
+    <course-detail-hero :course />
+    <course-about :course />
+    <course-format :course />
+    <course-due-time :course />
+    <course-modules :course />
+    <course-author :course />
     <course-places reserved-count="4" :place-count="10" />
-    <course-address />
-    <course-review-slider />
-    <course-gallery />
-    <course-leed-form />
-    <course-faq />
+    <course-address :course />
+    <course-review-slider :course />
+    <course-gallery :course />
+    <course-leed-form :course />
+    <course-faq :course />
   </div>
 </template>
 
@@ -33,6 +33,17 @@ import CourseReviewSlider from "~/features/courses/ui/course-review-slider.vue"
 import CourseGallery from "~/features/courses/ui/course-gallery.vue"
 import CourseLeedForm from "~/features/courses/ui/course-leed-form.vue"
 import CourseFaq from "~/features/courses/ui/course-faq.vue"
+import { useCoursesApi } from "~/api/courses/api"
+
+const courseApi = useCoursesApi()
+const route = useRoute()
+const course = ref({})
+const { data } = await useAsyncData("course", async () => {
+  const courseId = route.params.id as string
+  return courseApi.getCoursesById(courseId)
+})
+
+course.value = data.value?.data || {}
 </script>
 
 <style>

@@ -6,10 +6,10 @@
       :title="banner.title"
       :background="HomeHeroBg"
     />
-    <home-specialist-grid :items="specialists"  />
+    <home-specialist-grid :items="specialists" />
     <home-course-grid :items="courses" />
-    <home-review-grid :items="reviews"/>
-    <home-news-grid />
+    <home-review-grid :items="reviews" />
+    <home-news-grid :items="blog" />
     <home-leed-form />
     <home-about />
   </div>
@@ -46,6 +46,10 @@ const blog = ref([])
 const courses = ref([])
 const reviews = ref([])
 
+const { t } = useI18n({
+  useScope: "local"
+})
+
 const { data, error } = await useAsyncData("home", async () => {
   const request = [
     siteSettingsApi.getSiteSettings(),
@@ -53,16 +57,28 @@ const { data, error } = await useAsyncData("home", async () => {
     specialistsApi.getSpecialistsList(),
     blogApi.getBlogList(),
     courseApi.getCoursesList(),
-    reviewApi.getReviewList()
+    reviewApi.getReviewList({
+      is_home_page: true,
+    })
   ]
 
   return await Promise.all(request)
 })
 const [siteSettings, _banner, _specialists, _blog, _courses, _review] = data.value || []
 
-if (error.value) {
-  console.error("Error fetching data:", error.value)
-}
+// if (error.value) {
+//   showError(error.value)
+// }
+
+useHead({
+  title: t("title"),
+  meta: [
+    {
+      name: "description",
+      content: t("description")
+    }
+  ]
+})
 
 banner.value = _banner?.data || {}
 specialists.value = _specialists?.data || []
@@ -74,3 +90,20 @@ onMounted(() => {
   siteSettingsStore.siteSettings.value = siteSettings?.data
 })
 </script>
+
+<i18n>
+{
+  "ru": {
+    "title": "Душевное Здоровье – платформа психологической поддержки",
+    "description": "Консультации психотерапевтов, авторские курсы и полезные статьи. Найдите своего специалиста в Узбекистане"
+  },
+  "uz": {
+    "title": "Душевное Здоровье – платформа психологической поддержки",
+    "description": "Консультации психотерапевтов, авторские курсы и полезные статьи. Найдите своего специалиста в Узбекистане"
+  },
+  "en": {
+    "title": "Душевное Здоровье – платформа психологической поддержки",
+    "description": "Консультации психотерапевтов, авторские курсы и полезные статьи. Найдите своего специалиста в Узбекистане"
+  }
+}
+</i18n>

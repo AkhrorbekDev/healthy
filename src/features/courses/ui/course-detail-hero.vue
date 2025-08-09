@@ -9,28 +9,31 @@
             <h-tag>
               <div class="flex flex-nowrap items-center gap-[8px]">
                 <icon class="text-[18px] text-green-500" name="h-icon:calendar"></icon>
-                <span>10 июля 2025</span>
+                <span>{{ course.start_date }}</span>
               </div>
             </h-tag>
-            <h-tag>Для всех</h-tag>
-            <h-tag>Оффлайн</h-tag>
+            <h-tag>
+              {{ course.type }}
+            </h-tag>
+            <h-tag>
+              {{ course.format }}
+            </h-tag>
           </div>
           <div class="z-[13] flex shrink-0 flex-col flex-nowrap items-start gap-[12px] self-stretch">
             <h1
               class="font-['Onest'] text-[58px] text-mobile-headline-2 font-semibold text-[#323232] md:w-[710px] md:text-headline-1"
             >
-              Управление стрессом и эмоциями
+              {{ course.title }}
             </h1>
             <div class="md:w-[598px]">
               <span class="font-['Onest'] text-mobile-body-15 font-normal text-[#585958] md:text-body-18">
-                Научитесь справляться с тревогой и восстановите эмоциональный баланс под руководством опытного
-                психотерапевта
+                {{ course.description }}
               </span>
             </div>
           </div>
         </div>
         <div class="flex w-full flex-col flex-nowrap items-start gap-[10px] md:flex-row md:gap-[20px]">
-          <ui-button class="w-full md:w-auto md:min-w-[223px]">Записаться на курс</ui-button>
+          <ui-button   class="w-full md:w-auto md:min-w-[223px]">Записаться на курс</ui-button>
           <ui-button class="w-full md:w-auto md:min-w-[223px]" variant="outline">Подробнее</ui-button>
         </div>
       </div>
@@ -46,6 +49,12 @@ import AppSection from "~/widgets/layout/app-section.vue"
 import HTag from "~/features/base/h-tag.vue"
 
 const { t } = useI18n({ useScope: "local" })
+
+interface IProps {
+  course: any
+}
+
+defineProps<IProps>()
 </script>
 
 <i18n>

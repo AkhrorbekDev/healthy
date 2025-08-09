@@ -144,7 +144,7 @@ onBeforeUnmount(() => {
 
                 <slot name="header-action">
                   <ui-icon-button
-                    variant="white"
+                    variant="ghost"
                     color="secondary"
                     icon-class="text-xl"
                     icon-name="lucide:x"

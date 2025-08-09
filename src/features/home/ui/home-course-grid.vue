@@ -37,7 +37,7 @@ const carouselConfig = computed<Partial<CarouselConfig>>(() => ({
       {{ t("title") }}
     </p>
     <carousel v-bind="carouselConfig" ref="carouselRef">
-      <slide v-for="item in items" class="h-full" :item="item.id">
+      <slide v-for="item in items" class="h-full" :key="item.id">
         <home-course-card :course="item" />
       </slide>
     </carousel>

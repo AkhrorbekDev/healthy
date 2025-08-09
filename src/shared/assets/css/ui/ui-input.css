@@ -1,7 +1,7 @@
 .ui-input {
     @apply rounded-lg border;
     @apply focus:outline-0 focus:ring-1;
-    @apply border-gray-200 bg-gray-50 placeholder-gray-400;
+    @apply border-gray-200 bg-gray-50 !placeholder-[#848484];
     @apply hover:border-gray-300;
     @apply dark:border-gray-800 dark:bg-gray-950 dark:caret-gray-100;
     @apply dark:hover:border-gray-700;
