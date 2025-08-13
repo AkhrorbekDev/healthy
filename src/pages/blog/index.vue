@@ -85,12 +85,20 @@ const toggleAuthorsMenu = () => {
     showAuthorsMenu.value = !showAuthorsMenu.value
   }
 }
+const blogs = ref([])
 const blogApi = useBlogApi()
 const specialistsApi = useSpecialistsApi()
+const pagination = ref({
+  page: 1,
+  total: 0,
+  limit: 10
+})
 const route = useRoute()
 const router = useRouter()
 const query = ref({ ...route.query } || {})
 const { data, error, refresh } = await useAsyncData("posts", () => blogApi.getBlogList(route.query), { server: false })
+
+blogs.value = data.value?.data || []
 const authorsList = ref([])
 const i = 0
 const filter = () => {

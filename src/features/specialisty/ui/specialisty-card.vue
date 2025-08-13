@@ -4,7 +4,11 @@
     @click="$router.push(`/specialisty/${specialist.slug}`)"
   >
     <div class="flex items-start gap-[15px]">
-      <img class="h-[137px] w-[119px] rounded-[10px] md:h-[310px] md:min-w-[269px]" alt="" :src="specialist.photo" />
+      <img
+        class="h-[137px] w-[119px] rounded-[10px] object-cover md:h-[310px] md:min-w-[269px]"
+        alt=""
+        :src="specialist.photo"
+      />
       <div class="flex h-full flex-col justify-between md:hidden">
         <span class="text-mobile-subtilte-20 overflow-hidden text-left font-['Onest'] font-semibold text-[#323232]">
           {{ specialist.full_name }}
@@ -56,7 +60,7 @@
           <icon class="text-[18px] text-green-500" name="h-icon:language"></icon>
 
           <span class="text-left font-['Onest'] text-mobile-body-15 font-medium text-[#323232]">
-            {{ specialist.lang?.map((item) => $t(`languages.${item}`)) }}
+            {{ specialist.lang?.map((item) => $t(`languages.${item}`)).join(", ") }}
           </span>
         </div>
       </div>

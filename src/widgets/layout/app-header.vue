@@ -58,7 +58,7 @@ onUnmounted(() => {
         </nuxt-link-locale>
         <nuxt-link-locale
           class="text-body-18"
-          to="/blog"
+          to="/about"
           :class="{
             'text-white': !isScrolled,
             'text-[#585958]': isScrolled
@@ -68,7 +68,7 @@ onUnmounted(() => {
         </nuxt-link-locale>
         <nuxt-link-locale
           class="text-body-18"
-          to="/about"
+          to="/contacts"
           :class="{
             'text-white': !isScrolled,
             'text-[#585958]': isScrolled
