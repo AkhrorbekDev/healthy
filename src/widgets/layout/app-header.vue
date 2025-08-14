@@ -106,23 +106,24 @@ onUnmounted(() => {
             }"
           ></icon>
         </a>
-        <ui-button
-          class="rounded-[15px] !border-0 !p-0 md:h-[50px] md:w-[50px] md:!border"
-          variant="outline"
-          :class="{
-            '!border-white': !isScrolled,
-            '!border-[#E8E8E8] text-green-500': isScrolled
-          }"
-        >
-          <icon
-            class="text-[25px]"
-            name="h-icon:language"
-            :class="{
-              'text-white': !isScrolled,
-              'text-green-500': isScrolled
-            }"
-          ></icon>
-        </ui-button>
+        <app-language :is-scrolled="isScrolled" />
+        <!--        <ui-button-->
+        <!--          class="rounded-[15px] !border-0 !p-0 md:h-[50px] md:w-[50px] md:!border"-->
+        <!--          variant="outline"-->
+        <!--          :class="{-->
+        <!--            '!border-white': !isScrolled,-->
+        <!--            '!border-[#E8E8E8] text-green-500': isScrolled-->
+        <!--          }"-->
+        <!--        >-->
+        <!--          <icon-->
+        <!--            class="text-[25px]"-->
+        <!--            name="h-icon:language"-->
+        <!--            :class="{-->
+        <!--              'text-white': !isScrolled,-->
+        <!--              'text-green-500': isScrolled-->
+        <!--            }"-->
+        <!--          ></icon>-->
+        <!--        </ui-button>-->
         <ui-button
           class="!flex rounded-[15px] !border-0 !border-white !p-0 md:!hidden md:h-[50px] md:w-[50px] md:!border"
           variant="outline"

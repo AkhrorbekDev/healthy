@@ -9,13 +9,13 @@ export interface IProps {
 }
 
 const props = withDefaults(defineProps<IProps>(), {
-  modelValue: 0,
+  modelValue: 1,
   total: 0,
   perPage: 10,
-  firstPage: 0
+  firstPage: 1
 })
 
-const model = defineModel<number>({ default: 0 })
+const model = defineModel<number>({ default: 1 })
 
 const breakpoints = useBreakpoints(breakpointsMasterCss)
 const isMobile = breakpoints.smallerOrEqual("2xs")

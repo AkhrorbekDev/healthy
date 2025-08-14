@@ -32,3 +32,12 @@ export const getValue = (obj: Record<string, any>, path: string, locale: string)
   if (!obj || !path) return undefined
   return obj[`${path}_${locale}`]
 }
+
+export const getUserFullName = (user: Record<string, any>) => {
+  if (!user) return ""
+  const firstName = user.first_name || ""
+  const lastName = user.last_name?.toUpperCase() || ""
+  const middleName = user.middle_name?.toUpperCase() || ""
+
+  return [firstName, lastName.charAt(0) + ". ", middleName.charAt(0) + ". "].join(" ").trim()
+}

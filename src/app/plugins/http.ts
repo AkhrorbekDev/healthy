@@ -1,6 +1,8 @@
 import axios from "axios"
 import type { AxiosResponse } from "axios"
 
+import { stringify } from "qs"
+
 const addExtraMethods = (axiosInstance: Record<string, any>) => {
   const methods = ["request", "delete", "get", "head", "options", "post", "put", "patch"]
   const axiosExtra: Record<string, any> = {}
@@ -16,7 +18,12 @@ const addExtraMethods = (axiosInstance: Record<string, any>) => {
 
 export default defineNuxtPlugin(() => {
   const { $i18n, $toast, $config } = useNuxtApp()
-  const http = axios.create({ baseURL: $config.public.apiUrl })
+  const http = axios.create({
+    baseURL: $config.public.apiUrl,
+    paramsSerializer: (params) => {
+      return stringify(params, { arrayFormat: "comma", skipNulls: true, encode: false, allowDots: true })
+    }
+  })
   addExtraMethods(http)
 
   http.interceptors.request.use(
@@ -46,7 +53,7 @@ export default defineNuxtPlugin(() => {
         {
           success,
           description,
-          status: typeof status,
+          status: typeof status
         },
         "response data"
       )
