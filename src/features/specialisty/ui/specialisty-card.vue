@@ -31,7 +31,7 @@
           v-if="specialist.specializations?.length"
           class="flex w-[227px] shrink-0 flex-nowrap items-start gap-[5px]"
         >
-          <h-tag>{{ specialist.specializations[0] }}</h-tag>
+          <h-tag>{{ specialist.specializations[0].name }}</h-tag>
           <h-tag v-if="specialist.specializations?.length > 1">+ {{ specialist.specializations?.length - 1 }}</h-tag>
         </div>
       </div>

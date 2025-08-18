@@ -52,7 +52,7 @@ const { t, tm, rt } = useI18n({ useScope: "local" })
       </div>
     </div>
     <div>
-      <span class="headline-1 font-semibold text-[#323232]">
+      <span class="section-title">
         {{ t("about_title2") }}
       </span>
       <div class="mt-[20px] grid grid-cols-1 gap-[10px] md:mt-[30px] md:grid-cols-4 md:gap-[20px]">

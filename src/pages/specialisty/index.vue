@@ -1,10 +1,10 @@
 <template>
   <div class="main-container relative mx-auto w-full overflow-hidden bg-[#f0f4f1]">
     <specialisty-hero />
-    <specialisty-filter />
+    <specialisty-filter @on:filter="changeRoute" />
     <specialisty-grid :items="specialists" />
     <app-section class="mb-[120px] mt-[70px]">
-      <ui-pagination v-model="query.page" :total="pagination.total" @update:model-value="getSpecialists" />
+      <ui-pagination v-model="query.page" :total="pagination.total" @update:model-value="changeRoute" />
     </app-section>
   </div>
 </template>
@@ -26,28 +26,35 @@ const pagination = ref({
 })
 
 const specialists = ref([])
-const getSpecialists = () => {
+
+const changeRoute = () => {
   router
-    .push({
+    .replace({
       query: {
-        ...query.value
+        ...route.query,
+        ...query.value,
+        page: 1
       }
     })
     .then(() => {
-      specialistsApi.getSpecialistsList(query.value).then((response) => {
-        specialists.value = response.data?.data || []
-        pagination.value = response.data?.pagination || {
-          page: 1,
-          total: 0,
-          limit: 10
-        }
-      })
+      getSpecialists()
     })
+}
+
+const getSpecialists = () => {
+  specialistsApi.getSpecialistsList(route.query).then((response) => {
+    specialists.value = response?.data || []
+    pagination.value = response?.pagination || {
+      page: 1,
+      total: 0,
+      limit: 10
+    }
+  })
 }
 
 const specialistsApi = useSpecialistsApi()
 const { data, refresh } = await useAsyncData("specialists", async () => {
-  return specialistsApi.getSpecialistsList(query.value)
+  return specialistsApi.getSpecialistsList(route.query)
 })
 
 specialists.value = data.value?.data || []

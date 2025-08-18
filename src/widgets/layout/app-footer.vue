@@ -1,8 +1,10 @@
 <script setup lang="ts">
-import { ProfileMenu } from "~/features/profile"
-import { AppLanguage, AppThemeSwitcher } from "~/features/layout"
 import Logo from "~/shared/assets/Logo.svg"
 import AppSectionFluid from "~/widgets/layout/app-section-fluid.vue"
+import { useSiteSettingsStore } from "~/entities/site-settings/site-settings.store"
+
+const siteSettingsStore = useSiteSettingsStore()
+const { siteSettings } = storeToRefs(siteSettingsStore)
 </script>
 
 <template>
@@ -12,15 +14,21 @@ import AppSectionFluid from "~/widgets/layout/app-section-fluid.vue"
         <logo class="h-[70px] w-[70px] text-white md:h-[80px] md:w-[80px]" alt="Logo" />
       </nuxt-link-locale>
       <div class="relative flex items-center gap-[20px] md:w-[160px]">
-        <div
-          class="relative h-[30px] w-[30px] shrink-0 overflow-hidden bg-[url(https://codia-f2c.s3.us-west-1.amazonaws.com/image/2025-07-20/yPJLFS0Mrn.png)] bg-cover bg-no-repeat md:h-[40px] md:w-[40px]"
-        ></div>
-        <div
-          class="relative h-[30px] w-[30px] shrink-0 overflow-hidden bg-[url(https://codia-f2c.s3.us-west-1.amazonaws.com/image/2025-07-20/M0xHPN9iJa.png)] bg-cover bg-no-repeat md:h-[40px] md:w-[40px]"
-        ></div>
-        <div
-          class="relative h-[30px] w-[30px] shrink-0 bg-[url(https://codia-f2c.s3.us-west-1.amazonaws.com/image/2025-07-20/ij44xJ0f0Q.png)] bg-cover bg-no-repeat md:h-[40px] md:w-[40px]"
-        ></div>
+        <a
+          class="h-[30px] w-[30px] shrink-0 cursor-pointer overflow-hidden bg-[url(https://codia-f2c.s3.us-west-1.amazonaws.com/image/2025-07-20/yPJLFS0Mrn.png)] bg-cover bg-no-repeat md:h-[40px] md:w-[40px]"
+          target="_blank"
+          :href="siteSettings.value?.telegram"
+        ></a>
+        <a
+          class="shrink-0 cursor-pointer overflow-hidden bg-[url(https://codia-f2c.s3.us-west-1.amazonaws.com/image/2025-07-20/M0xHPN9iJa.png)] bg-cover bg-no-repeat md:h-[40px] md:w-[40px]"
+          target="_blank"
+          :href="siteSettings.value?.facebook"
+        ></a>
+        <a
+          class="h-[30px] w-[30px] shrink-0 cursor-pointer bg-[url(https://codia-f2c.s3.us-west-1.amazonaws.com/image/2025-07-20/ij44xJ0f0Q.png)] bg-cover bg-no-repeat md:h-[40px] md:w-[40px]"
+          target="_blank"
+          :href="siteSettings.value?.instagram"
+        ></a>
       </div>
     </div>
   </app-section-fluid>
@@ -31,13 +39,19 @@ import AppSectionFluid from "~/widgets/layout/app-section-fluid.vue"
       <div class="col-span-full flex w-[345px] flex-col flex-nowrap items-start gap-[20px] md:gap-[30px]">
         <div class="relative flex shrink-0 flex-col flex-nowrap items-start justify-center gap-[5px] self-stretch">
           <span class="text-mobile-body-14 font-normal text-[#fff] opacity-80 md:text-body-17">Телефон</span>
-          <span class="text-mobile-subtitle-18 font-semibold text-[#fff] md:text-subtitle-22">+998 91 137 55 16</span>
+          <span class="text-mobile-subtitle-18 font-semibold text-[#fff] md:text-subtitle-22">
+            {{ siteSettings.value?.phone }}
+          </span>
         </div>
         <div class="relative flex shrink-0 flex-col flex-nowrap items-start justify-center gap-[5px] self-stretch">
           <span class="text-mobile-body-14 font-normal text-[#fff] opacity-80 md:text-body-17">Адрес</span>
-          <span class="text-mobile-subtitle-18 font-semibold text-[#fff] md:text-subtitle-22">
-            Ташкент, улица Навнихол, проезд 3
-          </span>
+          <a
+            class="text-mobile-subtitle-18 font-semibold text-[#fff] md:text-subtitle-22"
+            target="_blank"
+            :href="siteSettings.value?.address_url"
+          >
+            {{ siteSettings.value?.address }}
+          </a>
         </div>
       </div>
       <div class="flex w-[131px] flex-col flex-nowrap items-start gap-[10px] md:gap-[15px]">

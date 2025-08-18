@@ -1,8 +1,42 @@
 <script setup lang="ts">
-import AppSection from "~/widgets/layout/app-section.vue"
 import AppSectionFluid from "~/widgets/layout/app-section-fluid.vue"
+import { useCommonApi } from "~/api/common"
+import { useSiteSettingsStore } from "~/entities/site-settings/site-settings.store"
 
 const { t } = useI18n({ useScope: "local" })
+const commonApi = useCommonApi()
+const siteSettingsStore = useSiteSettingsStore()
+const { siteSettings } = storeToRefs(siteSettingsStore)
+
+const { required, email } = useRule()
+
+const form = ref({
+  full_name: "",
+  phone_number: "",
+  comment: ""
+})
+
+const rules = ref({
+  full_name: { required },
+  phone_number: { required },
+  comment: { required }
+})
+
+const { hasError, vuelidate } = useValidate(form, rules)
+const loading = ref(false)
+const submit = async () => {
+  const isValid = await vuelidate.value.$validate()
+  if (isValid)
+    commonApi.createOrder(form.value).finally(() => {
+      loading.value = false
+      form.value = {
+        full_name: "",
+        phone_number: "",
+        comment: ""
+      }
+      vuelidate.value.$reset()
+    })
+}
 </script>
 
 <template>
@@ -24,34 +58,50 @@ const { t } = useI18n({ useScope: "local" })
         >
           <icon class="text-[18px] !text-white" name="h-icon:phone"></icon>
           <div class="relative w-[184px] shrink-0 whitespace-nowrap text-left font-['Onest'] font-semibold">
-            <span class="font-['Onest'] text-mobile-subtitle-18 font-semibold text-[#fff] md:text-subtitle-22">
-              +998 91 137 55 16
-            </span>
+            <a
+              class="font-['Onest'] text-mobile-subtitle-18 font-semibold text-[#fff] md:text-subtitle-22"
+              :href="`tel:${siteSettings.value?.phone?.trim()}`"
+            >
+              {{ siteSettings.value?.phone }}
+            </a>
           </div>
         </div>
       </div>
       <div class="flex w-full flex-col flex-nowrap items-start gap-[40px] md:mr-[121px] md:w-[345px]">
         <div class="relative flex shrink-0 flex-col flex-nowrap items-start gap-[10px] self-stretch">
-          <ui-form-group class="w-full">
+          <ui-form-group v-bind="hasError('full_name')" v-slot="{ id }" class="w-full">
             <ui-input
-              class="ui-input-outline !h-auto !border-0 !border-b-2 py-[10px] md:py-[15px]"
+              v-model="form.full_name"
+              class="ui-input-outline !h-auto !border-0 !border-b-2 py-[10px] !placeholder-white md:py-[15px]"
+              :id
               :placeholder="t('form-inputs.fio')"
             ></ui-input>
           </ui-form-group>
-          <ui-form-group class="w-full">
-            <ui-input
-              class="ui-input-outline !h-auto !border-0 !border-b-2 py-[10px] md:py-[15px]"
+          <ui-form-group v-bind="hasError('phone_number')" v-slot="{ id }" class="w-full">
+            <ui-mask-input
+              v-model="form.phone_number"
+              class="ui-input-outline !h-auto !border-0 !border-b-2 py-[10px] !placeholder-white md:py-[15px]"
+              mask="+### (##) ###-##-##"
+              unmasked
+              :id
               :placeholder="t('form-inputs.phone')"
-            ></ui-input>
+            ></ui-mask-input>
           </ui-form-group>
-          <ui-form-group class="w-full">
+          <ui-form-group v-bind="hasError('comment')" v-slot="{ id }" class="w-full">
             <ui-input
-              class="ui-input-outline !h-auto !border-0 !border-b-2 py-[10px] md:py-[15px]"
+              v-model="form.comment"
+              class="ui-input-outline !h-auto !border-0 !border-b-2 py-[10px] !placeholder-white md:py-[15px]"
+              :id
               :placeholder="t('form-inputs.reason')"
             ></ui-input>
           </ui-form-group>
         </div>
-        <ui-button class="!w-full !bg-white !text-green-500 md:w-auto" :label="t('Записаться')" />
+        <ui-button
+          class="!w-full !bg-white !text-green-500 md:w-auto"
+          type="button"
+          :label="t('Записаться')"
+          @click="submit"
+        />
       </div>
     </div>
   </app-section-fluid>

@@ -1,7 +1,7 @@
 .ui-input {
     @apply rounded-lg border;
     @apply focus:outline-0 focus:ring-1;
-    @apply border-gray-200 bg-gray-50 !placeholder-[#848484];
+    @apply border-gray-200 bg-gray-50 placeholder-[#848484];
     @apply hover:border-gray-300;
     @apply dark:border-gray-800 dark:bg-gray-950 dark:caret-gray-100;
     @apply dark:hover:border-gray-700;
@@ -113,13 +113,13 @@
     @apply focus:ring-0 focus:ring-offset-0;
 
     &:checked {
-        color: theme("colors.primary.600");
-        border-color: theme("colors.primary.600");
-        background-color: theme("colors.primary.600");
+        color: theme("colors.green.500");
+        border-color: theme("colors.green.500");
+        background-color: theme("colors.green.500");
     }
 
     &:focus-visible {
-        @apply ring-1 ring-primary-600;
+        @apply ring-1 ring-green-500;
     }
 }
 

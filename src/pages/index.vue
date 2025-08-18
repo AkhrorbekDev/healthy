@@ -52,19 +52,18 @@ const { t } = useI18n({
 
 const { data, error } = await useAsyncData("home", async () => {
   const request = [
-    siteSettingsApi.getSiteSettings(),
     bannerApi.getBanner(),
     specialistsApi.getSpecialistsList(),
     blogApi.getBlogList(),
     courseApi.getCoursesList(),
     reviewApi.getReviewList({
-      is_home_page: true,
+      is_home_page: true
     })
   ]
 
   return await Promise.all(request)
 })
-const [siteSettings, _banner, _specialists, _blog, _courses, _review] = data.value || []
+const [_banner, _specialists, _blog, _courses, _review] = data.value || []
 
 // if (error.value) {
 //   showError(error.value)
@@ -85,10 +84,6 @@ specialists.value = _specialists?.data || []
 blog.value = _blog?.data || []
 courses.value = _courses?.data || []
 reviews.value = _review?.data || []
-
-onMounted(() => {
-  siteSettingsStore.siteSettings.value = siteSettings?.data
-})
 </script>
 
 <i18n>
