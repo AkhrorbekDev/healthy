@@ -1,5 +1,5 @@
 <template>
-  <div class="relative mx-auto max-w-screen-2xl overflow-hidden bg-[#f0f4f1] pb-[80px] md:pb-[120px]">
+  <div class="relative mx-auto overflow-hidden bg-[#f0f4f1] pb-[80px] md:pb-[120px]">
     <course-hero />
     <course-filter v-model="query.type" @update:model-value="getCourses" />
     <app-section class="mt-[20px] pb-[56px] md:pb-[60px]">

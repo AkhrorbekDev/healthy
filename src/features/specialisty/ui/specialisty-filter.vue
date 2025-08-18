@@ -97,9 +97,13 @@ const changeRoute = () => {
       <div class="w-[953px] shrink-0 flex-nowrap items-center gap-[20px] md:flex">
         <ui-dropdown body-class="max-h-[200px]" :distance="16">
           <div
-            class="flex w-[223px] shrink-0 flex-nowrap items-center justify-between rounded-[100px] bg-[#f7f7f7] pb-[15px] pl-[20px] pr-[20px] pt-[15px]"
+            class="flex w-[223px] shrink-0 flex-nowrap items-center justify-between rounded-[100px] pb-[15px] pl-[20px] pr-[20px] pt-[15px]"
+            :class="{
+              'bg-[#F0F4F1] text-green-500': query.specialization?.length > 0,
+              'bg-[#f7f7f7] text-[#323232]': query.specialization?.length
+            }"
           >
-            <span class="h-[23px] shrink-0 basis-auto text-left font-['Onest'] text-[18px] font-normal text-[#323232]">
+            <span class="font-['Onest'] text-body-18 font-normal">
               {{ t("filters.specialization") }}
             </span>
             <icon class="h-[24px] w-[24px] rotate-[90deg]" name="h-icon:arrow"></icon>
@@ -117,11 +121,13 @@ const changeRoute = () => {
         </ui-dropdown>
         <ui-dropdown body-class="max-h-[200px]" :distance="16">
           <div
-            class="relative z-[55] flex w-[223px] shrink-0 flex-nowrap items-center justify-between rounded-[100px] bg-[#f7f7f7] pb-[15px] pl-[20px] pr-[20px] pt-[15px]"
+            class="relative z-[55] flex w-[223px] shrink-0 flex-nowrap items-center justify-between rounded-[100px] pb-[15px] pl-[20px] pr-[20px] pt-[15px]"
+            :class="{
+              'bg-[#F0F4F1] text-green-500': query?.gender,
+              'bg-[#f7f7f7] text-[#323232]': query?.gender
+            }"
           >
-            <span
-              class="relative z-[56] h-[23px] shrink-0 basis-auto text-left font-['Onest'] text-[18px] font-normal text-[#323232]"
-            >
+            <span class="font-['Onest'] text-body-18 font-normal">
               {{ t("filters.gender") }}
             </span>
             <icon class="h-[24px] w-[24px] rotate-[90deg]" name="h-icon:arrow"></icon>
@@ -134,11 +140,13 @@ const changeRoute = () => {
         </ui-dropdown>
         <ui-dropdown body-class="max-h-[200px]" :distance="16">
           <div
-            class="relative z-[58] flex w-[223px] shrink-0 flex-nowrap items-center justify-between rounded-[100px] bg-[#f7f7f7] pb-[15px] pl-[20px] pr-[20px] pt-[15px]"
+            class="relative z-[58] flex w-[223px] shrink-0 flex-nowrap items-center justify-between rounded-[100px] pb-[15px] pl-[20px] pr-[20px] pt-[15px]"
+            :class="{
+              'bg-[#F0F4F1] text-green-500': query.lang?.length > 0,
+              'bg-[#f7f7f7] text-[#323232]': !query.lang?.length
+            }"
           >
-            <span
-              class="relative z-[59] h-[23px] shrink-0 basis-auto text-left font-['Onest'] text-[18px] font-normal text-[#323232]"
-            >
+            <span class="font-['Onest'] text-body-18 font-normal">
               {{ t("filters.language") }}
             </span>
             <icon class="h-[24px] w-[24px] rotate-[90deg]" name="h-icon:arrow"></icon>
@@ -151,11 +159,13 @@ const changeRoute = () => {
         </ui-dropdown>
         <ui-dropdown body-class="max-h-[200px]" :distance="16">
           <div
-            class="relative z-[61] flex w-[223px] shrink-0 flex-nowrap items-center justify-between rounded-[100px] bg-[#f7f7f7] pb-[15px] pl-[20px] pr-[20px] pt-[15px]"
+            class="relative z-[61] flex w-[223px] shrink-0 flex-nowrap items-center justify-between rounded-[100px] pb-[15px] pl-[20px] pr-[20px] pt-[15px]"
+            :class="{
+              'bg-[#F0F4F1] text-green-500': query.city?.length > 0,
+              'bg-[#f7f7f7] text-[#323232]': !query.city?.length
+            }"
           >
-            <span
-              class="relative z-[62] h-[23px] shrink-0 basis-auto text-left font-['Onest'] text-[18px] font-normal text-[#323232]"
-            >
+            <span class="font-['Onest'] text-body-18 font-normal">
               {{ t("filters.city") }}
             </span>
             <icon class="h-[24px] w-[24px] rotate-[90deg]" name="h-icon:arrow"></icon>
@@ -188,7 +198,7 @@ const changeRoute = () => {
           class="relative z-[64] flex w-auto shrink-0 flex-nowrap items-center gap-[12px] rounded-[100px] bg-[#f7f7f7] p-[12px] md:w-[228px] md:px-[20px] md:py-[15px]"
         >
           <span class="body-18 body-15 font-['Onest'] font-medium text-[#323232]">
-            {{ t("filters.rating") }}
+            {{ !query.sort_by ? t("filters.rating") : t(`sort_items.${query.sort_by}`) }}
           </span>
           <icon class="h-[24px] w-[24px] rotate-[90deg]" name="h-icon:arrow"></icon>
         </div>
@@ -211,7 +221,7 @@ const changeRoute = () => {
       "gender": "Пол специалиста",
       "language": "Язык",
       "city": "Город",
-      "rating": "Высокий рейтинг"
+      "rating": "Сортировать"
     },
     "genders": {
       "male": "Мужчина",
@@ -231,7 +241,7 @@ const changeRoute = () => {
       "gender": "Mutaxassis jinsi",
       "language": "Til",
       "city": "Shahar",
-      "rating": "Yuqori reyting"
+      "rating": "Saralash"
     },
     "genders": {
       "male": "Erkak",
@@ -251,7 +261,7 @@ const changeRoute = () => {
       "gender": "Gender of the specialist",
       "language": "Language",
       "city": "City",
-      "rating": "High rating"
+      "rating": "Sort"
     },
     "genders": {
       "male": "Male",
