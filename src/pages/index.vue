@@ -4,7 +4,7 @@
       :buttons="banner.buttons"
       :description="banner.description"
       :title="banner.title"
-      :background="HomeHeroBg"
+      :background="isMobile ? banner.thumbnail_mobile : banner.thumbnail_desktop"
     />
     <home-specialist-grid :items="specialists" />
     <home-course-grid :items="courses" />
@@ -31,6 +31,7 @@ import { useSpecialistsApi } from "~/entities/specialists/specialists.api"
 import { useBlogApi } from "~/entities/blog/blog.api"
 import { useCoursesApi } from "~/api/courses/api"
 import { useReviewApi } from "~/api/reviews/api"
+import { breakpointsTailwind } from "@vueuse/core"
 
 const bannerApi = useBannerApi()
 const blogApi = useBlogApi()
@@ -39,6 +40,9 @@ const reviewApi = useReviewApi()
 const specialistsApi = useSpecialistsApi()
 const siteSettingsApi = useSiteSettingsApi()
 const siteSettingsStore = useSiteSettingsStore()
+
+const breakpoints = useBreakpoints(breakpointsTailwind)
+const isMobile = breakpoints.smallerOrEqual("sm")
 
 const banner = ref({})
 const specialists = ref([])

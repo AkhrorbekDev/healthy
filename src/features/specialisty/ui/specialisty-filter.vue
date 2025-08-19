@@ -29,6 +29,9 @@ const regions = ref({
 const route = useRoute()
 const router = useRouter()
 const query = reactive({ ...route.query })
+const showFilterBottomSheet = ref(false)
+const showSortBottomSheet = ref(false)
+
 if (Array.isArray(query.specialization) === false) {
   query.specialization = query.specialization ? [query.specialization] : []
 }
@@ -42,7 +45,7 @@ if (Array.isArray(query.city) === false) {
   query.city = query.city ? [query.city] : []
 }
 if (!query.gender) {
-  query.gender = "0"
+  query.gender = undefined
 }
 
 onMounted(() => {
@@ -76,16 +79,31 @@ const sortItems = {
 }
 
 const changeRoute = () => {
+  console.log("changeRoute", query)
   router
     .replace({
       query: {
         ...query,
-        page: 1
+        page: undefined
       }
     })
     .then(() => {
       emits("on:filter")
     })
+}
+
+const clearSort = () => {
+  query.sort_by = undefined
+  changeRoute()
+  showSortBottomSheet.value = false
+}
+const clearFilters = () => {
+  query.specialization = []
+  query.gender = []
+  query.lang = []
+  query.city = []
+  changeRoute()
+  showFilterBottomSheet.value = false
 }
 </script>
 
@@ -94,13 +112,13 @@ const changeRoute = () => {
     <div
       class="flex flex-nowrap items-center justify-between rounded-[20px] bg-[#fff] p-[12px] md:px-[20px] md:py-[25px]"
     >
-      <div class="w-[953px] shrink-0 flex-nowrap items-center gap-[20px] md:flex">
+      <div class="hidden w-[953px] shrink-0 flex-nowrap items-center gap-[20px] md:flex">
         <ui-dropdown body-class="max-h-[200px]" :distance="16">
           <div
             class="flex w-[223px] shrink-0 flex-nowrap items-center justify-between rounded-[100px] pb-[15px] pl-[20px] pr-[20px] pt-[15px]"
             :class="{
               'bg-[#F0F4F1] text-green-500': query.specialization?.length > 0,
-              'bg-[#f7f7f7] text-[#323232]': query.specialization?.length
+              'bg-[#f7f7f7] text-[#323232]': !query.specialization?.length
             }"
           >
             <span class="font-['Onest'] text-body-18 font-normal">
@@ -124,7 +142,7 @@ const changeRoute = () => {
             class="relative z-[55] flex w-[223px] shrink-0 flex-nowrap items-center justify-between rounded-[100px] pb-[15px] pl-[20px] pr-[20px] pt-[15px]"
             :class="{
               'bg-[#F0F4F1] text-green-500': query?.gender,
-              'bg-[#f7f7f7] text-[#323232]': query?.gender
+              'bg-[#f7f7f7] text-[#323232]': !query?.gender
             }"
           >
             <span class="font-['Onest'] text-body-18 font-normal">
@@ -182,35 +200,154 @@ const changeRoute = () => {
           </template>
         </ui-dropdown>
       </div>
-      <div
-        class="relative z-[64] flex w-auto shrink-0 flex-nowrap items-center gap-[12px] rounded-[100px] bg-[#f7f7f7] p-[12px] md:hidden md:w-[228px] md:px-[20px] md:py-[15px]"
-      >
-        <span class="body-18 body-15 font-['Onest'] font-medium text-[#323232]">
-          {{ t("filters.labels") }}
-        </span>
+      <div class="flex w-full items-center gap-3">
         <div
-          class="relative z-[66] h-[24px] w-[24px] shrink-0 overflow-hidden bg-[url(https://codia-f2c.s3.us-west-1.amazonaws.com/image/2025-07-21/XOHQgKiA9S.png)] bg-cover bg-no-repeat"
-        ></div>
-      </div>
-
-      <ui-dropdown body-class="max-h-[200px]" :distance="16">
-        <div
-          class="relative z-[64] flex w-auto shrink-0 flex-nowrap items-center gap-[12px] rounded-[100px] bg-[#f7f7f7] p-[12px] md:w-[228px] md:px-[20px] md:py-[15px]"
+          class="flex w-full flex-nowrap items-center justify-between rounded-[100px] bg-[#f7f7f7] p-[12px] md:hidden md:w-[228px] md:gap-[12px] md:px-[20px] md:py-[15px]"
+          @click="showFilterBottomSheet = true"
         >
-          <span class="body-18 body-15 font-['Onest'] font-medium text-[#323232]">
-            {{ !query.sort_by ? t("filters.rating") : t(`sort_items.${query.sort_by}`) }}
+          <span class="font-['Onest'] text-mobile-body-15 font-medium text-[#323232]">
+            {{ t("filters.labels") }}
           </span>
           <icon class="h-[24px] w-[24px] rotate-[90deg]" name="h-icon:arrow"></icon>
         </div>
-        <template #body>
-          <ui-dropdown-item v-for="(value, key) in sortItems" :key="key">
-            <ui-radio v-model="query.sort_by" :value="key" :label="t(value)" @update:model-value="changeRoute" />
-          </ui-dropdown-item>
-        </template>
-      </ui-dropdown>
+
+        <ui-dropdown class="!hidden md:!flex" body-class="max-h-[200px]" :distance="16">
+          <div
+            class="flex w-auto shrink-0 flex-nowrap items-center rounded-[100px] bg-[#f7f7f7] p-[12px] md:w-[228px] md:gap-[12px] md:px-[20px] md:py-[15px]"
+          >
+            <span class="font-['Onest'] text-mobile-body-15 font-medium text-[#323232] md:text-body-18">
+              {{ !query.sort_by ? t("filters.rating") : t(`sort_items.${query.sort_by}`) }}
+            </span>
+            <icon class="h-[24px] w-[24px] rotate-[90deg]" name="h-icon:arrow"></icon>
+          </div>
+          <template #body>
+            <ui-dropdown-item v-for="(value, key) in sortItems" :key="key">
+              <ui-radio
+                v-model="query.sort_by"
+                class="sort-item"
+                :value="key"
+                :label="t(value)"
+                @update:model-value="changeRoute"
+              />
+            </ui-dropdown-item>
+          </template>
+        </ui-dropdown>
+        <div
+          class="flex w-full flex-nowrap items-center justify-between rounded-[100px] bg-[#f7f7f7] p-[12px] md:hidden md:w-[228px] md:gap-[12px] md:px-[20px] md:py-[15px]"
+          @click="showSortBottomSheet = true"
+        >
+          <span class="font-['Onest'] text-mobile-body-15 font-medium text-[#323232] md:text-body-18">
+            {{ t("filters.rating") }}
+          </span>
+          <icon class="h-[24px] w-[24px] rotate-[90deg]" name="h-icon:arrow"></icon>
+        </div>
+      </div>
     </div>
+    <ui-bottom-sheet v-model="showSortBottomSheet">
+      <div class="py-5">
+        <p class="mb-5 font-['Onest'] text-subtitle-20 font-semibold text-[#323232]">
+          {{ t("filters.rating") }}
+        </p>
+        <div class="flex w-full flex-col gap-3">
+          <div v-for="(value, key) in sortItems" :key="key">
+            <ui-radio v-model="query.sort_by" :value="key" :label="t(value)" @update:model-value="changeRoute" />
+          </div>
+        </div>
+      </div>
+      <template #footer>
+        <ui-button
+          class="mb-[10px] w-full"
+          type="button"
+          :label="t('save-filters')"
+          @click="showSortBottomSheet = false"
+        ></ui-button>
+        <ui-button
+          class="w-full"
+          type="button"
+          variant="outline"
+          :label="t('clear-filters')"
+          @click="clearSort"
+        ></ui-button>
+      </template>
+    </ui-bottom-sheet>
+    <ui-bottom-sheet v-model="showFilterBottomSheet">
+      <div class="py-5">
+        <p class="mb-5 font-['Onest'] text-subtitle-20 font-semibold text-[#323232]">
+          {{ t("filters.specialization") }}
+        </p>
+        <ui-hidden-card class="mb-5 border-b border-[#E8E8E8] pb-5">
+          <div class="flex w-full flex-col gap-3">
+            <div v-for="specizalization in specizalizations.data" :key="specizalization.id">
+              <ui-checkbox
+                v-model="query.specialization"
+                :value="specizalization.id"
+                :label="getValue(specizalization, 'name', locale)"
+                @update:model-value="changeRoute"
+              />
+            </div>
+          </div>
+        </ui-hidden-card>
+        <div class="mb-5 flex w-full flex-col gap-3 border-b border-[#E8E8E8] pb-5">
+          <p class="mb-[2px] font-['Onest'] text-subtitle-20 font-semibold text-[#323232]">
+            {{ t("filters.gender") }}
+          </p>
+          <div v-for="(value, key) in genders" :key="key">
+            <ui-radio v-model="query.gender" :value="key" :label="t(value)" @update:model-value="changeRoute" />
+          </div>
+        </div>
+
+        <ui-hidden-card class="mb-5 border-b border-[#E8E8E8] pb-5">
+          <div class="flex w-full flex-col gap-3">
+            <p class="mb-[2px] font-['Onest'] text-subtitle-20 font-semibold text-[#323232]">
+              {{ t("filters.language") }}
+            </p>
+            <div v-for="{ code, name } in locales" :key="code">
+              <ui-checkbox v-model="query.lang" :value="code" :label="name" @update:model-value="changeRoute" />
+            </div>
+          </div>
+        </ui-hidden-card>
+        <ui-hidden-card class="border-b border-[#E8E8E8] pb-5">
+          <div class="flex w-full flex-col gap-3">
+            <p class="mb-[2px] font-['Onest'] text-subtitle-20 font-semibold text-[#323232]">
+              {{ t("filters.city") }}
+            </p>
+            <div v-for="region in regions.data" :key="region.id">
+              <ui-checkbox
+                v-model="query.city"
+                :value="region.id"
+                :label="getValue(region, 'name', locale)"
+                @update:model-value="changeRoute"
+              />
+            </div>
+          </div>
+        </ui-hidden-card>
+      </div>
+      <template #footer>
+        <ui-button
+          class="mb-[10px] w-full"
+          type="button"
+          :label="t('save-filters')"
+          @click="showFilterBottomSheet = false"
+        ></ui-button>
+        <ui-button
+          class="w-full"
+          type="button"
+          variant="outline"
+          :label="t('clear-filters')"
+          @click="clearFilters"
+        ></ui-button>
+      </template>
+    </ui-bottom-sheet>
   </app-section>
 </template>
+
+<style>
+.sort-item {
+  input {
+    display: none;
+  }
+}
+</style>
 
 <i18n>
 {
@@ -232,7 +369,9 @@ const changeRoute = () => {
       "expensive": "Сначала дороже",
       "cheapest": "Сначала дешевле",
       "experience": "Более опытные"
-    }
+    },
+    "save-filters": "Сохранить фильтры",
+    "clear-filters": "Сбросить фильтры"
   },
   "uz": {
     "filters": {
@@ -252,7 +391,9 @@ const changeRoute = () => {
       "expensive": "Birinchi navbatda qimmatroq",
       "cheapest": "Avval arzonroq",
       "experience": "Ko'proq tajribali"
-    }
+    },
+    "save-filters": "Filtrlarni saqlash",
+    "clear-filters": "Filtrlarni tozalash"
   },
   "en": {
     "filters": {
@@ -272,7 +413,9 @@ const changeRoute = () => {
       "expensive": "More expensive first",
       "cheapest": "Cheaper first",
       "experience": "More experienced"
-    }
+    },
+    "save-filters": "Save filters",
+    "clear-filters": "Clear filters"
   }
 }
 </i18n>

@@ -38,7 +38,10 @@
     "role": "Rol",
     "roles": "Rollar",
     "updated_at": "Yangilangan sana",
-    "users": "Foydalanuvchilar"
+    "users": "Foydalanuvchilar",
+    "from": "dan",
+    "sum": "sum",
+    "price": "{ price } so'mdan"
   },
   "messages": {
     "confirm": {

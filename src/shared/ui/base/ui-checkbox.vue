@@ -29,7 +29,7 @@ const model = defineModel<T>()
 
     <label
       v-bind="labelProps"
-      class="w-full cursor-pointer text-start text-sm font-medium leading-none text-[#323232] md:text-body-17"
+      class="w-full cursor-pointer text-start font-['Onest'] text-mobile-subtitle-16 font-normal text-[#323232] md:text-body-17"
       :for="id"
       :class="labelClass"
     >

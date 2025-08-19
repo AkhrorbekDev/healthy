@@ -8,7 +8,7 @@
     "save": "Save",
     "sign_in": "Sign in",
     "sign_out": "Sign out",
-    "toggle_sidebar": "Toggle sidebar",
+    "toggle_sidebar": "Toggle sidebar"
   },
   "descriptions": {
     "roles": "List of roles",
@@ -38,7 +38,10 @@
     "role": "Role",
     "roles": "Roles",
     "updated_at": "Updated at",
-    "users": "Users"
+    "users": "Users",
+    "from" : "from",
+    "sum": "sum",
+    "price": "from { price } sum"
   },
   "messages": {
     "confirm": {

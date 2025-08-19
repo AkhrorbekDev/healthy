@@ -2,7 +2,7 @@
   "languages": {
     "en": "Английский",
     "ru": "Русский",
-    "uz": "Узбекский",
+    "uz": "Узбекский"
   },
   "actions": {
     "add": "Добавить",
@@ -47,7 +47,10 @@
     "roles": "Роли",
     "updated_at": "Обновлено в",
     "users": "Пользователи",
-    "for_specialist": "Специалистам"
+    "for_specialist": "Специалистам",
+    "from": "от",
+    "sum": "сум",
+    "price": "от { price } сум"
   },
   "messages": {
     "confirm": {

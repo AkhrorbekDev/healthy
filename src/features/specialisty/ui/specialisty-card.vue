@@ -1,3 +1,14 @@
+<script lang="ts" setup>
+import HTag from "~/features/base/h-tag.vue"
+
+const { t } = useI18n({ useScope: "local" })
+
+interface IProps {
+  specialist: any
+}
+
+defineProps<IProps>()
+</script>
 <template>
   <div
     class="flex w-full flex-col flex-nowrap items-start gap-[20px] rounded-[20px] bg-[#fff] p-[15px] md:flex-row md:p-[20px]"
@@ -14,9 +25,7 @@
           {{ specialist.full_name }}
         </span>
         <span class="text-left font-['Onest'] text-mobile-body-14 font-semibold text-[#63845c]">
-          от
-          {{ specialist.price }}
-          сум
+          {{ $t("labels.price", { price: specialist.price }) }}
         </span>
       </div>
     </div>
@@ -31,8 +40,11 @@
           v-if="specialist.specializations?.length"
           class="flex w-[227px] shrink-0 flex-nowrap items-start gap-[5px]"
         >
-          <h-tag>{{ specialist.specializations[0].name }}</h-tag>
-          <h-tag v-if="specialist.specializations?.length > 1">+ {{ specialist.specializations?.length - 1 }}</h-tag>
+          <h-tag class="md:px-[10px] md:py-[5px]">{{ specialist.specializations[0].name }}</h-tag>
+          <h-tag v-if="specialist.specializations?.length > 1" class="md:px-[10px] md:py-[5px]">
+            +
+            {{ specialist.specializations?.length - 1 }}
+          </h-tag>
         </div>
       </div>
       <div
@@ -41,20 +53,20 @@
         <div class="flex shrink-0 flex-nowrap items-center gap-[8px]">
           <icon class="text-[18px] text-green-500" name="h-icon:achieve"></icon>
           <span class="text-mobile-body-15 font-medium text-[#323232] md:text-body-17">
-            Опыт: {{ specialist.experience }} лет
+            {{ t("experience") }}: {{ specialist.experience }} {{ t("year") }}
           </span>
         </div>
         <div class="flex shrink-0 flex-nowrap items-center gap-[8px]">
           <icon class="text-[18px] text-green-500" name="h-icon:star"></icon>
 
           <span class="text-mobile-body-15 font-medium text-[#323232] md:text-body-17">
-            Рейтинг: {{ specialist.rating }}
+            {{ t("rating") }}: {{ specialist.rating }}
           </span>
         </div>
         <div class="flex shrink-0 flex-nowrap items-center gap-[8px]">
           <icon class="text-[18px] text-green-500" name="h-icon:location"></icon>
 
-          <span class="text-mobile-body-15 font-medium text-[#323232] md:text-body-17">{{ specialist.location }}</span>
+          <span class="text-mobile-body-15 font-medium text-[#323232] md:text-body-17">{{ specialist.city }}</span>
         </div>
         <div class="flex flex-nowrap items-center gap-[8px] self-stretch">
           <icon class="text-[18px] text-green-500" name="h-icon:language"></icon>
@@ -69,7 +81,7 @@
           class="flex shrink-0 flex-nowrap items-center justify-center gap-[10px] rounded-[100px] border border-solid border-[#63845c] pb-[5px] pl-[10px] pr-[10px] pt-[5px]"
         >
           <span class="font-['Onest'] text-mobile-body-14 font-bold text-[#63845c] md:text-subtitle-16">
-            {{ specialist.specializations[0] }}
+            {{ specialist.specializations[0].name }}
           </span>
         </div>
         <div
@@ -82,36 +94,36 @@
         </div>
       </div>
       <span
-        class="!hidden shrink-0 basis-auto self-stretch text-left font-['Onest'] text-[24px] font-semibold text-[#63845c] md:block"
+        class="!hidden shrink-0 basis-auto self-stretch text-left font-['Onest'] text-[24px] font-semibold text-[#63845c] md:!block"
       >
-        от {{ specialist.price }} сум
+        {{ $t("labels.price", { price: specialist.price }) }}
       </span>
     </div>
   </div>
 </template>
 
-<script lang="ts" setup>
-import HTag from "~/features/base/h-tag.vue"
-
-const { t } = useI18n({ useScope: "local" })
-
-interface IProps {
-  specialist: any
-}
-
-defineProps<IProps>()
-</script>
-
 <i18n>
 {
   "en": {
-    "title": "Specialist Card"
+    "title": "Specialist Card",
+    "experience": "Experience",
+    "rating": "Rating",
+    "year": "year",
+    "owner": "Owner"
   },
   "ru": {
-    "title": "Карточка специалиста"
+    "title": "Карточка специалиста",
+    "experience": "Опыт",
+    "rating": "Рейтинг",
+    "year": "лет",
+    "owner": "Основатель"
   },
   "uz": {
-    "title": "Mutaxassis kartasi"
+    "title": "Mutaxassis kartasi",
+    "experience": "Tajribasi",
+    "rating": "Reyting",
+    "year": "yil",
+    "owner": "Asoschi"
   }
 }
 </i18n>

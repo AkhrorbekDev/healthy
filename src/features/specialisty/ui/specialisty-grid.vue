@@ -1,6 +1,6 @@
 <template>
   <app-section>
-    <div class="relative z-[67] mb-0 mr-0 mt-[30px] grid grid-cols-1 gap-[20px] md:grid-cols-2">
+    <div class="mt-[20px] grid grid-cols-1 gap-[20px] md:mt-[30px] md:grid-cols-2">
       <specialisty-card v-for="specialist in items" :specialist :key="specialist.id" />
     </div>
   </app-section>

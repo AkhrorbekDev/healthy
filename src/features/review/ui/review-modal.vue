@@ -5,10 +5,7 @@ const { t } = useI18n({
 const review = ref({})
 
 const onBeforeShow = (e: any) => {
-  console.log("Review Modal Data:", e)
   review.value = e
-  if (review) {
-  }
 }
 </script>
 
