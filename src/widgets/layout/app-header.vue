@@ -9,6 +9,7 @@ const isScrolled = ref(false)
 const handleScroll = () => {
   isScrolled.value = window.scrollY > 10
 }
+const localePath = useLocalePath()
 
 const showMenu = ref(false)
 
@@ -139,6 +140,7 @@ onUnmounted(() => {
           ></icon>
         </ui-button>
         <ui-button
+          :to="localePath('/for-psychologists')"
           class="!hidden md:!block"
           :class="{
             '!bg-white/20 !text-white': !isScrolled,

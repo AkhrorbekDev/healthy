@@ -8,7 +8,7 @@ const isMobile = breakpoints.smallerOrEqual("sm")
 </script>
 
 <template>
-  <for-psychologist-m v-if="!isMobile"></for-psychologist-m>
+  <for-psychologist-m v-if="isMobile"></for-psychologist-m>
   <for-psychologist-d v-else></for-psychologist-d>
 </template>
 
